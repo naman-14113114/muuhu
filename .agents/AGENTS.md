@@ -115,3 +115,15 @@ This version has breaking changes — APIs, conventions, and file structure may 
   - Executed a PowerShell script to globally update `globals.css` padding rules and class names.
   - Updated `StickyAddToCart.tsx` across `us`, `uk`, `ca`, and `au` to lower the CTA positioning.
   - Committed ("Fix sticky add to cart overlapping footer and adjust bottom position") and pushed the changes to GitHub.
+
+### Session 7: Logo Transparency and Comparison Table Update
+- **User Intent**: The user uploaded a new, transparent version of the Muuhu logo. They requested this new version to replace the logo in the header/footer, and also demanded that the old "BUUDY (Your Beauty, Our Light)" logo be removed from the first column of the Comparison Table and replaced with the new Muuhu logo.
+- **Agent Logic & Thinking**:
+  - Found the uploaded transparent logo file (`media__1782305802159.png`).
+  - Copied it to overwrite `muuhu_logo.png` in the public assets directory across all 4 apps. By overwriting the file, the header, minimal cart header, and footer components automatically inherit the transparent version without needing code changes.
+  - Investigated `ComparisonTable.tsx` and found a hardcoded external image URL (`img.thesitebase.net/...`) pointing to the old BUUDY logo.
+  - Used PowerShell string replacement to update this `src` attribute to point to the local `/media/products/buudy-led-mask/images/muuhu_logo.png` path across all 4 apps.
+- **Actions Taken**:
+  - Overwrote public logo files across `apps/{us,uk,ca,au}`.
+  - Replaced the comparison table image URL in `ComparisonTable.tsx` across all apps.
+  - Committed ("Update logo to transparent version in header, footer, and comparison table") and pushed to GitHub.

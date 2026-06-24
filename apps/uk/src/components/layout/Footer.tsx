@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import { footerMenus, paymentIcons } from "@/data/footer";
 import { productMediaAsset } from "@/lib/media";
@@ -14,7 +14,7 @@ export function Footer() {
                 alt="Muuhu"
                 className="h-auto w-44"
                 height={58}
-                src={productMediaAsset("muuhu_logo.png")}
+                src={productMediaAsset("muuhu_logo_v2.png")}
                 width={174}
               />
             </Link>
@@ -127,5 +127,6 @@ export function Footer() {
     </footer>
   );
 }
+
 
 

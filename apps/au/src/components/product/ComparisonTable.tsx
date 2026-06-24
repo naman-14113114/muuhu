@@ -154,7 +154,7 @@ export function ComparisonTable() {
                   <div className="flex items-center h-full">
                     <div className="w-1/4 flex flex-col justify-center items-center h-full pb-3 px-2 pt-3 md:pt-4">
                       <img
-                        src="/media/products/buudy-led-mask/images/muuhu_logo.png"
+                        src="/media/products/buudy-led-mask/images/muuhu_logo_v2.png"
                         alt="Muuhu"
                         className="h-8 md:h-10 object-contain"
                       />
@@ -302,4 +302,5 @@ export function ComparisonTable() {
     </section>
   );
 }
+
 
