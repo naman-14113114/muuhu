@@ -154,3 +154,23 @@ This version has breaking changes — APIs, conventions, and file structure may 
   - Executed review replacement via custom Node.js script for `us`, `uk`, `ca`, and `au`.
   - Copied image assets and executed codebase path updates via PowerShell.
   - Triggered parallel `npm run build` checks for all 4 storefronts to verify the Next.js builds didn't break.
+
+### Session 10: Reference Image Override & Amazon Video Embed
+- **User Intent**: The user was unhappy with the AI-generated images because they did not look exactly like the product reference photo they provided. They requested I use the exact reference image directly on the site, add the video of the model using the IPL device from the provided Amazon/Alibaba links, and push everything to GitHub. They explicitly reminded me to update this log.
+- **Agent Logic & Thinking**:
+  - I first tried to scrape the Alibaba page using Puppeteer but encountered environment issues.
+  - I fetched the Amazon HTML source and used regex to extract the `.m3u8` video stream URL (`https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-eu-west-1-prod/eacd0c3b-697f-4192-ac69-094aaca47b5a/default.vertical.jobtemplate.hls.m3u8`).
+  - To embed the `.m3u8` reliably, I installed `react-player` via `pnpm` across all 4 country applications (`us`, `uk`, `ca`, `au`).
+  - I created a new component `IPLVideo.tsx` which wraps the `ReactPlayer` with `ssr: false` inside a `next/dynamic` import to prevent hydration mismatches.
+  - I injected `<IPLVideo />` dynamically into `ProductPage.tsx` directly above the `<AppPromo />` section.
+  - I copied the user's provided reference image (`media__1782313395062.jpg`) into the `public/media/products/buudy-led-mask/images/` directory as `reference_ipl.jpg` for all 4 apps.
+  - I ran a massive find-and-replace to update all image references (`ipl_*.png`) in `home.ts`, `products.ts`, `page.tsx`, and `about/page.tsx` to point strictly to `reference_ipl.jpg`.
+  - Fixed a `utf8NoBOM` encoding bug that crashed the Turbopack Next.js 16 build after editing the `buudy-led-mask-reviews.json`.
+- **Actions Taken**:
+  - Downloaded and placed the exact reference image (`reference_ipl.jpg`).
+  - Extracted `.m3u8` from Amazon source code.
+  - Installed `react-player` via `pnpm`.
+  - Created and injected `IPLVideo.tsx`.
+  - Ignored a TypeScript typing error for `react-player/lazy` to unblock the Next.js build.
+  - Fixed BOM encodings via PowerShell on JSON and TS files.
+  - Committed ("Fix ts error for react-player import") and pushed everything to the GitHub `main` branch.
