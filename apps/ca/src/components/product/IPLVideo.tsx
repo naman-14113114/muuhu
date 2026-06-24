@@ -1,21 +1,7 @@
 ﻿// @ts-nocheck
 "use client";
 
-import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
-
-// @ts-ignore
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
-
 export function IPLVideo() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
   return (
     <section className="py-12 bg-[var(--cream)] px-4">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
@@ -23,22 +9,16 @@ export function IPLVideo() {
           See the IPL in Action
         </h2>
         <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-black relative">
-          <ReactPlayer
-            url="/media/products/buudy-led-mask/videos/hero.mp4"
-            width="100%"
-            height="100%"
-            playing={true}
-            muted={true}
-            loop={true}
-            controls={false}
+          <video
+            src="/media/products/buudy-led-mask/videos/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </div>
       </div>
     </section>
   );
 }
-
-
-
-
-

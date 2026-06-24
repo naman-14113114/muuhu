@@ -81,7 +81,7 @@ export const homeYoungerYou = {
   title: "Reveal smoother skin",
   copy: "With 999,999 flashes, ice cooling technology, and Auto-glide mode for fast treatment on large areas, you can achieve salon-quality hair removal from the comfort of your home.",
   image: {
-    src: productMediaAsset("media__1782322332594.jpg"),
+    src: productMediaAsset("reference_ipl.jpg"),
     alt: "Muuhu IPL Hair Removal smooth skin results",
   },
 };
@@ -121,6 +121,7 @@ export const homeCustomerReviewsGrid = {
   ctaHref: "/pages/about-us",
   image: productMediaAsset("banner_collage_image.jpeg")
 };
+
 
 
 

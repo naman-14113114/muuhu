@@ -89,11 +89,15 @@ export const muuhuIpl: Product = {
   promoLabel: "Glow kit promo applied",
   cartImage: productMediaAsset("ipl_provided_2.png"),
     gallery: [
-      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL" },
-      { src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Lifestyle" },
-      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL Device" },
-      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Technology" },
-      { src: productMediaAsset("ipl_provided_6.png"), alt: "Muuhu IPL Action" }
+      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Hair Removal" },
+      { src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Device Side" },
+      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL In Use" },
+      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Close Up" },
+      { src: productMediaAsset("ipl_provided_6.png"), alt: "Muuhu IPL Ice Cooling" },
+      { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu IPL Product Shot" },
+      { src: productMediaAsset("ipl_provided_8.png"), alt: "Muuhu IPL Full View" },
+      { src: productMediaAsset("ipl_provided_9.png"), alt: "Muuhu IPL Lifestyle" },
+      { src: productMediaAsset("ipl_provided_10.png"), alt: "Muuhu IPL Premium" }
     ],
   gifts: [
     {

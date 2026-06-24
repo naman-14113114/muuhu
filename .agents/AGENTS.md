@@ -216,3 +216,18 @@ pm run build) and pushed to GitHub.
   - Injected review images via custom Node script.
   - Passed 
 pm run build locally and pushed to GitHub.
+
+### Session 13: Finalizing Asset Placements & Removing All Old AI Reviews
+- **User Intent**: The user discovered that old AI/mask images were still showing up deeper inside the 51,000+ customer reviews. They also clarified that the very 1st image from their provided 10 images was meant to be a review image, making a total of 4 specific review images. Finally, they wanted to ensure the explicitly uploaded image was used in the Ice Cooling section.
+- **Agent Logic & Thinking**:
+  - Found the 4 review images (eview_img_1, eview_img_2, eview_img_3, and renamed ipl_provided_1.png to eview_img_4.png).
+  - Ran a Node script across all 4 country apps to completely strip the images property from the remaining 51,000+ reviews in uudy-led-mask-reviews.json. This ensures that NO OLD mask photos or AI photos appear in the reviews.
+  - Injected the 4 selected review images into the top 4 latest reviews (indices 0 to 3) as ["/media/..."], leaving the rest as empty arrays [] to satisfy Next.js TypeScript definitions for ProductReview.
+  - Re-mapped the Gallery arrays in home.ts and products.ts. Because ipl_provided_1.png was moved to reviews, we had 9 distinct images left. To satisfy the 10-image requirement on the homepage without repeating, the explicitly uploaded ice cooling image (media__1782322332594.jpg) was seamlessly assigned to the collectionBanner slot to maintain 100% unique visual distribution.
+  - Re-updated AppPromo.tsx to strictly point to media__1782322332594.jpg.
+- **Actions Taken**:
+  - Wrote and executed Node script to parse and cleanse uudy-led-mask-reviews.json.
+  - Handled TypeScript compilation errors resulting from undefined vs [] arrays for images.
+  - Distributed 10 unique assets across home.ts and products.ts.
+  - Triggered a Next.js 
+pm run build, verified it compiled successfully in ~10s, and pushed the updates to GitHub.
