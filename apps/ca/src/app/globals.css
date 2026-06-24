@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
   --plum: #000000;
@@ -334,12 +334,12 @@ section.bg-\[\#f6ede2\] + section.bg-\[\#f6ede2\] {
   color: inherit;
 }
 
-.buudy-mask-sticky-cta footer {
+.Muuhu-mask-sticky-cta footer {
   padding-bottom: 1.5rem;
 }
 
 @media (min-width: 640px) {
-  .buudy-mask-sticky-cta footer {
+  .Muuhu-mask-sticky-cta footer {
     padding-bottom: 3.75rem;
   }
 }
@@ -355,7 +355,7 @@ section.bg-\[\#f6ede2\] + section.bg-\[\#f6ede2\] {
   }
 }
 
-/* ── Muuhu-* aliases (components use Muuhu- prefix after rebrand) ── */
+/* â”€â”€ Muuhu-* aliases (components use Muuhu- prefix after rebrand) â”€â”€ */
 .Muuhu-wrap {
   width: calc(100% - 32px);
   max-width: 1180px;
@@ -408,3 +408,4 @@ section.bg-\[\#f6ede2\] + section.bg-\[\#f6ede2\] {
 .Muuhu-marquee-slow {
   animation-duration: 60s;
 }
+

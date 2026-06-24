@@ -85,3 +85,20 @@ This version has breaking changes — APIs, conventions, and file structure may 
   - Injected `<AppPromo />` and `<IceCoolingSection />` into `ProductPage.tsx` across all 4 apps.
   - Copied the updated `AppPromo.tsx` code to all 4 apps.
   - Committed ("Update AppPromo to IPL details and add IceCoolingSection") and pushed the changes to GitHub.
+
+### Session 5: Build Encoding Fix and Ice Cooling Restyling
+- **User Intent**: The user pointed out that the App and Ice Cooling sections were not visible on the live AU storefront, and then angrily noticed that the Ice Cooling section had an unwanted background color and divider lines.
+- **Agent Logic & Thinking**:
+  - Investigated the build failure and discovered that appending the new `IceCoolingSection` via PowerShell had corrupted the file encoding, causing the Turbopack compiler to throw an "invalid utf-8 sequence" error.
+  - Re-encoded `AppPromo.tsx` to strictly `UTF-8` across all 4 apps, fixing the build issue.
+  - For the styling issue, removed `border-y border-[var(--border)]` and `bg-[#FDF6F0]` from `IceCoolingSection`. 
+  - Changed it to match the surrounding layout (`bg-[var(--cream)]`) for a seamless scroll experience without assuming separate section divisions.
+- **Actions Taken**:
+  - Fixed file encoding on `AppPromo.tsx` and pushed the fix to resolve Vercel Turbopack crashes.
+  - Stripped the background and border classes from `IceCoolingSection` across `us`, `uk`, `ca`, and `au` apps.
+  - Committed ("Remove background color and border from IceCoolingSection to match design") and pushed the visual updates.
+
+## Session Logging Requirement (CRITICAL)
+- **MANDATORY**: After EVERY task, regardless of whether the user explicitly requests it, you MUST append a detailed session log to this `AGENTS.md` file.
+- Do not summarize the context. Write everything in detail: your thinking, user intent and constraints, and all actions taken.
+- This rule is permanent and non-negotiable.

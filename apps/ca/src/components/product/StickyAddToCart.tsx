@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -73,7 +73,7 @@ export function StickyAddToCart({ product }: { product: Product }) {
 
   return (
     <div
-      className={`pointer-events-none fixed bottom-3 inset-x-3 z-40 transition duration-300 ease-out sm:inset-x-0 sm:bottom-5 sm:px-3 ${
+      className={`pointer-events-none fixed bottom-2 inset-x-2 z-40 transition duration-300 ease-out sm:inset-x-0 sm:bottom-2 sm:px-3 ${
         visible
           ? "translate-y-0 opacity-100"
           : "translate-y-[calc(100%+2rem)] opacity-0"
@@ -124,4 +124,5 @@ export function StickyAddToCart({ product }: { product: Product }) {
     </div>
   );
 }
+
 
