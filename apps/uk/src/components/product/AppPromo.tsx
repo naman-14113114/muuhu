@@ -118,8 +118,8 @@ export function AppPromo() {
           <p className="Muuhu-copy mt-3 text-sm leading-6">
             Muuhu Glow Coach is the AI Skincare app for Muuhu IPL Hair Removal
             customers. It helps customers plan, time, and track their
-            personalised LED mask sessions using the 7 wavelengths plus
-            near-infrared available on the mask.
+            personalised IPL treatment sessions, ensuring you never miss a
+            treatment on your journey to silky smooth skin.
           </p>
           <div className="mt-4 grid grid-cols-3 gap-2">
             {["Plan", "Time", "Track"].map((step) => (
@@ -145,4 +145,48 @@ export function AppPromo() {
   );
 }
 
-
+export function IceCoolingSection() {
+  return (
+    <section className="Muuhu-section border-y border-[var(--border)] bg-[#FDF6F0] text-[var(--plum)] py-14 md:py-24">
+      <div className="Muuhu-wrap grid items-center gap-8 md:gap-14 lg:grid-cols-2">
+        <div className="lg:order-last">
+          <p className="Muuhu-mono text-[#ED6A3A]">Advanced Comfort</p>
+          <h2 className="Muuhu-display mt-3 text-[2.5rem] leading-tight text-[var(--plum)] md:text-5xl">
+            Painless <em className="Muuhu-italic">Ice Cooling</em> Technology.
+          </h2>
+          <p className="mt-5 max-w-lg leading-7 text-[var(--muted)]">
+            Experience virtually painless hair removal with our built-in contact cooling. 
+            The sapphire cooling head lowers the temperature to a soothing ~8°C (46°F) where it touches your skin.
+          </p>
+          <ul className="mt-10 grid gap-6">
+            <li className="border-l-2 border-[#ED6A3A] pl-6">
+              <p className="Muuhu-display text-2xl text-[var(--plum)]">~8°C / 46°F</p>
+              <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
+                Maintains a consistent, soothing temperature to protect your epidermis while light pulses target the hair follicle.
+              </p>
+            </li>
+            <li className="border-l-2 border-[#ED6A3A] pl-6">
+              <p className="Muuhu-display text-2xl text-[var(--plum)]">Soothes instantly</p>
+              <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
+                Reduces redness and eliminates the burning sensation typical of older, uncooled IPL devices.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div className="relative aspect-square overflow-hidden rounded-[18px] bg-[var(--ink)]">
+          <Image
+            alt="Muuhu IPL Ice Cooling Technology"
+            className="object-cover"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            src={productAsset("06-buudy-led-mask-results.webp")}
+          />
+          <div className="absolute bottom-6 left-6 rounded-2xl bg-[rgba(253,246,240,.94)] p-4 text-[var(--plum)] backdrop-blur">
+            <p className="Muuhu-mono text-[#ED6A3A]">Skin Protection</p>
+            <p className="Muuhu-display mt-1 text-xl">Cooling Sapphire Head</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

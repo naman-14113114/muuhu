@@ -1,5 +1,5 @@
 ﻿import type { Product } from "@/data/products";
-import { AppPromo } from "./AppPromo";
+import { AppPromo, IceCoolingSection } from "./AppPromo";
 import { BeforeAfterGrid } from "./BeforeAfterGrid";
 import { ComparisonTable } from "./ComparisonTable";
 import { ExpertSection } from "./ExpertSection";
@@ -28,6 +28,7 @@ export function ProductPage({ product }: { product: Product }) {
       <ProductReviewsSection />
       <SuitabilitySection />
       <AppPromo />
+      <IceCoolingSection />
       <ComparisonTable />
       <FAQSection faqs={product.faqs} />
       <GuaranteeSection />
@@ -35,3 +36,4 @@ export function ProductPage({ product }: { product: Product }) {
     </>
   );
 }
+
