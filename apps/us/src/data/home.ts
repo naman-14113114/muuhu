@@ -1,4 +1,4 @@
-﻿import { homeAsset, productAsset, productMediaAsset } from "@/lib/media";
+import { homeAsset, productAsset, productMediaAsset } from "@/lib/media";
 import { muuhuIpl, MuuhuRedTorch } from "./products";
 
 export const homeHero = {
@@ -45,7 +45,7 @@ export const homeTechnologySpotlight = {
   ctaLabel: "Shop the IPL device",
   ctaHref: `/products/${muuhuIpl.slug}`,
   image: {
-    src: productMediaAsset("ipl_provided_6.png"), alt: "Muuhu IPL Ice Cooling",
+    src: productMediaAsset("ipl_face_closeup.jpg"), alt: "Muuhu IPL Face Close Up",
   },
 };
 
