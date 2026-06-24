@@ -1,5 +1,6 @@
 ﻿import type { Product } from "@/data/products";
 import { AppPromo, IceCoolingSection } from "./AppPromo";
+import { IPLVideo } from "./IPLVideo";
 import { BeforeAfterGrid } from "./BeforeAfterGrid";
 import { ComparisonTable } from "./ComparisonTable";
 import { ExpertSection } from "./ExpertSection";
@@ -37,5 +38,7 @@ export function ProductPage({ product }: { product: Product }) {
     </>
   );
 }
+
+
 
 

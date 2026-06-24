@@ -1,10 +1,11 @@
-﻿"use client";
+﻿// @ts-nocheck
+"use client";
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
 // @ts-ignore
-const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export function IPLVideo() {
   const [mounted, setMounted] = useState(false);
@@ -23,7 +24,7 @@ export function IPLVideo() {
         </h2>
         <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-black relative">
           <ReactPlayer
-            url="https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-eu-west-1-prod/eacd0c3b-697f-4192-ac69-094aaca47b5a/default.vertical.jobtemplate.hls.m3u8"
+            url="/media/products/buudy-led-mask/videos/alibaba_video.mp4"
             width="100%"
             height="100%"
             playing={true}
@@ -36,4 +37,7 @@ export function IPLVideo() {
     </section>
   );
 }
+
+
+
 

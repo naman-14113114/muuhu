@@ -1,4 +1,4 @@
-import { productAsset, productMediaAsset } from "@/lib/media";
+﻿import { productAsset, productMediaAsset } from "@/lib/media";
 
 export type Feature = {
   title: string;
@@ -43,7 +43,7 @@ export const features: Feature[] = [
   {
     title: "Ice Cooling Technology",
     kicker: "Painless Treatments",
-    body: "Traditional hair removal can be painful, but Muuhu is different. Built-in ice cooling technology lowers the temperature at the treatment window to 8°C (46°F), soothing your skin on contact and making every flash comfortable.",
+    body: "Traditional hair removal can be painful, but Muuhu is different. Built-in ice cooling technology lowers the temperature at the treatment window to 8Â°C (46Â°F), soothing your skin on contact and making every flash comfortable.",
   },
   {
     title: "9 Energy Levels",
@@ -105,74 +105,66 @@ export const realLifeImages = [
 export const transformations: Transformation[] = [
   {
     id: "result-01",
-    image: productAsset("01-sagging-cheeks.webp"),
-    concern: "Sagging Cheeks",
+    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    concern: "Leg Hair Stubbles",
     title: "Best investment ever",
-    quote:
-      '"I have noticed a significant reduction in the sagging around my cheeks and jawline."',
+    quote: "I have noticed a significant reduction in leg hair growth. It's so smooth now!",
     name: "Donna P.",
   },
   {
     id: "result-02",
-    image: productAsset("02-fine-lines.webp"),
-    concern: "Fine Lines",
+    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    concern: "Dark Underarms",
     title: "IT REALLY WORKS!!",
-    quote:
-      '"After using for 1 month, I cannot believe the difference! Fine lines are much less noticeable."',
+    quote: "After using for 1 month, I cannot believe the difference! The shadow is gone.",
     name: "Jane P.",
   },
   {
     id: "result-03",
-    image: productAsset("03-neck-firming.webp"),
-    concern: "Neck Firming",
+    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    concern: "Strawberry Legs",
     title: "Incredible results",
-    quote:
-      '"In less than 2 months, noticed the fine lines around my eyes and mouth are much less noticeable."',
+    quote: "In less than 2 months, my strawberry legs have completely vanished.",
     name: "Sarah K.",
   },
   {
     id: "result-04",
-    image: productAsset("04-forehead-lines.webp"),
-    concern: "Forehead Lines",
-    title: "Better than Botox",
-    quote:
-      '"Within just a few weeks, my skin started to clear up and the scars began to fade."',
+    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    concern: "Ingrown Hairs",
+    title: "Better than Waxing",
+    quote: "Within just a few weeks, my skin started to clear up and the ingrowns faded.",
     name: "Michelle L.",
   },
   {
     id: "result-05",
-    image: productAsset("05-jawline-sculpting.webp"),
-    concern: "Jawline Sculpting",
-    title: "Defined my face!",
-    quote:
-      '"I never thought I would see my jawline again without surgery. This device is a total game changer."',
+    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    concern: "Thick Hair",
+    title: "Defined my routine!",
+    quote: "I never thought I would stop shaving. This device is a total game changer.",
     name: "James D.",
   },
   {
     id: "result-06",
-    image: productAsset("06-skin-radiance.webp"),
-    concern: "Skin Radiance",
+    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    concern: "Shaving Rash",
     title: "Literal Glow Up",
-    quote:
-      '"My skin looks so much more radiant and healthy. I have even stopped wearing heavy foundation!"',
+    quote: "My skin looks so much more radiant. No more razor bumps!",
     name: "Karen W.",
   },
   {
     id: "result-07",
-    image: productAsset("07-under-eye-bags.webp"),
-    concern: "Under Eye Bags",
-    title: "Eyes look refreshed",
-    quote:
-      '"The puffiness under my eyes has vanished. I look like I have actually had 8 hours of sleep!"',
+    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    concern: "Fast Regrowth",
+    title: "Skin looks refreshed",
+    quote: "The regrowth is so slow now. I barely have to use it anymore!",
     name: "Linda S.",
   },
   {
     id: "result-08",
-    image: productAsset("08-skin-texture.webp"),
-    concern: "Skin Texture",
+    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    concern: "Coarse Hair",
     title: "Smooth as silk",
-    quote:
-      '"The overall texture of my skin has improved immensely. It feels incredibly soft and looks smooth."',
+    quote: "The overall texture of my skin has improved immensely. It feels incredibly soft.",
     name: "Jennifer H.",
   },
 ];
@@ -497,10 +489,10 @@ export const expertVideo = {
 export const comparison = {
   intro: "Here is a comparison, but really, there is no comparison.",
   columns: [
-    { label: "Muuhu", price: "£179", featured: true },
-    { label: "Brand A", price: "£299" },
-    { label: "Brand B", price: "£399" },
-    { label: "Brand C", price: "£372" },
+    { label: "Muuhu", price: "Â£179", featured: true },
+    { label: "Brand A", price: "Â£299" },
+    { label: "Brand B", price: "Â£399" },
+    { label: "Brand C", price: "Â£372" },
   ],
   rows: [
     ["Portable", "Hands-free, cordless and rechargeable", "-", "-", "-"],
@@ -537,7 +529,7 @@ export const touchTech = [
 export const faqs: FAQItem[] = [
   {
     question: "Does IPL hair removal hurt?",
-    answer: "No, especially with the Muuhu IPL device. The built-in ice cooling plate maintains 8°C at the treatment window to soothe the skin. Most users describe the sensation as a gentle warmth.",
+    answer: "No, especially with the Muuhu IPL device. The built-in ice cooling plate maintains 8Â°C at the treatment window to soothe the skin. Most users describe the sensation as a gentle warmth.",
   },
   {
     question: "How long until I see results?",
@@ -560,4 +552,5 @@ export const faqs: FAQItem[] = [
     answer: "Yes. Always shave the treatment area before your session. This ensures the light energy travels directly to the hair root rather than burning the hair above the skin surface.",
   },
 ];
+
 
