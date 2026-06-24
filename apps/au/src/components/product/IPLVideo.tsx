@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
+// @ts-ignore
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export function IPLVideo() {
@@ -35,3 +36,4 @@ export function IPLVideo() {
     </section>
   );
 }
+
