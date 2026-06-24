@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best IPL Hair Removal Canada | Muuhu",
     description:
-      "Discover the Muuhu IPL Hair Removal device with ice cooling, 999,999 flashes, and 9 energy levels.",
+      "Discover the Muuhu Ultra Pro device with ice cooling, 999,999 flashes, and 9 energy levels.",
     url: market.siteUrl,
     images: [
       {
         url: "/media/products/buudy-led-mask/images/reference_ipl.jpg",
         width: 1200,
         height: 900,
-        alt: "Muuhu IPL Hair Removal at home",
+        alt: "Muuhu Ultra Pro at home",
       },
     ],
   },

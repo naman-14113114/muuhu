@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best IPL Hair Removal Australia | Muuhu",
     description:
-      "Discover the Muuhu IPL Hair Removal device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels for full body treatment.",
+      "Discover the Muuhu Ultra Pro device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels for full body treatment.",
     url: market.siteUrl,
     images: [
       {
         url: "/media/products/buudy-led-mask/images/reference_ipl.jpg",
         width: 1200,
         height: 900,
-        alt: "Muuhu IPL hair removal device at home",
+        alt: "Muuhu Ultra Pro hair removal device at home",
       },
     ],
   },

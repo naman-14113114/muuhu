@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best IPL Hair Removal UK | Muuhu",
     description:
-      "Discover the Muuhu IPL with 192 LEDs, red and blue light therapy, near-infrared support, and full face plus neck coverage.",
+      "Discover the Muuhu Ultra Pro with 192 LEDs, red and blue light therapy, near-infrared support, and full face plus neck coverage.",
     url: market.siteUrl,
     images: [
       {

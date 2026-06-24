@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         url: "/images/products/buudy-led-mask/01-buudy-led-mask-front.webp",
         width: 1200,
         height: 1500,
-        alt: "Muuhu IPL Hair Removal with neck coverage",
+        alt: "Muuhu Ultra Pro with neck coverage",
       },
     ],
   },

@@ -69,16 +69,16 @@ export const muuhuIpl: Product = {
   sku: "MUUHU-IPL-ICE-1",
   slug: "muuhu-ipl-hair-removal",
   template: "mask",
-  name: "Muuhu IPL Hair Removal",
-  heroTitle: "Muuhu IPL",
-  heroEmphasis: "Hair Removal",
+  name: "Muuhu Ultra Pro",
+  heroTitle: "Muuhu Ultra",
+  heroEmphasis: "Pro",
   shortDescription:
     "At-home IPL hair removal with ice cooling, 999,999 flashes, and 9 energy levels for long-lasting smoothness.",
   description:
-    "At-home IPL hair removal reimagined for UK homes. The Muuhu IPL combines 999,999 flashes, built-in ice cooling at 8Ã‚Â°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
+    "At-home IPL hair removal reimagined for UK homes. The Muuhu Ultra Pro combines 999,999 flashes, built-in ice cooling at 8Ã‚Â°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
   seoTitle: "Best IPL Hair Removal UK | Muuhu Ice Cooling Device",
   seoDescription:
-    "Shop the Muuhu IPL Hair Removal in the UK: 999,999 flashes, ice cooling, 9 energy levels, 16J max output, Auto and Manual modes, LCD touch display, 90-day returns, and free shipping.",
+    "Shop the Muuhu Ultra Pro in the UK: 999,999 flashes, ice cooling, 9 energy levels, 16J max output, Auto and Manual modes, LCD touch display, 90-day returns, and free shipping.",
   currency: market.currency,
   priceCents: 9900,
   compareAtCents: 20900,
@@ -89,15 +89,15 @@ export const muuhuIpl: Product = {
   promoLabel: "Glow kit promo applied",
   cartImage: productMediaAsset("ipl_face_closeup.png"),
         gallery: [
-      { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu IPL Face Close Up" },
-      { src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu IPL Premium" },
-      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Hair Removal" },
-      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL In Use" },
-      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Close Up" },
-      { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu IPL Product Shot" },
-      { src: productMediaAsset("ipl_provided_8.png"), alt: "Muuhu IPL Full View" },
-      { src: productMediaAsset("ipl_provided_9.png"), alt: "Muuhu IPL Lifestyle" },
-      { src: productMediaAsset("ipl_provided_10.png"), alt: "Muuhu IPL Premium" }
+      { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
+      { src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Premium" },
+      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro" },
+      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use" },
+      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Close Up" },
+      { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu Ultra Pro Product Shot" },
+      { src: productMediaAsset("ipl_provided_8.png"), alt: "Muuhu Ultra Pro Full View" },
+      { src: productMediaAsset("ipl_provided_9.png"), alt: "Muuhu Ultra Pro Lifestyle" },
+      { src: productMediaAsset("ipl_provided_10.png"), alt: "Muuhu Ultra Pro Premium" }
     ],
   gifts: [
     {
@@ -140,7 +140,7 @@ export const muuhuIpl: Product = {
   ],
   included: [
     { quantity: "1x", label: "Premium Travel Box", tag: "Free gift" },
-    { quantity: "1x", label: "Muuhu IPL Device" },
+    { quantity: "1x", label: "Muuhu Ultra Pro Device" },
     { quantity: "1x", label: "Power Adapter (100Ã¢â‚¬â€œ240V)" },
     { quantity: "1x", label: "Protective Goggles" },
     { quantity: "1x", label: "User Manual" },
@@ -199,7 +199,7 @@ export const muuhuIpl: Product = {
     },
     {
       question: "Can I use it in my country?",
-      answer: "Yes. The Muuhu IPL device is universal voltage (AC 100Ã¢â‚¬â€œ240V) which means it can be used worldwide without any issues."
+      answer: "Yes. The Muuhu Ultra Pro device is universal voltage (AC 100Ã¢â‚¬â€œ240V) which means it can be used worldwide without any issues."
     },
     {
       question: "What if I am pregnant or have a medical condition?",
@@ -207,7 +207,7 @@ export const muuhuIpl: Product = {
     },
     {
       question: "Do you sell this anywhere else?",
-      answer: "The Muuhu IPL device is exclusively sold through our official store. There are no other authorised online retailers."
+      answer: "The Muuhu Ultra Pro device is exclusively sold through our official store. There are no other authorised online retailers."
     },
   ],
 };

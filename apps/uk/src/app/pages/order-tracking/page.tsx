@@ -3,7 +3,7 @@ import { OrderTrackingPage } from "@/components/policies/OrderTrackingPage";
 
 export const metadata: Metadata = {
   title: "Order Tracking | Muuhu",
-  description: "Locate your Muuhu IPL Hair Removal order status, shipment timeline, and official carrier tracking updates.",
+  description: "Locate your Muuhu Ultra Pro order status, shipment timeline, and official carrier tracking updates.",
   alternates: {
     canonical: "/policies/order-tracking",
   },

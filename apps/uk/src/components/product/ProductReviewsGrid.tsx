@@ -1429,7 +1429,7 @@ export function ProductReviewsGrid({
         {error ? <p className="text-sm text-red-900">{error}</p> : null}
         {hasMore ? (
           <Button
-            aria-label="Load 20 more Muuhu IPL Hair Removal reviews"
+            aria-label="Load 20 more Muuhu Ultra Pro reviews"
             className="min-w-48"
             disabled={isLoading}
             onClick={loadMoreReviews}

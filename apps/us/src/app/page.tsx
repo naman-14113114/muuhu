@@ -16,20 +16,20 @@ export const metadata: Metadata = {
     "at-home laser hair removal US",
     "ice cooling IPL",
     "painless hair removal device",
-    "Muuhu IPL",
+    "Muuhu Ultra Pro",
     "IPL with ice cooling",
   ],
   openGraph: {
     title: "Best IPL Hair Removal US | Muuhu",
     description:
-      "Discover the Muuhu IPL Hair Removal Device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels.",
+      "Discover the Muuhu Ultra Pro Device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels.",
     url: market.siteUrl,
     images: [
       {
         url: "/media/products/buudy-led-mask/images/reference_ipl.jpg",
         width: 1200,
         height: 900,
-        alt: "Muuhu IPL hair removal device at home",
+        alt: "Muuhu Ultra Pro hair removal device at home",
       },
     ],
   },

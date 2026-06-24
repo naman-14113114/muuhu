@@ -40,7 +40,7 @@ export const features: Feature[] = [
   {
     title: "999,999 Flashes",
     kicker: "Lifelong Use",
-    body: "With 999,999 flashes, the Muuhu IPL device offers years of full-body treatments. You will never need to buy a replacement lamp or cartridge, making it a one-time investment for lifelong smooth skin.",
+    body: "With 999,999 flashes, the Muuhu Ultra Pro device offers years of full-body treatments. You will never need to buy a replacement lamp or cartridge, making it a one-time investment for lifelong smooth skin.",
   },
   {
     title: "Ice Cooling Technology",
@@ -65,42 +65,42 @@ export const features: Feature[] = [
   {
     title: "Universal Voltage",
     kicker: "Travel Ready",
-    body: "Take your Muuhu IPL device anywhere in the world. It operates on AC 100-240V, meaning you just need a plug adapter to keep up with your hair removal routine while traveling.",
+    body: "Take your Muuhu Ultra Pro device anywhere in the world. It operates on AC 100-240V, meaning you just need a plug adapter to keep up with your hair removal routine while traveling.",
   },
 ];
 
 export const realLifeImages = [
   {
     src: productAsset("10-buudy-led-mask-dermatologist-recommended.webp"),
-    alt: "Dermatologist recommended Muuhu IPL Hair Removal",
+    alt: "Dermatologist recommended Muuhu Ultra Pro",
   },
   {
     src: productAsset("02-buudy-led-mask-side-profile.webp"),
-    alt: "Muuhu IPL Hair Removal side profile",
+    alt: "Muuhu Ultra Pro side profile",
   },
   {
     src: productAsset("15-buudy-led-mask-warranty.webp"),
-    alt: "Muuhu IPL Hair Removal warranty",
+    alt: "Muuhu Ultra Pro warranty",
   },
   {
     src: productAsset("08-buudy-led-mask-lifestyle-use.webp"),
-    alt: "Muuhu IPL Hair Removal lifestyle use",
+    alt: "Muuhu Ultra Pro lifestyle use",
   },
   {
     src: productAsset("11-buudy-led-mask-flexible-silicone.webp"),
-    alt: "Flexible silicone Muuhu IPL Hair Removal",
+    alt: "Flexible silicone Muuhu Ultra Pro",
   },
   {
     src: productAsset("14-buudy-led-mask-award-2026.webp"),
-    alt: "Muuhu IPL Hair Removal award 2026",
+    alt: "Muuhu Ultra Pro award 2026",
   },
   {
     src: productAsset("03-buudy-led-mask-anti-ageing-mode.webp"),
-    alt: "Muuhu IPL Hair Removal anti-ageing mode",
+    alt: "Muuhu Ultra Pro anti-ageing mode",
   },
   {
     src: productAsset("13-buudy-led-mask-starter-kit.webp"),
-    alt: "Muuhu IPL Hair Removal starter kit",
+    alt: "Muuhu Ultra Pro starter kit",
   },
 ];
 
@@ -517,7 +517,7 @@ export const touchTech = [
 export const faqs: FAQItem[] = [
   {
     question: "Does IPL hair removal hurt?",
-    answer: "No, especially with the Muuhu IPL device. The built-in ice cooling plate maintains 8Â°C at the treatment window to soothe the skin. Most users describe the sensation as a gentle warmth.",
+    answer: "No, especially with the Muuhu Ultra Pro device. The built-in ice cooling plate maintains 8Â°C at the treatment window to soothe the skin. Most users describe the sensation as a gentle warmth.",
   },
   {
     question: "How long until I see results?",
@@ -525,7 +525,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "Can I use it on my face and bikini line?",
-    answer: "Yes! The Muuhu IPL device is safe for the bikini line, underarms, and facial areas below the cheekbones (like the upper lip and chin). Just avoid using it near your eyes.",
+    answer: "Yes! The Muuhu Ultra Pro device is safe for the bikini line, underarms, and facial areas below the cheekbones (like the upper lip and chin). Just avoid using it near your eyes.",
   },
   {
     question: "What skin tones and hair colors does it work on?",

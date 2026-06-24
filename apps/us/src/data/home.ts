@@ -5,27 +5,27 @@ export const homeHero = {
   eyebrow: "Next-generation hair removal",
   title: "Smooth skin, simplified.",
   copy: "Professional-grade IPL hair removal from the comfort of your home. Experience long-lasting smoothness with 999,999 flashes, ice cooling technology, and 9 adjustable energy levels.",
-  ctaLabel: "Shop the Muuhu IPL",
+  ctaLabel: "Shop the Muuhu Ultra Pro",
   ctaHref: `/products/${muuhuIpl.slug}`,
   images: [
     {
-      src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Hero",
+      src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro Hero",
     },
     {
-      src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu IPL Lifestyle",
+      src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Lifestyle",
     },
     {
-      src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL In Use",
+      src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use",
     },
   ],
 };
 
 export const homeMaskSpotlight = {
   eyebrow: "Professional grade",
-  title: "The Muuhu IPL with ice cooling + 9 energy levels",
-  copy: "Modern problems require modern solutions. The Muuhu IPL Hair Removal device makes at-home hair removal painless and effective. With built-in ice cooling at 8Ã‚Â°C and 9 adjustable energy levels up to 16J, you can treat your entire body comfortably from home.",
+  title: "The Muuhu Ultra Pro with ice cooling + 9 energy levels",
+  copy: "Modern problems require modern solutions. The Muuhu Ultra Pro device makes at-home hair removal painless and effective. With built-in ice cooling at 8Ã‚Â°C and 9 adjustable energy levels up to 16J, you can treat your entire body comfortably from home.",
   image: {
-    src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Spotlight",
+    src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Spotlight",
   },
   product: muuhuIpl,
 };
@@ -41,18 +41,18 @@ export const homeSkincareGuideIntro = {
 export const homeTechnologySpotlight = {
   eyebrow: "IPL ice cooling technology",
   title: "A smarter way to remove hair.",
-  copy: "The Muuhu IPL uses Intense Pulsed Light (600Ã¢â‚¬â€œ1200nm) to target hair follicle melanin, disrupting the growth cycle for long-lasting reduction. Built-in ice cooling at 8Ã‚Â°C keeps every flash painless.",
+  copy: "The Muuhu Ultra Pro uses Intense Pulsed Light (600Ã¢â‚¬â€œ1200nm) to target hair follicle melanin, disrupting the growth cycle for long-lasting reduction. Built-in ice cooling at 8Ã‚Â°C keeps every flash painless.",
   ctaLabel: "Shop the IPL device",
   ctaHref: `/products/${muuhuIpl.slug}`,
   image: {
-    src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu IPL Face Close Up",
+    src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up",
   },
 };
 
 export const homeFeatureCards = [
   {
     title: "999,999 flash lifespan",
-    copy: "Your Muuhu IPL device is built to last for years of full-body treatments without ever needing a lamp replacement.",
+    copy: "Your Muuhu Ultra Pro device is built to last for years of full-body treatments without ever needing a lamp replacement.",
     image: productMediaAsset("ipl_provided_7.png"),
   },
   {
@@ -82,7 +82,7 @@ export const homeYoungerYou = {
   copy: "With 999,999 flashes, ice cooling technology, and Auto-glide mode for fast treatment on large areas, you can achieve salon-quality hair removal from the comfort of your home.",
   image: {
     src: productMediaAsset("reference_ipl.jpg"),
-    alt: "Muuhu IPL Hair Removal smooth skin results",
+    alt: "Muuhu Ultra Pro smooth skin results",
   },
 };
 
@@ -103,7 +103,7 @@ export const homeTorchSpotlight = {
 export const homeWavelengthMap = {
   eyebrow: "Full-body treatment guide",
   title: "Your treatment zone map",
-  copy: "The Muuhu IPL is designed for full-body use. Select any treatment zone below to see the recommended energy level and treatment tips.",
+  copy: "The Muuhu Ultra Pro is designed for full-body use. Select any treatment zone below to see the recommended energy level and treatment tips.",
   zones: [
     "Legs",
     "Arms",
@@ -115,7 +115,7 @@ export const homeWavelengthMap = {
 };
 
 export const homeCustomerReviewsGrid = {
-  title: "Why try the Muuhu IPL Hair Removal?",
+  title: "Why try the Muuhu Ultra Pro?",
   copy: "Thousands of happy customers and counting!",
   ctaLabel: "About Us",
   ctaHref: "/pages/about-us",

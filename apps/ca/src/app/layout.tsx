@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     "at-home laser hair removal Canada",
     "ice cooling IPL",
     "painless hair removal device",
-    "Muuhu IPL",
+    "Muuhu Ultra Pro",
     "IPL with ice cooling",
   ],
   alternates: {
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         url: "/images/products/buudy-led-mask/01-buudy-led-mask-front.webp",
         width: 1200,
         height: 1500,
-        alt: "Muuhu IPL Device",
+        alt: "Muuhu Ultra Pro Device",
       },
     ],
   },

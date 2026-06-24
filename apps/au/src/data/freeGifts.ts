@@ -23,7 +23,7 @@ export type FreeGiftDetail = {
 };
 
 const bundleFooter =
-  "The Muuhu IPL offer works best as a complete kit: the IPL device, the travel case, the LED Torch, and the skincare guide all support the same goal.";
+  "The Muuhu Ultra Pro offer works best as a complete kit: the IPL device, the travel case, the LED Torch, and the skincare guide all support the same goal.";
 
 export const freeGiftBundleFooter = bundleFooter;
 
@@ -32,15 +32,15 @@ export const freeGiftDetails: FreeGiftDetail[] = [
     slug: "premium-travel-box",
     eyebrow: "Free Bonus Gift",
     title: "Premium Travel Box",
-    seoTitle: "Premium Travel Box for Muuhu IPL Hair Removal",
+    seoTitle: "Premium Travel Box for Muuhu Ultra Pro",
     seoDescription:
-      "Discover the premium travel box included with the Muuhu IPL Hair Removal offer for protected storage, organized accessories, and easier travel.",
+      "Discover the premium travel box included with the Muuhu Ultra Pro offer for protected storage, organized accessories, and easier travel.",
     intro:
-      "The Premium Travel Box is the practical bonus most customers do not realize they will appreciate until the device becomes part of their weekly routine. It gives your Muuhu IPL Hair Removal a dedicated home, protects it between sessions, and makes travel much easier.",
+      "The Premium Travel Box is the practical bonus most customers do not realize they will appreciate until the device becomes part of their weekly routine. It gives your Muuhu Ultra Pro a dedicated home, protects it between sessions, and makes travel much easier.",
     note:
-      "This travel box is currently included as a free bonus with the Muuhu IPL Hair Removal offer.",
+      "This travel box is currently included as a free bonus with the Muuhu Ultra Pro offer.",
     image: productMediaAsset("ChatGPT Image May 31, 2026, 11_53_13 PM.png"),
-    imageAlt: "Premium Travel Box for the Muuhu IPL Hair Removal",
+    imageAlt: "Premium Travel Box for the Muuhu Ultra Pro",
     cardTitle: "Why it increases the value of your order",
     cardBullets: [
       "Keeps the device protected between uses",
@@ -78,11 +78,11 @@ export const freeGiftDetails: FreeGiftDetail[] = [
     title: "Muuhu LED Torch",
     seoTitle: "Muuhu LED Torch Bonus Gift",
     seoDescription:
-      "Explore the targeted Muuhu LED Torch included as a free companion gift with the Muuhu IPL Hair Removal offer.",
+      "Explore the targeted Muuhu LED Torch included as a free companion gift with the Muuhu Ultra Pro offer.",
     intro:
       "The Muuhu LED Torch adds precision to the main device offer. While the IPL device gives you broad face-and-neck coverage, the torch gives you a smaller tool you can use for targeted touch-up areas and travel-friendly sessions.",
     note:
-      "The current Muuhu IPL Hair Removal offer includes the LED Torch as a free bonus gift.",
+      "The current Muuhu Ultra Pro offer includes the LED Torch as a free bonus gift.",
     image: productMediaAsset("free_torch.png"),
     imageAlt: "Muuhu LED Torch bonus gift",
     cardTitle: "Why customers like this bonus",
@@ -141,7 +141,7 @@ export const freeGiftDetails: FreeGiftDetail[] = [
         title: "What is inside the guide",
         paragraphs: [
           "The guide walks customers through the Muuhu method from first principles to practical routines. It covers the science of LED light therapy, the role of each wavelength, skin-type matching, weekly protocols, morning and evening rituals, and the best ingredients to pair with LED sessions.",
-          "It also includes a results timeline, travel tips, routine examples by decade, common myths, and a bonus chapter on the Muuhu IPL ritual.",
+          "It also includes a results timeline, travel tips, routine examples by decade, common myths, and a bonus chapter on the Muuhu Ultra Pro ritual.",
         ],
         bullets: [
           "Welcome to the Muuhu Method",

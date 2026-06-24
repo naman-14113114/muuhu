@@ -304,3 +304,14 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Updated `AppPromo.tsx` across `us`, `uk`, `ca`, and `au` apps.
   - Deleted old images via PowerShell.
   - Committed ("Update Ice Cooling section to use ipl_provided_2.png and remove old images") and pushed to GitHub.
+
+### Session 18: Homepage Hero Banner Replacement
+- **User Intent**: The user shared a screenshot showing a large black empty space at the top of the homepage and requested to insert a specific AI-generated image (`ChatGPT Image Jun 24, 2026, 09_23_35 PM.png`) as a full-width hero banner into this spot.
+- **Agent Logic & Thinking**:
+  - Investigated the homepage layout and found the empty black banner was caused by a broken `<video>` tag in the `HomeVideoHero` component within `HomePage.tsx`.
+  - Copied the requested AI-generated image into all four storefront apps as `ipl_hero_banner.png`.
+  - Replaced the `<video>` tag implementation in `HomeVideoHero` with a Next.js `<Image>` component referencing `ipl_hero_banner.png` with full-width properties and priority loading.
+- **Actions Taken**:
+  - Copied the requested image to all public asset directories.
+  - Updated `HomePage.tsx` across `us`, `uk`, `ca`, and `au` apps.
+  - Committed ("Replace broken video hero with new static image hero banner across all apps") and pushed to GitHub (031619c).

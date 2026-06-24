@@ -11,7 +11,7 @@ export function RitualSection() {
       <div className="Muuhu-wrap grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
         <div className="relative aspect-video overflow-hidden rounded-[18px] bg-[var(--ink)]">
           <Image
-            alt="Muuhu IPL Hair Removal lifestyle ritual"
+            alt="Muuhu Ultra Pro lifestyle ritual"
             className="object-cover"
             fill
             sizes="(min-width: 1024px) 58vw, 100vw"
@@ -62,7 +62,7 @@ export function TouchTechSection() {
             hassle.
           </h2>
           <p className="mt-5 max-w-lg leading-7 text-[rgba(247,241,232,.72)]">
-            We engineered the Muuhu IPL Hair Removal to be as smart as it is effective,
+            We engineered the Muuhu Ultra Pro to be as smart as it is effective,
             replacing frustrating wires and heavy controllers with a sleek,
             wearable design.
           </p>
@@ -79,7 +79,7 @@ export function TouchTechSection() {
         </div>
         <div className="relative aspect-square overflow-hidden rounded-[18px] bg-[var(--ink)]">
           <LazyAutoplayVideo
-            ariaLabel="Muuhu IPL Hair Removal light modes demonstration"
+            ariaLabel="Muuhu Ultra Pro light modes demonstration"
             className="w-full h-full object-cover"
             rootMargin="1400px 0px"
             src={productMediaAsset("7 colors muted.mp4", "buudy-led-mask", "videos")}
@@ -116,7 +116,7 @@ export function AppPromo() {
             Muuhu <span className="text-[var(--gold)]">AI App</span>.
           </h2>
           <p className="Muuhu-copy mt-3 text-sm leading-6">
-            Muuhu Glow Coach is the AI Skincare app for Muuhu IPL Hair Removal
+            Muuhu Glow Coach is the AI Skincare app for Muuhu Ultra Pro
             customers. It helps customers plan, time, and track their
             personalised IPL treatment sessions, ensuring you never miss a
             treatment on your journey to silky smooth skin.
@@ -175,7 +175,7 @@ export function IceCoolingSection() {
         </div>
         <div className="relative aspect-square overflow-hidden rounded-[18px] bg-[var(--ink)]">
           <Image
-            alt="Muuhu IPL Ice Cooling Technology"
+            alt="Muuhu Ultra Pro Ice Cooling Technology"
             className="object-cover"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"

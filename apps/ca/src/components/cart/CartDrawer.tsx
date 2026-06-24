@@ -77,7 +77,7 @@ export function CartDrawer() {
                 Your bag is waiting.
               </p>
               <p className="Muuhu-copy mt-3 max-w-xs text-sm">
-                Add the Muuhu IPL Hair Removal or Red Torch to unlock current offers
+                Add the Muuhu Ultra Pro or Red Torch to unlock current offers
                 and free shipping.
               </p>
               <Button asChild className="mt-6" onClick={closeCart}>

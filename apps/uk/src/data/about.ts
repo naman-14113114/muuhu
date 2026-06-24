@@ -11,7 +11,7 @@ export const aboutSections = [
     id: "our-team",
     eyebrow: "Who we are",
     title: "Our Team",
-    copy: "Behind Muuhu is a close-knit team of skincare enthusiasts, tech innovators, and customer advocates. We aren't just selling a product; we use the Muuhu IPL ourselves. From our product design team ensuring the optimal output of every flash, to our dedicated customer support squad who are always ready to guide you on your hair removal journey, everyone at Muuhu is united by one common goal: delivering an exceptional experience and real, visible results to you.",
+    copy: "Behind Muuhu is a close-knit team of skincare enthusiasts, tech innovators, and customer advocates. We aren't just selling a product; we use the Muuhu Ultra Pro ourselves. From our product design team ensuring the optimal output of every flash, to our dedicated customer support squad who are always ready to guide you on your hair removal journey, everyone at Muuhu is united by one common goal: delivering an exceptional experience and real, visible results to you.",
     image: {
       src: "/images/about/about-team-v3.webp",
       alt: "The Muuhu team designing high-performance skincare solutions"
@@ -22,10 +22,10 @@ export const aboutSections = [
     id: "our-story",
     eyebrow: "How we started",
     title: "Our Story",
-    copy: "The idea for Muuhu was born out of genuine frustration with the traditional skincare cycle. We were tired of spending a fortune on topical creams that over-promised and expensive dermatologist visits that were hard to maintain.\n\nWe knew the science behind clinical IPL hair removal worked, but the at-home devices available were either too weak, overpriced, or tethered you to a wall with bulky cords. So, we changed the standard. We created the Muuhu IPL: a sleek, device packed with ice cooling and 9 energy levels. Today, we're proud to have helped over 16,000 customers regain their confidence from the comfort of home.",
+    copy: "The idea for Muuhu was born out of genuine frustration with the traditional skincare cycle. We were tired of spending a fortune on topical creams that over-promised and expensive dermatologist visits that were hard to maintain.\n\nWe knew the science behind clinical IPL hair removal worked, but the at-home devices available were either too weak, overpriced, or tethered you to a wall with bulky cords. So, we changed the standard. We created the Muuhu Ultra Pro: a sleek, device packed with ice cooling and 9 energy levels. Today, we're proud to have helped over 16,000 customers regain their confidence from the comfort of home.",
     image: {
       src: "/images/about/about-story-v3.webp",
-      alt: "The story and inspiration behind the wireless Muuhu IPL"
+      alt: "The story and inspiration behind the wireless Muuhu Ultra Pro"
     },
     align: "right" as const,
   },
@@ -33,7 +33,7 @@ export const aboutSections = [
     id: "trust-transparency",
     eyebrow: "Values",
     title: "Trust and Transparency",
-    copy: "When it comes to your skin, trust is everything. That's why transparency is woven into the fabric of our brand. We don't believe in exaggerated claims or hidden fine print.\n\n- Tested for Safety: The Muuhu IPL is rigorously tested to ensure it is safe, effective, and built to last.\n- Privacy First: We utilize state-of-the-art encryption to ensure your personal data and payment information are always 100% secure.\n- The 90-Day Guarantee: We are so confident in our technology that we back it up with a risk-free 90-day money-back guarantee. If you don't see the glow, you don't pay.",
+    copy: "When it comes to your skin, trust is everything. That's why transparency is woven into the fabric of our brand. We don't believe in exaggerated claims or hidden fine print.\n\n- Tested for Safety: The Muuhu Ultra Pro is rigorously tested to ensure it is safe, effective, and built to last.\n- Privacy First: We utilize state-of-the-art encryption to ensure your personal data and payment information are always 100% secure.\n- The 90-Day Guarantee: We are so confident in our technology that we back it up with a risk-free 90-day money-back guarantee. If you don't see the glow, you don't pay.",
     image: {
       src: "/images/about/about-trust.png",
       alt: "90-Day Guarantee, safety certificates and top security standard badges"

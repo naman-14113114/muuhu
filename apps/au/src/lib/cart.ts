@@ -141,7 +141,7 @@ export function getDisplayLines(lines: CartLine[]): CartLine[] {
       if (line.productId === "muuhu-ipl-hair-removal" && line.type === "product") {
         return {
           ...line,
-          title: "Muuhu IPL + Premium Travel Box",
+          title: "Muuhu Ultra Pro + Premium Travel Box",
           subtitle:
             "Salon-grade IPL device with the Premium Travel Box included for protected storage and travel.",
           image: "/media/products/buudy-led-mask/images/84-w.webp",

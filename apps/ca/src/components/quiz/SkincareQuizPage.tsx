@@ -25,7 +25,7 @@ export function SkincareQuizPage() {
           <aside className="lg:sticky lg:top-8">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] bg-[var(--plum)]">
               <Image
-                alt="Muuhu IPL Hair Removal presented in its travel case"
+                alt="Muuhu Ultra Pro presented in its travel case"
                 className="object-cover"
                 fill
                 priority

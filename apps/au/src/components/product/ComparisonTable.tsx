@@ -194,7 +194,7 @@ export function ComparisonTable() {
                     <div className="w-1/4 flex justify-center items-center py-4 px-2">
                       <img
                         src="https://roseskinco.vercel.app/images/new_device.png"
-                        alt="Muuhu IPL Device"
+                        alt="Muuhu Ultra Pro Device"
                         className="h-20 md:h-28 object-contain"
                       />
                     </div>

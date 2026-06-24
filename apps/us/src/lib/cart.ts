@@ -141,7 +141,7 @@ export function getDisplayLines(lines: CartLine[]): CartLine[] {
       if (line.productId === "muuhu-ipl-hair-removal" && line.type === "product") {
         return {
           ...line,
-          title: "Muuhu IPL + Premium Travel Box",
+          title: "Muuhu Ultra Pro + Premium Travel Box",
           subtitle:
             "At-home IPL hair removal with ice cooling, 999,999 flashes, and 9 energy levels for long-lasting smoothness.",
           image: "/media/products/buudy-led-mask/images/84-w.webp",

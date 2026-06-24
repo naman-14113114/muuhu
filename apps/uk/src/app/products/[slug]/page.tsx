@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             "ice cooling IPL UK",
             "painless hair removal device",
             "IPL with ice cooling",
-            "Muuhu IPL",
+            "Muuhu Ultra Pro",
           ]
         : [
             "red light torch UK",

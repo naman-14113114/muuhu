@@ -255,7 +255,7 @@ function HomeVideoHero() {
   return (
     <section className="buudy-section relative w-full overflow-hidden bg-[var(--plum)]">
       <Image
-        alt="Muuhu IPL Hero Banner"
+        alt="Muuhu Ultra Pro Hero Banner"
         src={productMediaAsset("ipl_hero_banner.png")}
         width={2560}
         height={1080}

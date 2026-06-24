@@ -89,14 +89,14 @@ function getResultType(skin: string, hair: string): ResultType {
 function getResultMessage(type: ResultType, skin: string, hair: string): string {
   switch (type) {
     case "yes":
-      return `Yes! Based on your skin tone and hair color, Muuhu IPL should be a great fit for you. Order Muuhu IPL now and get ready to feel silky-smooth all over.`;
+      return `Yes! Based on your skin tone and hair color, Muuhu Ultra Pro should be a great fit for you. Order Muuhu Ultra Pro now and get ready to feel silky-smooth all over.`;
     case "caution":
       if (skin === "Dark Tan") {
-        return `Possibly! Based on your skin tone and hair color, Muuhu IPL may work for you. But due to the darker pigmentation of your skin, we'd suggest exercising caution during treatment. Only use Muuhu IPL on its lowest intensity setting. Give Muuhu IPL a try – if it doesn't work for you, send it back within 90 days and we'll refund you in full!`;
+        return `Possibly! Based on your skin tone and hair color, Muuhu Ultra Pro may work for you. But due to the darker pigmentation of your skin, we'd suggest exercising caution during treatment. Only use Muuhu Ultra Pro on its lowest intensity setting. Give Muuhu Ultra Pro a try – if it doesn't work for you, send it back within 90 days and we'll refund you in full!`;
       }
-      return `Possibly! Based on your skin tone and hair color, Muuhu IPL may work for you. But due to the lightness of your body hair, Muuhu IPL may have trouble targeting the hair follicle. Give Muuhu IPL a try – if it doesn't work for you, send it back within 90 days and we'll refund you in full!`;
+      return `Possibly! Based on your skin tone and hair color, Muuhu Ultra Pro may work for you. But due to the lightness of your body hair, Muuhu Ultra Pro may have trouble targeting the hair follicle. Give Muuhu Ultra Pro a try – if it doesn't work for you, send it back within 90 days and we'll refund you in full!`;
     case "no":
-      return `Based on your skin tone, and hair color, Muuhu IPL probably won't be a good fit for you. Muuhu IPL requires more contrast between skin and hair root color to work its magic!`;
+      return `Based on your skin tone, and hair color, Muuhu Ultra Pro probably won't be a good fit for you. Muuhu Ultra Pro requires more contrast between skin and hair root color to work its magic!`;
   }
 }
 
@@ -368,7 +368,7 @@ export function SuitabilitySection() {
 
       <div className="suit-inner text-center">
         <p className="Muuhu-eyebrow mb-2">No more guesswork</p>
-        <h2 className="Muuhu-heading mb-10">Will Muuhu IPL work for me?</h2>
+        <h2 className="Muuhu-heading mb-10">Will Muuhu Ultra Pro work for me?</h2>
 
         <div className="suit-steps-wrapper">
           {/* ── Step 1: Skin Tone ── */}

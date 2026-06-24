@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     "IPL device Canada",
     "ice cooling IPL",
     "painless IPL hair removal",
-    "Muuhu IPL device",
+    "Muuhu Ultra Pro device",
   ],
   openGraph: {
     title: "Best IPL Hair Removal Canada 2026: Buyer Guide",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
         url: "/images/products/buudy-led-mask/01-buudy-led-mask-front.webp",
         width: 1200,
         height: 1500,
-        alt: "Muuhu IPL device",
+        alt: "Muuhu Ultra Pro device",
       },
     ],
   },
@@ -134,7 +134,7 @@ export default function BestIplHairRemovalCanadaPage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="bg-[var(--cream)] text-[var(--plum)] hover:bg-[var(--blush)]">
                 <Link href="/products/muuhu-ipl-hair-removal">
-                  Shop Muuhu IPL
+                  Shop Muuhu Ultra Pro
                   <ArrowRight size={17} />
                 </Link>
               </Button>
@@ -146,7 +146,7 @@ export default function BestIplHairRemovalCanadaPage() {
 
           <figure className="relative min-h-[460px] overflow-hidden rounded-[34px] bg-[var(--ink)]">
             <Image
-              alt="Muuhu IPL device"
+              alt="Muuhu Ultra Pro device"
               className="object-cover"
               fill
               priority
@@ -244,7 +244,7 @@ export default function BestIplHairRemovalCanadaPage() {
         <div className="Muuhu-wrap grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
           <figure className="relative min-h-[500px] overflow-hidden rounded-[34px] bg-[var(--blush)]">
             <Image
-              alt="Muuhu IPL device front view"
+              alt="Muuhu Ultra Pro device front view"
               className="object-cover"
               fill
               sizes="(min-width: 1024px) 52vw, 100vw"

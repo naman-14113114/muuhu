@@ -6,13 +6,13 @@ Muuhu CA sells at-home IPL hair removal devices with ice cooling technology.
 
 ## Primary Pages
 - Home: ${market.siteUrl}
-- Muuhu IPL Hair Removal: ${market.siteUrl}/products/muuhu-ipl-hair-removal
+- Muuhu Ultra Pro: ${market.siteUrl}/products/muuhu-ipl-hair-removal
 - Best IPL Hair Removal Canada Guide: ${market.siteUrl}/pages/best-ipl-hair-removal-canada
 - Red Light Torch: ${market.siteUrl}/products/red-light-torch
 - FAQs: ${market.siteUrl}/pages/faqs
 
-## Muuhu IPL Summary
-- Product: Muuhu IPL Hair Removal
+## Muuhu Ultra Pro Summary
+- Product: Muuhu Ultra Pro
 - Price: CAD 179 launch offer, compare-at CAD 359
 - Category: IPL hair removal device, at-home laser hair removal, ice cooling IPL
 - Technology: IPL (Intense Pulsed Light)

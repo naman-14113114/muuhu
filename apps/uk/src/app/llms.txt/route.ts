@@ -6,14 +6,14 @@ Muuhu Canada sells at-home LED light therapy devices for skincare and wellness r
 
 ## Primary Pages
 - Home: ${market.siteUrl}
-- Muuhu IPL Hair Removal: ${market.siteUrl}/products/buudy-led-mask
+- Muuhu Ultra Pro: ${market.siteUrl}/products/buudy-led-mask
 - Best LED Face Mask Canada Guide: ${market.siteUrl}/pages/best-led-face-mask-Canada
 - Muuhu Red Torch: ${market.siteUrl}/products/red-light-torch
 - Skincare Quiz: ${market.siteUrl}/pages/skincare-quiz
 - FAQs: ${market.siteUrl}/pages/faqs
 
-## Muuhu IPL Hair Removal Summary
-- Product: Muuhu IPL Hair Removal
+## Muuhu Ultra Pro Summary
+- Product: Muuhu Ultra Pro
 - Price: CAD 179 launch offer, compare-at CAD 449
 - Category: LED face mask, red light therapy mask, blue light acne routine mask, anti-ageing LED mask
 - LEDs: 192 high-density LEDs

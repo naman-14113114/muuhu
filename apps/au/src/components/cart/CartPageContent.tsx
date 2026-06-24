@@ -90,7 +90,7 @@ export function CartPageContent({
           <ShoppingBag className="mx-auto text-[var(--gold)]" size={42} />
           <h1 className="buudy-heading mt-5">Your cart is empty.</h1>
           <p className="buudy-copy mx-auto mt-5 max-w-lg">
-            Add the Muuhu IPL Hair Removal or Red Torch to unlock current offers and
+            Add the Muuhu Ultra Pro or Red Torch to unlock current offers and
             free shipping.
           </p>
           <Button asChild className="mt-8">
