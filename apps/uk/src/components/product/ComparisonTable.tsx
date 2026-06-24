@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 
-/* ── SVG Icons for feature rows ── */
+/* â”€â”€ SVG Icons for feature rows â”€â”€ */
 function IntensityIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-[var(--plum)]">
@@ -82,7 +82,7 @@ function CrossIcon() {
   );
 }
 
-/* ── Comparison Row with icon ── */
+/* â”€â”€ Comparison Row with icon â”€â”€ */
 interface ComparisonRowProps {
   icon: React.ReactNode;
   title: string;
@@ -154,7 +154,7 @@ export function ComparisonTable() {
                   <div className="flex items-center h-full">
                     <div className="w-1/4 flex flex-col justify-center items-center h-full pb-3 px-2 pt-3 md:pt-4">
                       <img
-                        src="https://img.thesitebase.net/10650/10650730/themes/175579000979c2a2281d.png?width=640&height=0&min_height=0"
+                        src="/media/products/buudy-led-mask/images/muuhu_logo.png"
                         alt="Muuhu"
                         className="h-8 md:h-10 object-contain"
                       />
@@ -290,10 +290,10 @@ export function ComparisonTable() {
             icon={<PriceIcon />}
             title="Price"
             values={[
-              <span key="1" className="Muuhu-display font-semibold text-base md:text-lg text-[var(--plum)]">£99</span>,
+              <span key="1" className="Muuhu-display font-semibold text-base md:text-lg text-[var(--plum)]">Â£99</span>,
               <span key="2" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">$279.99</span>,
               <span key="3" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">$499</span>,
-              <span key="4" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">£539</span>,
+              <span key="4" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">Â£539</span>,
             ]}
             isLast={true}
           />
@@ -302,3 +302,4 @@ export function ComparisonTable() {
     </section>
   );
 }
+

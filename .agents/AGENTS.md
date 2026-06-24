@@ -102,3 +102,16 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **MANDATORY**: After EVERY task, regardless of whether the user explicitly requests it, you MUST append a detailed session log to this `AGENTS.md` file.
 - Do not summarize the context. Write everything in detail: your thinking, user intent and constraints, and all actions taken.
 - This rule is permanent and non-negotiable.
+
+### Session 6: Footer Overlap Fix
+- **User Intent**: The user complained that the Sticky Add to Cart bar on the product page was overlapping the footer content (specifically the copyright and payment icons) and requested that the sticky CTA be moved further down.
+- **Agent Logic & Thinking**:
+  - Investigated `StickyAddToCart.tsx` and realized it adds a class `Muuhu-mask-sticky-cta` to the HTML tag to apply padding to the footer.
+  - Searched `globals.css` and found that the CSS rule was still targeting `.buudy-mask-sticky-cta footer`. Due to the global string replacement of 'buudy' with 'Muuhu' in the React components, this CSS link broke, which caused the footer to lose the bottom padding needed to accommodate the sticky bar.
+  - I replaced `.buudy-mask-sticky-cta` with `.Muuhu-mask-sticky-cta` in `globals.css` across all 4 apps.
+  - To push the sticky bar "further down" per the user's request, I reduced its bottom spacing from `bottom-3 sm:bottom-5` to `bottom-2 sm:bottom-2`.
+  - I also increased the footer padding in `globals.css` to `4rem` (mobile) and `6rem` (desktop) to ensure it perfectly clears the new sticky positioning.
+- **Actions Taken**:
+  - Executed a PowerShell script to globally update `globals.css` padding rules and class names.
+  - Updated `StickyAddToCart.tsx` across `us`, `uk`, `ca`, and `au` to lower the CTA positioning.
+  - Committed ("Fix sticky add to cart overlapping footer and adjust bottom position") and pushed the changes to GitHub.
