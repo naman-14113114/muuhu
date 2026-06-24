@@ -1,4 +1,4 @@
-import Image from "next/image";
+ï»¿import Image from "next/image";
 import { Play, Smartphone } from "lucide-react";
 import { touchTech } from "@/data/productSections";
 import { productAsset, productMediaAsset } from "@/lib/media";
@@ -156,11 +156,11 @@ export function IceCoolingSection() {
           </h2>
           <p className="mt-5 max-w-lg leading-7 text-[var(--muted)]">
             Experience virtually painless hair removal with our built-in contact cooling. 
-            The sapphire cooling head lowers the temperature to a soothing ~8°C (46°F) where it touches your skin.
+            The sapphire cooling head lowers the temperature to a soothing ~8Â°C (46Â°F) where it touches your skin.
           </p>
           <ul className="mt-10 grid gap-6">
             <li className="border-l-2 border-[#ED6A3A] pl-6">
-              <p className="Muuhu-display text-2xl text-[var(--plum)]">~8°C / 46°F</p>
+              <p className="Muuhu-display text-2xl text-[var(--plum)]">~8Â°C / 46Â°F</p>
               <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
                 Maintains a consistent, soothing temperature to protect your epidermis while light pulses target the hair follicle.
               </p>
@@ -190,3 +190,4 @@ export function IceCoolingSection() {
     </section>
   );
 }
+
