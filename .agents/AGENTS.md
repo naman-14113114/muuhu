@@ -293,3 +293,14 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Overwrote the asset files and deleted the `.jpg` versions.
   - Updated codebase references.
   - Committed ("Replace face closeup image with user-provided PNG version") and pushed to GitHub (bd5b37b).
+
+### Session 17: Ice Cooling Image Replacement in Technology Section
+- **User Intent**: The user wanted the image in the "Technology" (Ice Cooling) section to be replaced with `ipl_provided_2.png`. They provided a screenshot of the old image and requested it be removed and replaced everywhere.
+- **Agent Logic & Thinking**:
+  - Found the section defined in `AppPromo.tsx` across all 4 apps.
+  - Replaced the hardcoded string `src={productMediaAsset("ice_cooling.jpg", "buudy-led-mask", "images")}` with `src={productMediaAsset("ipl_provided_2.png")}` in all 4 copies of `AppPromo.tsx`.
+  - Deleted the old unused images (`ice_cooling.jpg` and `media__1782322332594.jpg`) from the public asset folders to keep the repository clean.
+- **Actions Taken**:
+  - Updated `AppPromo.tsx` across `us`, `uk`, `ca`, and `au` apps.
+  - Deleted old images via PowerShell.
+  - Committed ("Update Ice Cooling section to use ipl_provided_2.png and remove old images") and pushed to GitHub.

@@ -253,14 +253,15 @@ function CustomerReviewsGrid() {
 
 function HomeVideoHero() {
   return (
-    <section className="Muuhu-section relative w-full overflow-hidden bg-[var(--plum)]">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+    <section className="buudy-section relative w-full overflow-hidden bg-[var(--plum)]">
+      <Image
+        alt="Muuhu IPL Hero Banner"
+        src={productMediaAsset("ipl_hero_banner.png")}
+        width={2560}
+        height={1080}
         className="block h-auto w-full"
-        src="/media/products/buudy-led-mask/videos/Muuhu-goddess-bg.mp4"
+        sizes="100vw"
+        priority
       />
     </section>
   );
