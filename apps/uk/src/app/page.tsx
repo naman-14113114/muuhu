@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { HomePage } from "@/components/home/HomePage";
 import { market } from "@/lib/market";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: market.siteUrl,
     images: [
       {
-        url: "/images/products/buudy-led-mask/09-buudy-led-mask-home-spa.webp",
+        url: "/media/products/buudy-led-mask/images/ipl_hero_banner.png",
         width: 1200,
         height: 900,
         alt: "Muuhu LED light therapy mask at home",
@@ -47,4 +47,5 @@ export default function Page() {
     </>
   );
 }
+
 

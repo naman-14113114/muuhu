@@ -1,4 +1,4 @@
-import {
+﻿import {
   productAsset,
   productMediaAsset,
   type ProductImage,
@@ -75,7 +75,7 @@ export const muuhuIpl: Product = {
   shortDescription:
     "At-home IPL hair removal with ice cooling, 999,999 flashes, and 9 energy levels for long-lasting smoothness.",
   description:
-    "At-home IPL hair removal reimagined for UK homes. The Muuhu IPL combines 999,999 flashes, built-in ice cooling at 8°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
+    "At-home IPL hair removal reimagined for UK homes. The Muuhu IPL combines 999,999 flashes, built-in ice cooling at 8Â°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
   seoTitle: "Best IPL Hair Removal UK | Muuhu Ice Cooling Device",
   seoDescription:
     "Shop the Muuhu IPL Hair Removal in the UK: 999,999 flashes, ice cooling, 9 energy levels, 16J max output, Auto and Manual modes, LCD touch display, 90-day returns, and free shipping.",
@@ -87,68 +87,13 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productAsset("01-buudy-led-mask-front.webp"),
+  cartImage: productMediaAsset("ipl_product_angle.png"),
   gallery: [
-    {
-      src: productMediaAsset("Cleopatra-LED-Red-Light-Mask.webp"),
-      alt: "Cleopatra LED Red Light Mask",
-    },
-    {
-      src: productAsset("02-buudy-led-mask-side-profile.webp"),
-      alt: "Muuhu IPL Hair Removal side profile",
-    },
-    {
-      src: productAsset("03-buudy-led-mask-anti-ageing-mode.webp"),
-      alt: "Muuhu IPL Hair Removal anti-ageing mode",
-    },
-    {
-      src: productAsset("04-buudy-led-mask-blue-light-acne.webp"),
-      alt: "Muuhu IPL Hair Removal blue light acne mode",
-    },
-    {
-      src: productAsset("05-buudy-led-mask-packaging.webp"),
-      alt: "Muuhu IPL Hair Removal packaging",
-    },
-    {
-      src: productAsset("06-buudy-led-mask-results.webp"),
-      alt: "Muuhu IPL Hair Removal results",
-    },
-    {
-      src: productAsset("07-buudy-led-mask-controller.webp"),
-      alt: "Muuhu IPL Hair Removal tap controller",
-    },
-    {
-      src: productAsset("08-buudy-led-mask-lifestyle-use.webp"),
-      alt: "Muuhu IPL Hair Removal lifestyle use",
-    },
-    {
-      src: productAsset("09-buudy-led-mask-home-spa.webp"),
-      alt: "Muuhu IPL Hair Removal home spa",
-    },
-    {
-      src: productAsset("10-buudy-led-mask-dermatologist-recommended.webp"),
-      alt: "Muuhu IPL Hair Removal dermatologist recommended",
-    },
-    {
-      src: productAsset("11-buudy-led-mask-flexible-silicone.webp"),
-      alt: "Muuhu IPL Hair Removal flexible silicone",
-    },
-    {
-      src: productAsset("13-buudy-led-mask-starter-kit.webp"),
-      alt: "Muuhu IPL Hair Removal starter kit",
-    },
-    {
-      src: productMediaAsset("O3-w.webp"),
-      alt: "Muuhu IPL Hair Removal O3",
-    },
-    {
-      src: productAsset("Muuhu_purple.jpeg"),
-      alt: "Muuhu IPL Hair Removal Purple",
-    },
-    {
-      src: productAsset("01-buudy-led-mask-front.webp"),
-      alt: "Muuhu IPL Hair Removal front view",
-    },
+    { src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu IPL Hair Removal" },
+    { src: productMediaAsset("ipl_lifestyle_1.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
+    { src: productMediaAsset("ipl_product_angle.png"), alt: "Muuhu IPL Hair Removal Device" },
+    { src: productMediaAsset("ipl_ice_cooling.png"), alt: "Muuhu IPL Ice Cooling Technology" },
+    { src: productMediaAsset("ipl_lifestyle_2.png"), alt: "Muuhu IPL Hair Removal Model" }
   ],
   gifts: [
     {
@@ -181,18 +126,18 @@ export const muuhuIpl: Product = {
     { label: "Flash Count", value: "999,999 flashes" },
     { label: "Max Energy", value: "16J" },
     { label: "Energy Levels", value: "9 adjustable levels" },
-    { label: "Wavelength Range", value: "600–1200nm" },
-    { label: "Cooling", value: "Built-in ice cooling (~8°C / 46°F)" },
+    { label: "Wavelength Range", value: "600â€“1200nm" },
+    { label: "Cooling", value: "Built-in ice cooling (~8Â°C / 46Â°F)" },
     { label: "Modes", value: "Auto (glide) + Manual (stamp)" },
     { label: "Display", value: "LCD touch screen" },
-    { label: "Power Supply", value: "AC 100–240V (corded)" },
+    { label: "Power Supply", value: "AC 100â€“240V (corded)" },
     { label: "Material", value: "Plastic" },
     { label: "Waterproof", value: "No" },
   ],
   included: [
     { quantity: "1x", label: "Premium Travel Box", tag: "Free gift" },
     { quantity: "1x", label: "Muuhu IPL Device" },
-    { quantity: "1x", label: "Power Adapter (100–240V)" },
+    { quantity: "1x", label: "Power Adapter (100â€“240V)" },
     { quantity: "1x", label: "Protective Goggles" },
     { quantity: "1x", label: "User Manual" },
     { quantity: "1x", label: "Muuhu LED Torch", tag: "Free gift" },
@@ -213,8 +158,8 @@ export const muuhuIpl: Product = {
     "Compact and ergonomic design",
   ],
   differentiators: [
-    "999,999 flash lifespan — no lamp replacements",
-    "Ice cooling at 8°C for pain-free sessions",
+    "999,999 flash lifespan â€” no lamp replacements",
+    "Ice cooling at 8Â°C for pain-free sessions",
     "16J max energy for effective results",
     "9 intensity levels for sensitive to coarse hair",
     "Auto and Manual modes for precision and speed",
@@ -230,19 +175,19 @@ export const muuhuIpl: Product = {
   faqs: [
     {
       question: "How does IPL hair removal work?",
-      answer: "IPL (Intense Pulsed Light) targets the melanin in hair follicles with broad-spectrum light energy (600–1200nm). The light is absorbed by the hair pigment, which disrupts the growth cycle over repeated treatments, leading to long-lasting hair reduction."
+      answer: "IPL (Intense Pulsed Light) targets the melanin in hair follicles with broad-spectrum light energy (600â€“1200nm). The light is absorbed by the hair pigment, which disrupts the growth cycle over repeated treatments, leading to long-lasting hair reduction."
     },
     {
       question: "Is the ice cooling really painless?",
-      answer: "The built-in ice cooling plate maintains a temperature of approximately 8°C (46°F) at the treatment window, soothing the skin on contact. Most users describe the sensation as a mild warm snap followed by instant cooling relief."
+      answer: "The built-in ice cooling plate maintains a temperature of approximately 8Â°C (46Â°F) at the treatment window, soothing the skin on contact. Most users describe the sensation as a mild warm snap followed by instant cooling relief."
     },
     {
       question: "How many sessions until I see results?",
-      answer: "Results vary by individual. Many users notice hair shedding after 2–3 weekly sessions. Consistent use over 6–12 weeks typically produces significant, long-lasting hair reduction. After that, occasional maintenance sessions keep results smooth."
+      answer: "Results vary by individual. Many users notice hair shedding after 2â€“3 weekly sessions. Consistent use over 6â€“12 weeks typically produces significant, long-lasting hair reduction. After that, occasional maintenance sessions keep results smooth."
     },
     {
       question: "What skin tones and hair colours work with IPL?",
-      answer: "IPL works best on light to medium skin tones with dark hair, where the contrast between skin and hair pigment allows effective light absorption. It is not recommended for very dark skin tones (Fitzpatrick V–VI) or for very light, red, grey, or white hair due to insufficient melanin."
+      answer: "IPL works best on light to medium skin tones with dark hair, where the contrast between skin and hair pigment allows effective light absorption. It is not recommended for very dark skin tones (Fitzpatrick Vâ€“VI) or for very light, red, grey, or white hair due to insufficient melanin."
     },
     {
       question: "Can I use this on any body area?",
@@ -250,7 +195,7 @@ export const muuhuIpl: Product = {
     },
     {
       question: "Can I use it in my country?",
-      answer: "Yes. The Muuhu IPL device is universal voltage (AC 100–240V) which means it can be used worldwide without any issues."
+      answer: "Yes. The Muuhu IPL device is universal voltage (AC 100â€“240V) which means it can be used worldwide without any issues."
     },
     {
       question: "What if I am pregnant or have a medical condition?",
@@ -291,39 +236,11 @@ export const MuuhuRedTorch: Product = {
   promoLabel: "Red torch offer applied",
   cartImage: torchAsset("01-buudy-red-torch-main.png"),
   gallery: [
-    {
-      src: torchAsset("01-buudy-red-torch-main.png"),
-      alt: "Muuhu Red Torch handheld light therapy device",
-    },
-    {
-      src: torchAsset("02-buudy-red-torch-animation.gif"),
-      alt: "Muuhu Red Torch light therapy in use",
-      animated: true,
-    },
-    {
-      src: torchAsset("03-buudy-red-torch-handheld.jpeg"),
-      alt: "Muuhu Red Torch compact handheld device",
-    },
-    {
-      src: torchAsset("04-buudy-red-torch-wavelengths.jpeg"),
-      alt: "Muuhu Red Torch wavelength detail",
-    },
-    {
-      src: torchAsset("05-buudy-red-torch-kit.jpeg"),
-      alt: "Muuhu Red Torch kit and accessories",
-    },
-    {
-      src: torchAsset("06-buudy-red-torch-body-relief.jpeg"),
-      alt: "Muuhu Red Torch body relief use",
-    },
-    {
-      src: torchAsset("07-buudy-red-torch-closeup.jpeg"),
-      alt: "Muuhu Red Torch LED close up",
-    },
-    {
-      src: torchAsset("08-buudy-red-torch-travel.jpeg"),
-      alt: "Muuhu Red Torch travel-ready design",
-    },
+    { src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu IPL Hair Removal" },
+    { src: productMediaAsset("ipl_lifestyle_1.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
+    { src: productMediaAsset("ipl_product_angle.png"), alt: "Muuhu IPL Hair Removal Device" },
+    { src: productMediaAsset("ipl_ice_cooling.png"), alt: "Muuhu IPL Ice Cooling Technology" },
+    { src: productMediaAsset("ipl_lifestyle_2.png"), alt: "Muuhu IPL Hair Removal Model" }
   ],
   gifts: [],
   specs: [
@@ -377,4 +294,5 @@ export function getProductBySlug(slug: string) {
 export function getProductById(id: string) {
   return productsById[id];
 }
+
 

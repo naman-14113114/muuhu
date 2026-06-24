@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { HomePage } from "@/components/home/HomePage";
 import { market } from "@/lib/market";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best IPL Hair Removal Australia | Muuhu",
     description:
-      "Discover the Muuhu IPL Hair Removal device with 999,999 flashes, ice cooling at 8°C, and 9 energy levels for full body treatment.",
+      "Discover the Muuhu IPL Hair Removal device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels for full body treatment.",
     url: market.siteUrl,
     images: [
       {
-        url: "/images/products/buudy-led-mask/09-buudy-led-mask-home-spa.webp",
+        url: "/media/products/buudy-led-mask/images/ipl_hero_banner.png",
         width: 1200,
         height: 900,
         alt: "Muuhu IPL hair removal device at home",
@@ -47,4 +47,5 @@ export default function Page() {
     </>
   );
 }
+
 
