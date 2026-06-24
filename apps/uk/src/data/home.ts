@@ -1,4 +1,4 @@
-﻿import { homeAsset, productAsset, productMediaAsset } from "@/lib/media";
+import { homeAsset, productAsset, productMediaAsset } from "@/lib/media";
 import { muuhuIpl, MuuhuRedTorch } from "./products";
 
 export const homeHero = {
@@ -9,15 +9,15 @@ export const homeHero = {
   ctaHref: `/products/${muuhuIpl.slug}`,
   images: [
     {
-      src: productMediaAsset("ipl_hero_banner.png"),
+      src: productMediaAsset("reference_ipl.jpg"),
       alt: "Muuhu IPL Hair Removal hero image",
     },
     {
-      src: productMediaAsset("ipl_lifestyle_1.png"),
+      src: productMediaAsset("reference_ipl.jpg"),
       alt: "Muuhu IPL Hair Removal lifestyle image",
     },
     {
-      src: productMediaAsset("ipl_product_angle.png"),
+      src: productMediaAsset("reference_ipl.jpg"),
       alt: "Muuhu IPL Hair Removal in use",
     },
   ],
@@ -28,7 +28,7 @@ export const homeMaskSpotlight = {
   title: "The Muuhu IPL with ice cooling + 9 energy levels",
   copy: "Modern problems require modern solutions. The Muuhu IPL Hair Removal device makes at-home hair removal painless and effective. With built-in ice cooling at 8Â°C and 9 adjustable energy levels up to 16J, you can treat your entire body comfortably from home.",
   image: {
-    src: productMediaAsset("ipl_lifestyle_2.png"),
+    src: productMediaAsset("reference_ipl.jpg"),
     alt: "Muuhu IPL Hair Removal product spotlight",
   },
   product: muuhuIpl,
@@ -49,7 +49,7 @@ export const homeTechnologySpotlight = {
   ctaLabel: "Shop the IPL device",
   ctaHref: `/products/${muuhuIpl.slug}`,
   image: {
-    src: productMediaAsset("ipl_ice_cooling.png"),
+    src: productMediaAsset("reference_ipl.jpg"),
     alt: "Muuhu IPL technology and ice cooling guide",
   },
 };
@@ -58,17 +58,17 @@ export const homeFeatureCards = [
   {
     title: "999,999 flash lifespan",
     copy: "Your Muuhu IPL device is built to last for years of full-body treatments without ever needing a lamp replacement.",
-    image: productMediaAsset("ipl_product_angle.png"),
+    image: productMediaAsset("reference_ipl.jpg"),
   },
   {
     title: "For all skin sensitivities",
     copy: "9 adjustable energy levels let you start low and increase gradually. From sensitive areas to coarse hair, there is a setting for you.",
-    image: productMediaAsset("ipl_lifestyle_1.png"),
+    image: productMediaAsset("reference_ipl.jpg"),
   },
   {
     title: "Ice cooling at 8Â°C",
     copy: "The built-in ice cooling plate soothes your skin on contact, making every flash painless. No numbing creams needed.",
-    image: productMediaAsset("ipl_product_angle.png"),
+    image: productMediaAsset("reference_ipl.jpg"),
   },
 ];
 
@@ -77,7 +77,7 @@ export const homeLightTherapy = {
   title: "What is IPL and how does it work?",
   copy: "IPL stands for Intense Pulsed Light. It targets the melanin pigment in hair follicles with broad-spectrum light energy (600â€“1200nm), disrupting the hair growth cycle over repeated treatments. Clinical studies have shown that consistent at-home IPL use over 6â€“12 weeks produces significant, long-lasting hair reduction. It is non-invasive, requires no consumables, and treats your entire body.",
   image: {
-    src: productMediaAsset("ipl_lifestyle_2.png"),
+    src: productMediaAsset("reference_ipl.jpg"),
     alt: "IPL technology editorial image",
   },
 };
@@ -86,7 +86,7 @@ export const homeYoungerYou = {
   title: "Reveal smoother skin",
   copy: "With 999,999 flashes, ice cooling technology, and Auto-glide mode for fast treatment on large areas, you can achieve salon-quality hair removal from the comfort of your home.",
   image: {
-    src: productMediaAsset("ipl_hero_banner.png"),
+    src: productMediaAsset("reference_ipl.jpg"),
     alt: "Muuhu IPL Hair Removal smooth skin results",
   },
 };
@@ -126,4 +126,5 @@ export const homeCustomerReviewsGrid = {
   ctaHref: "/pages/about-us",
   image: productMediaAsset("banner_collage_image.jpeg")
 };
+
 

@@ -1,4 +1,4 @@
-﻿import {
+import {
   productAsset,
   productMediaAsset,
   type ProductImage,
@@ -87,13 +87,13 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_product_angle.png"),
+  cartImage: productMediaAsset("reference_ipl.jpg"),
   gallery: [
-    { src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu IPL Hair Removal" },
-    { src: productMediaAsset("ipl_lifestyle_1.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
-    { src: productMediaAsset("ipl_product_angle.png"), alt: "Muuhu IPL Hair Removal Device" },
-    { src: productMediaAsset("ipl_ice_cooling.png"), alt: "Muuhu IPL Ice Cooling Technology" },
-    { src: productMediaAsset("ipl_lifestyle_2.png"), alt: "Muuhu IPL Hair Removal Model" }
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Lifestyle" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Device" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Ice Cooling Technology" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Model" }
   ],
   gifts: [
     {
@@ -236,11 +236,11 @@ export const MuuhuRedTorch: Product = {
   promoLabel: "Red torch offer applied",
   cartImage: torchAsset("01-buudy-red-torch-main.png"),
   gallery: [
-    { src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu IPL Hair Removal" },
-    { src: productMediaAsset("ipl_lifestyle_1.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
-    { src: productMediaAsset("ipl_product_angle.png"), alt: "Muuhu IPL Hair Removal Device" },
-    { src: productMediaAsset("ipl_ice_cooling.png"), alt: "Muuhu IPL Ice Cooling Technology" },
-    { src: productMediaAsset("ipl_lifestyle_2.png"), alt: "Muuhu IPL Hair Removal Model" }
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Lifestyle" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Device" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Ice Cooling Technology" },
+    { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Model" }
   ],
   gifts: [],
   specs: [
@@ -294,5 +294,6 @@ export function getProductBySlug(slug: string) {
 export function getProductById(id: string) {
   return productsById[id];
 }
+
 
 

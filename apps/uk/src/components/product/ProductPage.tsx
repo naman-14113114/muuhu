@@ -27,7 +27,8 @@ export function ProductPage({ product }: { product: Product }) {
 
       <ProductReviewsSection />
       <SuitabilitySection />
-      <AppPromo />
+      <IPLVideo />
+        <AppPromo />
       <IceCoolingSection />
       <ComparisonTable />
       <FAQSection faqs={product.faqs} />
@@ -36,4 +37,5 @@ export function ProductPage({ product }: { product: Product }) {
     </>
   );
 }
+
 
