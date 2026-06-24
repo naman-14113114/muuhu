@@ -87,13 +87,13 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_provided_1.png"),
+  cartImage: productMediaAsset("ipl_provided_2.png"),
     gallery: [
-      { src: productMediaAsset("ipl_provided_1.png"), alt: "Muuhu IPL" },
-      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Lifestyle" },
-      { src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Device" },
-      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL Technology" },
-      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Action" }
+      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL" },
+      { src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Lifestyle" },
+      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL Device" },
+      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Technology" },
+      { src: productMediaAsset("ipl_provided_6.png"), alt: "Muuhu IPL Action" }
     ],
   gifts: [
     {

@@ -194,3 +194,25 @@ This version has breaking changes — APIs, conventions, and file structure may 
   - Scripted UGC image injection into JSON reviews.
   - Built successfully (
 pm run build) and pushed to GitHub.
+
+### Session 12: User Provided Assets Final Migration
+- **User Intent**: The user was unhappy with the AI-generated images and wanted them all completely deleted. They provided a local directory containing 13 ChatGPT images, a specific hero video, an ice cooling image, and 40+ UGC images for Before/After matching. They also explicitly demanded no repeated images on the same page and that Before/After logic be tracked in 'Weeks'.
+- **Agent Logic & Thinking**:
+  - Located the user's provided folder at E:\1st YEAR DTU\New folder\muuhu_ipl_generated_images.
+  - Used Powershell to delete all old ipl_*.png images from the us, uk, ca, and u apps.
+  - Wrote a Node script to replace the gallery images in home.ts and products.ts strictly mapping 1 through 10 without any overlaps on a single page.
+  - Copied hero.mp4 into the apps and updated IPLVideo.tsx to controls={false} for a silent, looping, autoplay experience.
+  - Placed the attached image (61vlwNsX6PL._SY500_.jpg) exactly into the AppPromo.tsx IceCoolingSection layout as requested.
+  - Attempted to stitch efore_after 	rustoo-*.jpg pairs via System.Drawing in Powershell, but encountered Out of memory errors due to invalid/WebP file formats disguised as JPEGs.
+  - Resolved the stitching problem elegantly by rebuilding BeforeAfterGrid.tsx to conditionally accept imageBefore and imageAfter as separate flex-grid components natively within Next.js.
+  - Sorted the 	rustoo images chronologically to implicitly match Before/After pairs and injected them into productSections.ts.
+  - Updated the textual timeline to "Week 1", "Week 2", "Week 4", etc.
+  - Injected the 3 provided review images into the uudy-led-mask-reviews.json.
+- **Actions Taken**:
+  - Deleted old files via Remove-Item.
+  - Uploaded provided video and muted it in IPLVideo.tsx.
+  - Rebuilt BeforeAfterGrid.tsx for dual-image splits.
+  - Rewrote data configurations.
+  - Injected review images via custom Node script.
+  - Passed 
+pm run build locally and pushed to GitHub.

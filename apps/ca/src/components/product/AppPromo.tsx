@@ -179,7 +179,7 @@ export function IceCoolingSection() {
             className="object-cover"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            src={productMediaAsset("ice_cooling.jpg", "buudy-led-mask", "images")}
+            src={productMediaAsset("media__1782322332594.jpg", "buudy-led-mask", "images")}
           />
           <div className="absolute bottom-6 left-6 rounded-2xl bg-[rgba(253,246,240,.94)] p-4 text-[var(--plum)] backdrop-blur">
             <p className="Muuhu-mono text-[#ED6A3A]">Skin Protection</p>
