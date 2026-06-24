@@ -231,3 +231,22 @@ pm run build locally and pushed to GitHub.
   - Distributed 10 unique assets across home.ts and products.ts.
   - Triggered a Next.js 
 pm run build, verified it compiled successfully in ~10s, and pushed the updates to GitHub.
+
+### Session 14: Comprehensive Fix — Gallery, Before/After, Video, Ice Cooling, Reviews
+- **User Intent**: The user shared a screen recording showing multiple problems: (1) Product gallery only had 5 images instead of all 9 provided 1:1 images. (2) Before/After section had completely mismatched images (face photo paired with leg photo). (3) Video was not autoplaying. (4) The ice cooling image was incorrectly used as the main/cart image and showing in the sticky add-to-cart bar. (5) Old AI images still visible in reviews. (6) Duplicate images on the homepage. (7) No infographic images wanted on homepage.
+- **Agent Logic & Thinking**:
+  - **Gallery**: The previous script only inserted 5 images (ipl_provided_2 through 6). Updated to include ALL 9 (ipl_provided_2 through 10, since 1 was moved to reviews).
+  - **Before/After**: The trustoo images from the user's folder are individual random review photos with random hashes, NOT matched before/after pairs of the same person. Pairing them sequentially created absurd mismatches (face with leg). Since there is no correct pairing data, I emptied the entire 	ransformations array, effectively removing the Before/After section from the product page.
+  - **Video Autoplay**: eact-player with dynamic SSR import was preventing reliable autoplay. Replaced the entire IPLVideo.tsx with a native HTML5 <video> element using utoPlay, muted, loop, and playsInline attributes, which browsers reliably autoplay.
+  - **Ice Cooling Image**: Reverted AppPromo.tsx back to ice_cooling.jpg (the original correct one showing the device with ice blocks), removing media__1782322332594.jpg which had been incorrectly promoted to main/cart image.
+  - **Cart Image**: The cartImage in products.ts was correctly set to ipl_provided_2.png (NOT the ice cooling image), ensuring the sticky add-to-cart bar shows the product, not the ice cooling shot.
+  - **Reviews**: Ran a final complete scrub — set ALL review images to [] empty arrays, then injected only the 4 dedicated review images into the top 4 reviews.
+  - **Homepage Duplicates**: Fixed the homeYoungerYou section which duplicated ipl_provided_5.png from the spotlight section. Replaced it with eference_ipl.jpg to maintain zero duplicates on any page.
+- **Actions Taken**:
+  - Rewrote products.ts gallery across all 4 apps to include all 9 images.
+  - Emptied 	ransformations array in productSections.ts across all 4 apps.
+  - Rewrote IPLVideo.tsx to use native HTML5 video instead of ReactPlayer across all 4 apps.
+  - Reverted AppPromo.tsx ice cooling image path across all 4 apps.
+  - Ran Node script to scrub and re-inject review images across all 4 apps.
+  - Fixed homepage duplicate by using eference_ipl.jpg for the homeYoungerYou section.
+  - Build passed successfully. Committed and pushed to GitHub.

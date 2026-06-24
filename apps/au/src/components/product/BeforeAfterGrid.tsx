@@ -165,7 +165,7 @@ export function BeforeAfterGrid() {
   }, [userInteracted, isPaused, getStep, customSmoothScroll]);
 
   return (
-    <section className="Muuhu-section bg-[var(--cream)] md: md: py-14 md:py-24">
+    <section className="Muuhu-section bg-[var(--cream)] pb-14 md:pb-24 pt-4 md:pt-8">
       <div className="Muuhu-wrap">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-6 md:mb-12">
           <SectionHeading

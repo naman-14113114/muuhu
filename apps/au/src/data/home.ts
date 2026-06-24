@@ -12,7 +12,7 @@ export const homeHero = {
       src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Hero",
     },
     {
-      src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Lifestyle",
+      src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu IPL Lifestyle",
     },
     {
       src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL In Use",
