@@ -14,7 +14,7 @@ export function Footer() {
                 alt="Muuhu"
                 className="h-auto w-44"
                 height={58}
-                src={productMediaAsset("Muuhu_footer_logo.png")}
+                src={productMediaAsset("muuhu_logo.png")}
                 width={174}
               />
             </Link>
@@ -127,4 +127,5 @@ export function Footer() {
     </footer>
   );
 }
+
 

@@ -20,7 +20,7 @@ export function CartMinimalHeader() {
             height={74}
             priority
             sizes="(min-width: 640px) 160px, 132px"
-            src="/media/products/buudy-led-mask/images/ChatGPT Image May 31, 2026, 12_10_21 AM.png"
+            src="/media/products/buudy-led-mask/images/muuhu_logo.png"
             width={220}
           />
         </Link>
@@ -33,5 +33,6 @@ export function CartMinimalHeader() {
     </header>
   );
 }
+
 
 
