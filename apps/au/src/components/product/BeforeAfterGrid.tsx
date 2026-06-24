@@ -165,14 +165,14 @@ export function BeforeAfterGrid() {
   }, [userInteracted, isPaused, getStep, customSmoothScroll]);
 
   return (
-    <section className="buudy-section bg-[var(--cream)] md: md: py-14 md:py-24">
-      <div className="buudy-wrap">
+    <section className="Muuhu-section bg-[var(--cream)] md: md: py-14 md:py-24">
+      <div className="Muuhu-wrap">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-6 md:mb-12">
           <SectionHeading
             eyebrow="Real users / Real results"
             title={
               <>
-                Eight stories, <em className="buudy-italic">one device</em>.
+                Eight stories, <em className="Muuhu-italic">one device</em>.
               </>
             }
           />
@@ -203,38 +203,61 @@ export function BeforeAfterGrid() {
               data-story-card
               key={`${story.id}-${index}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)]">
-                <Image
-                  alt={story.concern}
-                  className="object-cover"
-                  fill
-                  sizes="(min-width: 1024px) 336px, 82vw"
-                  src={story.image}
-                />
+              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)] flex">
+                {story.imageBefore && story.imageAfter ? (
+                  <>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} Before`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageBefore}
+                      />
+                    </div>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} After`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageAfter}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <Image
+                    alt={story.concern}
+                    className="object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 336px, 82vw"
+                    src={story.image}
+                  />
+                )}
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between gap-3">
-                  <p className="buudy-mono text-[var(--gold)]">{story.concern}</p>
-                  <span className="buudy-mono text-[var(--plum-soft)]">5.0</span>
+                  <p className="Muuhu-mono text-[var(--gold)]">{story.concern}</p>
+                  <span className="Muuhu-mono text-[var(--plum-soft)]">5.0</span>
                 </div>
-                <h3 className="buudy-display mt-3 text-xl text-[var(--plum)]">
+                <h3 className="Muuhu-display mt-3 text-xl text-[var(--plum)]">
                   {story.title}
                 </h3>
                 <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
                   {story.quote}
                 </p>
                 <div className="mt-4 flex items-center justify-between border-t border-[var(--border)] pt-3">
-                  <span className="buudy-display text-sm text-[var(--plum)]">
+                  <span className="Muuhu-display text-sm text-[var(--plum)]">
                     {story.name}
                   </span>
-                  <span className="buudy-mono text-[var(--plum-soft)]">Verified</span>
+                  <span className="Muuhu-mono text-[var(--plum-soft)]">Verified</span>
                 </div>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="buudy-wrap mt-6 flex items-center justify-center gap-5">
+        <div className="Muuhu-wrap mt-6 flex items-center justify-center gap-5">
           <button
             aria-label="Previous transformation story"
             className="grid h-11 w-11 place-items-center rounded-full border border-[rgba(58,31,61,.3)] text-[var(--plum)] transition hover:bg-[var(--plum)] hover:text-[var(--cream)]"
@@ -243,7 +266,7 @@ export function BeforeAfterGrid() {
           >
             <ChevronLeft size={20} />
           </button>
-          <span className="buudy-mono text-[var(--plum)]">customer stories</span>
+          <span className="Muuhu-mono text-[var(--plum)]">customer stories</span>
           <button
             aria-label="Next transformation story"
             className="grid h-11 w-11 place-items-center rounded-full border border-[rgba(58,31,61,.3)] text-[var(--plum)] transition hover:bg-[var(--plum)] hover:text-[var(--cream)]"

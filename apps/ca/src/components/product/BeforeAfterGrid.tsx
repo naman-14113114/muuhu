@@ -176,7 +176,7 @@ export function BeforeAfterGrid() {
               </>
             }
           />
-          <p className="max-w-sm text-[14.5px] leading-7 text-[var(--muted)]">
+          <p className="max-w-sm text-sm leading-7 text-[var(--muted)]">
             Verified customer transformations, photographed in their own homes
             after consistent use of the Muuhu IPL Hair Removal.
           </p>
@@ -203,14 +203,37 @@ export function BeforeAfterGrid() {
               data-story-card
               key={`${story.id}-${index}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)]">
-                <Image
-                  alt={story.concern}
-                  className="object-cover"
-                  fill
-                  sizes="(min-width: 1024px) 336px, 82vw"
-                  src={story.image}
-                />
+              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)] flex">
+                {story.imageBefore && story.imageAfter ? (
+                  <>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} Before`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageBefore}
+                      />
+                    </div>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} After`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageAfter}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <Image
+                    alt={story.concern}
+                    className="object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 336px, 82vw"
+                    src={story.image}
+                  />
+                )}
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between gap-3">
@@ -220,7 +243,7 @@ export function BeforeAfterGrid() {
                 <h3 className="Muuhu-display mt-3 text-xl text-[var(--plum)]">
                   {story.title}
                 </h3>
-                <p className="mt-2 text-[14.5px] leading-7 text-[var(--muted)]">
+                <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
                   {story.quote}
                 </p>
                 <div className="mt-4 flex items-center justify-between border-t border-[var(--border)] pt-3">

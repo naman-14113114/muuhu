@@ -24,19 +24,20 @@ export function IPLVideo() {
         </h2>
         <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-black relative">
           <ReactPlayer
-            url="/media/products/buudy-led-mask/videos/alibaba_video.mp4"
+            url="/media/products/buudy-led-mask/videos/hero.mp4"
             width="100%"
             height="100%"
             playing={true}
             muted={true}
             loop={true}
-            controls={true}
+            controls={false}
           />
         </div>
       </div>
     </section>
   );
 }
+
 
 
 

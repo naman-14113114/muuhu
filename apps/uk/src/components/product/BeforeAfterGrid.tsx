@@ -203,14 +203,37 @@ export function BeforeAfterGrid() {
               data-story-card
               key={`${story.id}-${index}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)]">
-                <Image
-                  alt={story.concern}
-                  className="object-cover"
-                  fill
-                  sizes="(min-width: 1024px) 336px, 82vw"
-                  src={story.image}
-                />
+              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--blush)] flex">
+                {story.imageBefore && story.imageAfter ? (
+                  <>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} Before`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageBefore}
+                      />
+                    </div>
+                    <div className="relative w-1/2 h-full">
+                      <Image
+                        alt={`${story.concern} After`}
+                        className="object-cover"
+                        fill
+                        sizes="(min-width: 1024px) 168px, 41vw"
+                        src={story.imageAfter}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <Image
+                    alt={story.concern}
+                    className="object-cover"
+                    fill
+                    sizes="(min-width: 1024px) 336px, 82vw"
+                    src={story.image}
+                  />
+                )}
               </div>
               <div className="p-5">
                 <div className="flex items-center justify-between gap-3">

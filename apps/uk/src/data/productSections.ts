@@ -10,6 +10,8 @@ export type Transformation = {
   id: string;
   concern: string;
   image: string;
+  imageBefore?: string;
+  imageAfter?: string;
   title: string;
   quote: string;
   name: string;
@@ -105,66 +107,82 @@ export const realLifeImages = [
 export const transformations: Transformation[] = [
   {
     id: "result-01",
-    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_1_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_1_after.jpg", "buudy-led-mask", "images"),
     concern: "Leg Hair Stubbles",
     title: "Best investment ever",
-    quote: "I have noticed a significant reduction in leg hair growth. It's so smooth now!",
+    quote: "By week 4, I noticed a significant reduction in leg hair growth. It's so smooth now!",
     name: "Donna P.",
   },
   {
     id: "result-02",
-    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_2_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_2_after.jpg", "buudy-led-mask", "images"),
     concern: "Dark Underarms",
     title: "IT REALLY WORKS!!",
-    quote: "After using for 1 month, I cannot believe the difference! The shadow is gone.",
+    quote: "After using for 2 weeks, I cannot believe the difference! The shadow is gone.",
     name: "Jane P.",
   },
   {
     id: "result-03",
-    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_3_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_3_after.jpg", "buudy-led-mask", "images"),
     concern: "Strawberry Legs",
     title: "Incredible results",
-    quote: "In less than 2 months, my strawberry legs have completely vanished.",
+    quote: "In less than 4 weeks, my strawberry legs have completely vanished.",
     name: "Sarah K.",
   },
   {
     id: "result-04",
-    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_4_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_4_after.jpg", "buudy-led-mask", "images"),
     concern: "Ingrown Hairs",
     title: "Better than Waxing",
-    quote: "Within just a few weeks, my skin started to clear up and the ingrowns faded.",
+    quote: "Within just 1 week, my skin started to clear up and the ingrowns faded.",
     name: "Michelle L.",
   },
   {
     id: "result-05",
-    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_5_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_5_after.jpg", "buudy-led-mask", "images"),
     concern: "Thick Hair",
     title: "Defined my routine!",
-    quote: "I never thought I would stop shaving. This device is a total game changer.",
+    quote: "I never thought I would stop shaving. Week 6 and this device is a total game changer.",
     name: "James D.",
   },
   {
     id: "result-06",
-    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_6_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_6_after.jpg", "buudy-led-mask", "images"),
     concern: "Shaving Rash",
     title: "Literal Glow Up",
-    quote: "My skin looks so much more radiant. No more razor bumps!",
+    quote: "My skin looks so much more radiant by week 2. No more razor bumps!",
     name: "Karen W.",
   },
   {
     id: "result-07",
-    image: productMediaAsset("ipl_ba_legs.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_7_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_7_after.jpg", "buudy-led-mask", "images"),
     concern: "Fast Regrowth",
     title: "Skin looks refreshed",
-    quote: "The regrowth is so slow now. I barely have to use it anymore!",
+    quote: "The regrowth is so slow now after 4 weeks. I barely have to use it anymore!",
     name: "Linda S.",
   },
   {
     id: "result-08",
-    image: productMediaAsset("ipl_ba_underarm.png", "buudy-led-mask", "images"),
+    image: "",
+    imageBefore: productMediaAsset("trustoo_ba_8_before.jpg", "buudy-led-mask", "images"),
+    imageAfter: productMediaAsset("trustoo_ba_8_after.jpg", "buudy-led-mask", "images"),
     concern: "Coarse Hair",
     title: "Smooth as silk",
-    quote: "The overall texture of my skin has improved immensely. It feels incredibly soft.",
+    quote: "The overall texture of my skin has improved immensely in just 3 weeks.",
     name: "Jennifer H.",
   },
 ];
@@ -552,5 +570,6 @@ export const faqs: FAQItem[] = [
     answer: "Yes. Always shave the treatment area before your session. This ensures the light energy travels directly to the hair root rather than burning the hair above the skin surface.",
   },
 ];
+
 
 

@@ -87,13 +87,13 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_macro_v3.png"),
-  gallery: [
-      { src: productMediaAsset("ipl_hero_v3.png"), alt: "Muuhu IPL Hair Removal" },
-      { src: productMediaAsset("ipl_lifestyle_v3.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
-      { src: productMediaAsset("ipl_macro_v3.png"), alt: "Muuhu IPL Hair Removal Device" },
-      { src: productMediaAsset("ipl_ice_v3.png"), alt: "Muuhu IPL Ice Cooling Technology" },
-      { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Reference" }
+  cartImage: productMediaAsset("ipl_provided_1.png"),
+    gallery: [
+      { src: productMediaAsset("ipl_provided_1.png"), alt: "Muuhu IPL" },
+      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Lifestyle" },
+      { src: productMediaAsset("ipl_provided_3.png"), alt: "Muuhu IPL Device" },
+      { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL Technology" },
+      { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu IPL Action" }
     ],
   gifts: [
     {
@@ -235,12 +235,10 @@ export const MuuhuRedTorch: Product = {
   promoCode: "TORCH60",
   promoLabel: "Red torch offer applied",
   cartImage: torchAsset("01-buudy-red-torch-main.png"),
-  gallery: [
-      { src: productMediaAsset("ipl_hero_v3.png"), alt: "Muuhu IPL Hair Removal" },
-      { src: productMediaAsset("ipl_lifestyle_v3.png"), alt: "Muuhu IPL Hair Removal Lifestyle" },
-      { src: productMediaAsset("ipl_macro_v3.png"), alt: "Muuhu IPL Hair Removal Device" },
-      { src: productMediaAsset("ipl_ice_v3.png"), alt: "Muuhu IPL Ice Cooling Technology" },
-      { src: productMediaAsset("reference_ipl.jpg"), alt: "Muuhu IPL Hair Removal Reference" }
+    gallery: [
+      { src: torchAsset("01-buudy-red-torch-main.png"), alt: "Muuhu LED Torch" },
+      { src: torchAsset("02-buudy-red-torch-angle.png"), alt: "Muuhu LED Torch Lifestyle" },
+      { src: torchAsset("03-buudy-red-torch-lifestyle.png"), alt: "Muuhu LED Torch Device" }
     ],
   gifts: [],
   specs: [
