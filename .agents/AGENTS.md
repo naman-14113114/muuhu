@@ -315,3 +315,18 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Copied the requested image to all public asset directories.
   - Updated `HomePage.tsx` across `us`, `uk`, `ca`, and `au` apps.
   - Committed ("Replace broken video hero with new static image hero banner across all apps") and pushed to GitHub (031619c).
+
+### Session 19: Global Product Rename to Muuhu Ultra Pro
+- **User Intent**: The user requested that the product name be changed from "Muuhu IPL Hair Removal" to "Muuhu Ultra Pro" everywhere, and wanted to ensure the main product heading fits on one line across all devices.
+- **Agent Logic & Thinking**:
+  - The shorter name "Muuhu Ultra Pro" will naturally fix the text wrapping issue on the product heading. 
+  - Since the previous name "Muuhu IPL Hair Removal" and its shorthand "Muuhu IPL" were used in over 90 locations (product configurations, SEO titles, reviews, headers, and UI copy), a manual find-and-replace was error-prone.
+  - Wrote and executed a Node.js script (`fix_name.js`) to recursively parse all `.ts` and `.tsx` files in `apps/**/src/`.
+  - The script performed safe, exact string replacements:
+    - `"Muuhu IPL Hair Removal"` → `"Muuhu Ultra Pro"`
+    - `"Muuhu IPL"` → `"Muuhu Ultra Pro"`
+    - Adjusted `heroTitle` to `"Muuhu Ultra"` and `heroEmphasis` to `"Pro"` to keep the elegant split-italic styling on the product page.
+- **Actions Taken**:
+  - Executed `fix_name.js` updating 92 files across all 4 storefronts (`us`, `uk`, `ca`, `au`).
+  - Verified it preserved URL slugs and variables because case-sensitive strict matches were used.
+  - Committed ("Rename product from Muuhu IPL Hair Removal to Muuhu Ultra Pro across all apps") and pushed to GitHub.
