@@ -266,3 +266,18 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Injected horizontal banner into homepage carousel.
   - Enforced strict 4-image UGC review limits.
   - Committed and pushed to GitHub (d57ac7a).
+
+### Session 15: Gallery Ice Cooling Image Removal & Face Close-Up Main Image
+- **User Intent**: The user requested removal of the ice cooling image (`ipl_provided_6.png`) from the product gallery, and wanted the 3rd attached image (a close-up face shot from `Ultra_Pro_Main_Image_PDP_V2.jpg` in the IPL images folder) added to the gallery and made the main image across all 4 country apps.
+- **Agent Logic & Thinking**:
+  - Identified `ipl_provided_6.png` in the gallery (alt: "Muuhu IPL Ice Cooling") as the image to remove.
+  - Located the user's desired face close-up image at `E:\1st YEAR DTU\New folder\IPL images\Ultra_Pro_Main_Image_PDP_V2.jpg`.
+  - Copied this image as `ipl_face_closeup.jpg` to all 4 app public asset directories.
+  - Updated `products.ts` in all 4 apps: changed `cartImage` to `ipl_face_closeup.jpg`, removed `ipl_provided_6.png` from the gallery array, and inserted `ipl_face_closeup.jpg` as the first gallery entry.
+  - Also updated `home.ts` in all 4 apps to replace the `ipl_provided_6.png` reference in the `homeTechnologySpotlight` section with `ipl_face_closeup.jpg`.
+  - Verified no remaining references to `ipl_provided_6` in any `.ts`/`.tsx` files.
+- **Actions Taken**:
+  - Copied `Ultra_Pro_Main_Image_PDP_V2.jpg` → `ipl_face_closeup.jpg` to `apps/{us,uk,ca,au}/public/media/products/buudy-led-mask/images/`.
+  - Edited `products.ts` (gallery + cartImage) across all 4 apps.
+  - Edited `home.ts` (technology spotlight image) across all 4 apps.
+  - Committed ("Replace ice cooling image with face closeup as main gallery image across all apps") and pushed to GitHub (ca7f2fc).

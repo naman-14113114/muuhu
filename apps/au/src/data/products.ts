@@ -88,9 +88,9 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_face_closeup.jpg"),
+  cartImage: productMediaAsset("ipl_face_closeup.png"),
         gallery: [
-      { src: productMediaAsset("ipl_face_closeup.jpg"), alt: "Muuhu IPL Face Close Up" },
+      { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu IPL Face Close Up" },
       { src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu IPL Premium" },
       { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu IPL Hair Removal" },
       { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu IPL In Use" },

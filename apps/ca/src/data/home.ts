@@ -45,7 +45,7 @@ export const homeTechnologySpotlight = {
   ctaLabel: "Shop the IPL device",
   ctaHref: `/products/${muuhuIpl.slug}`,
   image: {
-    src: productMediaAsset("ipl_face_closeup.jpg"), alt: "Muuhu IPL Face Close Up",
+    src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu IPL Face Close Up",
   },
 };
 
