@@ -1,4 +1,4 @@
-import type { Product } from "@/data/products";
+﻿import type { Product } from "@/data/products";
 import { AppPromo } from "./AppPromo";
 import { BeforeAfterGrid } from "./BeforeAfterGrid";
 import { ComparisonTable } from "./ComparisonTable";
@@ -12,7 +12,6 @@ import { TorchProductPage } from "./TorchProductPage";
 import { TrustBadges } from "./TrustBadges";
 import { VideoReviews } from "./VideoReviews";
 import { SuitabilitySection } from "./SuitabilitySection";
-
 
 export function ProductPage({ product }: { product: Product }) {
   if (product.template === "torch") {
@@ -28,6 +27,7 @@ export function ProductPage({ product }: { product: Product }) {
 
       <ProductReviewsSection />
       <SuitabilitySection />
+      <AppPromo />
       <ComparisonTable />
       <FAQSection faqs={product.faqs} />
       <GuaranteeSection />
