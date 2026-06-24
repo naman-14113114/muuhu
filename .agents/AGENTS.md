@@ -281,3 +281,15 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Edited `products.ts` (gallery + cartImage) across all 4 apps.
   - Edited `home.ts` (technology spotlight image) across all 4 apps.
   - Committed ("Replace ice cooling image with face closeup as main gallery image across all apps") and pushed to GitHub (ca7f2fc).
+
+### Session 16: Immediate Correction of Face Close-Up Image
+- **User Intent**: The user was upset because the previously added face close-up image contained a NAVA logo. They explicitly requested to instantly replace it everywhere with a specific AI-generated image: `E:\1st YEAR DTU\New folder\muuhu_ipl_generated_images\ChatGPT Image Jun 24, 2026, 06_49_21 PM.png`.
+- **Agent Logic & Thinking**:
+  - Acknowledged the error with the previous image selection.
+  - Copied the requested `.png` file to all 4 storefronts, renaming it to `ipl_face_closeup.png` to maintain a semantic name.
+  - Removed the old `ipl_face_closeup.jpg` from all storefronts.
+  - Ran a Node.js script to globally replace `ipl_face_closeup.jpg` with `ipl_face_closeup.png` across `products.ts` and `home.ts` in all 4 apps.
+- **Actions Taken**:
+  - Overwrote the asset files and deleted the `.jpg` versions.
+  - Updated codebase references.
+  - Committed ("Replace face closeup image with user-provided PNG version") and pushed to GitHub (bd5b37b).
