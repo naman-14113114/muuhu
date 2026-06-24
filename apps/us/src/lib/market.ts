@@ -1,0 +1,15 @@
+export const market = {
+  siteUrl: "https://us.muuhu.com",
+  locale: "en-US",
+  currency: "USD",
+  country: "United States",
+  marketLabel: "US",
+  flagEmoji: "🇺🇸",
+  madeInLabel: "Made in USA",
+  checkoutSource: "us_muuhu",
+  checkoutUtmSource: "us.muuhu.com",
+  checkoutUtmCampaign: "us_ipl",
+  supportHours: "Monday to Friday, 9:00 AM to 5:00 PM EST",
+} as const;
+
+export type StoreCurrency = "USD" | "GBP" | "CAD" | "AUD";

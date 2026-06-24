@@ -1,0 +1,34 @@
+{
+  "name": "Muuhu",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.1.1",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "dev:uk": "pnpm --filter @Muuhu/uk dev",
+    "dev:us": "pnpm --filter @Muuhu/us dev",
+    "dev:ca": "pnpm --filter @Muuhu/ca dev",
+    "dev:au": "pnpm --filter @Muuhu/au dev",
+    "build:uk": "pnpm --filter @Muuhu/uk build",
+    "build:us": "pnpm --filter @Muuhu/us build",
+    "build:ca": "pnpm --filter @Muuhu/ca build",
+    "build:au": "pnpm --filter @Muuhu/au build",
+    "lint:uk": "pnpm --filter @Muuhu/uk lint",
+    "lint:us": "pnpm --filter @Muuhu/us lint",
+    "lint:ca": "pnpm --filter @Muuhu/ca lint",
+    "lint:au": "pnpm --filter @Muuhu/au lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.8.6",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
+  }
+}

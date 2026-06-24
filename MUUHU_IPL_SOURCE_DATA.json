@@ -1,0 +1,40 @@
+{
+  "source": {
+    "url": "https://www.alibaba.com/product-detail/IPL-Hair-Removal-with-Ice-Cooling_1601577208241.html",
+    "productId": "1601577208241",
+    "supplier": "Foshan Jindi Electric Appliance Co., Ltd.",
+    "extractedAt": "2026-06-24"
+  },
+  "approvedStorefrontFacts": {
+    "technology": "IPL (Intense Pulsed Light)",
+    "flashCount": 999999,
+    "maxEnergy": "16J",
+    "energyLevels": 9,
+    "wavelengthRange": "600–1200nm",
+    "coolingTemp": "~8°C / 46°F",
+    "modes": ["Auto (glide)", "Manual (stamp)"],
+    "display": "LCD touch screen",
+    "energyMemory": true,
+    "powerInput": "AC 100–240V",
+    "material": "Plastic",
+    "waterproof": false,
+    "color": "White"
+  },
+  "storefrontPricing": {
+    "note": "User-approved retail pricing, NOT supplier cost",
+    "USD": { "price": 129, "compareAt": 260 },
+    "GBP": { "price": 99, "compareAt": 209 },
+    "CAD": { "price": 179, "compareAt": 359 },
+    "AUD": { "price": 199, "compareAt": 399 }
+  },
+  "heldBackClaims": {
+    "note": "Do NOT use these on the storefront without user approval",
+    "items": [
+      "Guaranteed hair reduction percentages (e.g., 96% in 8 weeks)",
+      "FDA / CE / UKCA / RoHS / PSE certifications",
+      "Supplier warranty terms",
+      "Rechargeable / battery claims (device is corded)",
+      "Supplier product imagery (using existing site images instead)"
+    ]
+  }
+}

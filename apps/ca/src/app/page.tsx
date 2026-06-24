@@ -1,0 +1,50 @@
+import type { Metadata } from "next";
+import { HomePage } from "@/components/home/HomePage";
+import { market } from "@/lib/market";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Best IPL Hair Removal Canada | Muuhu",
+  description:
+    "Shop Muuhu Canada for salon-grade IPL hair removal, ice cooling routines, and free tracked shipping.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "Best IPL Hair Removal Canada",
+    "IPL hair removal Canada",
+    "at-home IPL Canada",
+    "ice cooling IPL Canada",
+    "painless IPL hair removal",
+  ],
+  openGraph: {
+    title: "Best IPL Hair Removal Canada | Muuhu",
+    description:
+      "Discover the Muuhu IPL Hair Removal device with ice cooling, 999,999 flashes, and 9 energy levels.",
+    url: market.siteUrl,
+    images: [
+      {
+        url: "/images/products/buudy-led-mask/09-buudy-led-mask-home-spa.webp",
+        width: 1200,
+        height: 900,
+        alt: "Muuhu IPL Hair Removal at home",
+      },
+    ],
+  },
+};
+
+export default function Page() {
+  return (
+    <>
+      {[organizationJsonLd(), websiteJsonLd()].map((schema, index) => (
+        <script
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          key={index}
+          type="application/ld+json"
+        />
+      ))}
+      <HomePage />
+    </>
+  );
+}
+
