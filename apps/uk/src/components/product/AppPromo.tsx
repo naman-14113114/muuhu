@@ -147,7 +147,7 @@ export function AppPromo() {
 
 export function IceCoolingSection() {
   return (
-    <section className="Muuhu-section border-y border-[var(--border)] bg-[#FDF6F0] text-[var(--plum)] py-14 md:py-24">
+    <section className="Muuhu-section bg-[var(--cream)] py-14 md:py-24">
       <div className="Muuhu-wrap grid items-center gap-8 md:gap-14 lg:grid-cols-2">
         <div className="lg:order-last">
           <p className="Muuhu-mono text-[#ED6A3A]">Advanced Comfort</p>
@@ -190,4 +190,5 @@ export function IceCoolingSection() {
     </section>
   );
 }
+
 
