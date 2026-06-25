@@ -144,7 +144,7 @@ export function getDisplayLines(lines: CartLine[]): CartLine[] {
           title: "Muuhu Ultra Pro + Premium Travel Box",
           subtitle:
             "Salon-grade IPL device with the Premium Travel Box included for protected storage and travel.",
-          image: "/media/products/buudy-led-mask/images/84-w.webp",
+          image: "/media/products/buudy-led-mask/images/ipl_price_comparison.jpg",
         };
       }
       return line;

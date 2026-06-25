@@ -144,7 +144,7 @@ export function getDisplayLines(lines: CartLine[]): CartLine[] {
           title: "Muuhu Ultra Pro + Premium Travel Box",
           subtitle:
             "At-home IPL hair removal with ice cooling, 999,999 flashes, and 9 energy levels for long-lasting smoothness.",
-          image: "/media/products/buudy-led-mask/images/84-w.webp",
+          image: "/media/products/buudy-led-mask/images/ipl_price_comparison.jpg",
         };
       }
       return line;
