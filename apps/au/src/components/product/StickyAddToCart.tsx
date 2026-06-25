@@ -83,7 +83,7 @@ export function StickyAddToCart({ product }: { product: Product }) {
         className="pointer-events-auto flex min-h-12 w-full max-w-full items-center rounded-full border border-[var(--border)] bg-[var(--card)] p-1 shadow-[0_18px_42px_-20px_rgba(58,31,61,.68)] sm:mx-auto sm:min-h-[78px] sm:w-full sm:max-w-[850px] sm:justify-between sm:gap-5 sm:px-3 sm:py-2.5"
       >
         <div className="hidden min-w-0 items-center gap-4 sm:flex">
-          <div className="relative h-14 w-14 flex-none overflow-hidden rounded-full border border-[var(--border)] bg-[var(--blush)]">
+          <div className="relative h-14 w-14 flex-none overflow-hidden rounded-full border border-[var(--border)] bg-[var(--cream)]">
             <Image
               alt={product.name}
               className="object-cover"

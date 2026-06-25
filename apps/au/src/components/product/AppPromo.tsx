@@ -98,7 +98,7 @@ export function AppPromo() {
   return (
     <section className="Muuhu-section bg-[var(--cream)] md: md: py-14 md:py-24" id="Muuhu-ai">
       <div className="Muuhu-wrap grid items-center gap-8 md:gap-12 lg:grid-cols-[1fr_1.2fr]">
-        <div className="relative aspect-[1200/799] w-full overflow-hidden rounded-[18px] bg-[var(--blush)] lg:order-last">
+        <div className="relative aspect-[1200/799] w-full overflow-hidden rounded-[18px] bg-[var(--cream)] lg:order-last">
           <Image
             alt="Muuhu AI companion app"
             className="object-cover"

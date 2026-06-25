@@ -69,7 +69,7 @@ export function SEOGuideSection({ product }: { product: Product }) {
             </div>
             <Button
               asChild
-              className="mt-6 bg-[var(--cream)] text-[var(--plum)] hover:bg-[var(--blush)]"
+              className="mt-6 bg-[var(--cream)] text-[var(--plum)] hover:bg-[var(--cream)]"
             >
               <Link href="/pages/best-ipl-hair-removal-US">Read the full US guide</Link>
             </Button>

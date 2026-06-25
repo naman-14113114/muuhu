@@ -12,7 +12,7 @@ export const homeHero = {
       src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu Ultra Pro Hero",
     },
     {
-      src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Lifestyle",
+      src: productMediaAsset("ipl_provided_homepage_1.png"), alt: "Muuhu Ultra Pro Lifestyle",
     },
     {
       src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use",

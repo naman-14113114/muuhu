@@ -88,10 +88,10 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_face_closeup.png"),
+  cartImage: productMediaAsset("ipl_provided_gallery_1.png"),
         gallery: [
-      { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
-      { src: productMediaAsset("ipl_replacement_1.png"), alt: "Muuhu Ultra Pro Premium" },
+      { src: productMediaAsset("ipl_provided_gallery_1.png"), alt: "Muuhu Ultra Pro Face Close Up" },
+      { src: productMediaAsset("ipl_provided_gallery_2.png"), alt: "Muuhu Ultra Pro Premium" },
       { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro" },
       { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use" },
       { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Close Up" },

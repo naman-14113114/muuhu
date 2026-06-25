@@ -261,7 +261,7 @@ export function GiftBundle({ product }: { product: Product }) {
       {product.id === "muuhu-ipl-hair-removal" && (
         <div className="mt-8 grid grid-cols-4 gap-2 border-b border-[rgba(58,31,61,.12)] pb-8 text-center">
           <div className="flex flex-col items-center gap-2">
-            <Image src="/media/products/buudy-led-mask/images/i5.png" alt="999,999 Flashes" width={60} height={60} className="object-contain" />
+            <Image src="/media/products/buudy-led-mask/images/ipl_icon_999999.png" alt="999,999 Flashes" width={55} height={55} className="object-contain mb-1" />
             <p className="Muuhu-display text-[10px] font-bold leading-tight text-[var(--plum-soft)] tracking-wider uppercase">
               999,999
               <br />
@@ -269,7 +269,7 @@ export function GiftBundle({ product }: { product: Product }) {
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Image src="/media/products/buudy-led-mask/images/i6.png" alt="Ice Cooling Technology" width={60} height={60} className="object-contain" />
+            <Image src="/media/products/buudy-led-mask/images/i6.png" alt="Ice Cooling Technology" width={55} height={55} className="object-contain mb-1" />
             <p className="Muuhu-display text-[10px] font-bold leading-tight text-[var(--plum-soft)] tracking-wider uppercase">
               Ice Cooling
               <br />
@@ -277,7 +277,7 @@ export function GiftBundle({ product }: { product: Product }) {
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Image src="/media/products/buudy-led-mask/images/i7.png" alt="90 Days Money Back Guarantee" width={60} height={60} className="object-contain" />
+            <Image src="/media/products/buudy-led-mask/images/i7.png" alt="90 Days Money Back Guarantee" width={55} height={55} className="object-contain mb-1" />
             <p className="Muuhu-display text-[10px] font-bold leading-tight text-[var(--plum-soft)] tracking-wider uppercase">
               90 Days Money
               <br />
@@ -285,7 +285,7 @@ export function GiftBundle({ product }: { product: Product }) {
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Image src="/media/products/buudy-led-mask/images/i8.png" alt="Painless & Safe" width={60} height={60} className="object-contain" />
+            <Image src="/media/products/buudy-led-mask/images/i8.png" alt="Painless & Safe" width={55} height={55} className="object-contain mb-1" />
             <p className="Muuhu-display text-[10px] font-bold leading-tight text-[var(--plum-soft)] tracking-wider uppercase">
               Painless
               <br />

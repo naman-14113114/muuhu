@@ -67,7 +67,7 @@ function TorchFeatureGrid({ product }: { product: Product }) {
 
 function TorchStorySection() {
   return (
-    <section className="Muuhu-section bg-[var(--blush)] md: py-14 md:py-24">
+    <section className="Muuhu-section bg-[var(--cream)] md: py-14 md:py-24">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
         <div>
           <SectionHeading
