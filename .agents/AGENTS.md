@@ -406,3 +406,31 @@ Update the MASTER_CONTEXT.md file after every major task completion.
   - Copied 22 images to public assets across US, UK, CA, and AU apps.
   - Executed `inject_reviews.js` across all apps.
   - Created a walkthrough artifact and updated task logs.
+
+
+### Session 17: Review Masonry Order Fix
+- **User Intent**: The user was furious that the reviews were appearing out of chronological order on the frontend (e.g., April 11 reviews appearing before June 17 reviews) and commanded me to fix the sorting logic statically from newest to oldest without changing the actual data or reverting prior changes.
+- **Agent Logic & Thinking**:
+  - Checked `route.ts` and `reviews.ts` and verified that the backend sorting was already perfectly correct (sorting by `getReviewTimestamp(b) - getReviewTimestamp(a)`).
+  - Investigated the frontend rendering and discovered the root cause: `ProductReviewsGrid.tsx` used CSS `columns-2 lg:columns-4` which flows items top-to-bottom.
+  - Deduced that because the 1st review (Alicia) had a massive image, it made Column 1 very tall, so the browser shoved the next 8 text-only reviews underneath Alicia. This caused the 10th review (Manuel, April 11) to be placed at the top of Column 2, ruining the left-to-right reading order.
+  - Proposed an implementation plan to replace CSS columns with a JS-based row-chunking grid layout (modulo arithmetic by 4 for desktop, 2 for mobile). The user approved.
+  - Executed a Node script to replace the layout block in `ProductReviewsGrid.tsx` across all 4 apps (`us`, `uk`, `ca`, `au`).
+  - Ran `npm run build` to verify that the chunking logic compiled without TypeScript errors or hydration mismatch issues.
+- **Actions Taken**:
+  - Rewrote `ProductReviewsGrid.tsx` rendering logic across 4 storefronts.
+  - Enforced a strict left-to-right, row-by-row reading order while preserving masonry staggering.
+  - Verified Next.js build.
+
+
+### Session 18: Shift Review Dates Forward
+- **User Intent**: The user provided a custom Node script (`update-review-dates.js`) and requested that it be used to globally shift all review dates forward by +6 days across all storefronts, without any other changes.
+- **Agent Logic & Thinking**:
+  - Saved the user's `update-review-dates.js` script exactly as provided into the root directory of the monorepo.
+  - Executed `node update-review-dates.js 6` which processed the 51,000+ line JSON files across all 4 countries (US, UK, CA, AU).
+  - The script successfully parsed the existing UTC dates, added 6 days, and re-formatted the dates flawlessly for 21,780 reviews.
+  - Initiated a Next.js production build check to ensure the modified JSON syntax was completely valid and caused no downstream Turbopack caching/build crashes.
+- **Actions Taken**:
+  - Added `update-review-dates.js` to the root directory.
+  - Ran the script with the `6` argument to add 6 days.
+  - Validated changes via `npm run build` and updated `AGENTS.md` log tracking.

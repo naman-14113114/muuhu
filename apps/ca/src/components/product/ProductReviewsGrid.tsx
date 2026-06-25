@@ -1395,17 +1395,39 @@ export function ProductReviewsGrid({
       />
 
       {reviews.length ? (
-        <div aria-busy={isLoading} className="min-w-0 columns-2 gap-3 sm:gap-5 lg:columns-4">
-          {reviews.map((review) => (
-            <div className="mb-3 inline-block w-full break-inside-avoid sm:mb-5" key={review.id}>
-              <ReviewCard
-                onOpen={openSelectedReview}
-                onPrefetch={prefetchReviewImages}
-                review={review}
-              />
-            </div>
-          ))}
-        </div>
+        <>
+          {/* Desktop 4-column layout */}
+          <div aria-busy={isLoading} className="hidden lg:grid grid-cols-4 gap-5 items-start">
+            {Array.from({ length: 4 }).map((_, colIndex) => (
+              <div key={colIndex} className="flex flex-col gap-5">
+                {reviews.filter((_, i) => i % 4 === colIndex).map((review) => (
+                  <ReviewCard
+                    key={review.id}
+                    onOpen={openSelectedReview}
+                    onPrefetch={prefetchReviewImages}
+                    review={review}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile 2-column layout */}
+          <div aria-busy={isLoading} className="grid lg:hidden grid-cols-2 gap-3 sm:gap-5 items-start">
+            {Array.from({ length: 2 }).map((_, colIndex) => (
+              <div key={colIndex} className="flex flex-col gap-3 sm:gap-5">
+                {reviews.filter((_, i) => i % 2 === colIndex).map((review) => (
+                  <ReviewCard
+                    key={review.id}
+                    onOpen={openSelectedReview}
+                    onPrefetch={prefetchReviewImages}
+                    review={review}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        </>
       ) : (
         <div
           aria-busy={isLoading}
