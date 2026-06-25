@@ -204,7 +204,7 @@ function LightTherapyStory() {
           eyebrow={homeLightTherapy.eyebrow}
           title={
             <>
-              What is light therapy and{" "}
+              What is IPL and{" "}
               <em className="buudy-italic">where did it come from?</em>
             </>
           }

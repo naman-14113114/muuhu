@@ -5,14 +5,14 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Personalised Skincare Quiz",
   description:
-    "Take the Muuhu skincare quiz to match your concerns with a personalised LED light therapy and daily skincare routine.",
+    "Take the Muuhu skincare quiz to match your concerns with a personalised IPL hair removal and daily skincare routine.",
   alternates: {
     canonical: "/pages/skincare-quiz",
   },
   openGraph: {
     title: "Personalised Skincare Quiz | Muuhu",
     description:
-      "Build a personalised LED light therapy and daily skincare routine in 60 seconds.",
+      "Build a personalised IPL hair removal and daily skincare routine in 60 seconds.",
     url: absoluteUrl("/pages/skincare-quiz"),
   },
 };

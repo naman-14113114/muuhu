@@ -302,7 +302,7 @@ function QuizIntro({
         Build your custom <em className="buudy-italic">routine</em>.
       </h2>
       <p className="buudy-copy mt-5 max-w-xl">
-        Discover the exact LED light therapy and daily skincare habits you need
+        Discover the exact IPL hair removal and skincare habits you need
         for your specific concerns.
       </p>
 

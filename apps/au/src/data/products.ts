@@ -91,13 +91,13 @@ export const muuhuIpl: Product = {
   cartImage: productMediaAsset("ipl_face_closeup.png"),
         gallery: [
       { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
-      { src: productMediaAsset("ipl_replacement_1.png"), alt: "Muuhu Ultra Pro Premium" },
+      { src: productMediaAsset("ipl_price_comparison.jpg"), alt: "Muuhu Ultra Pro Premium" },
       { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro" },
       { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use" },
       { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Close Up" },
       { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu Ultra Pro Product Shot" },
       { src: productMediaAsset("ipl_replacement_3.png"), alt: "Muuhu Ultra Pro Full View" },
-      { src: productMediaAsset("ipl_replacement_2.png"), alt: "Muuhu Ultra Pro Lifestyle" },
+      { src: productMediaAsset("ipl_replacement_4.png"), alt: "Muuhu Ultra Pro Lifestyle" },
       { src: productMediaAsset("ipl_provided_10.png"), alt: "Muuhu Ultra Pro Premium" }
     ],
   gifts: [

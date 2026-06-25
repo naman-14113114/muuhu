@@ -58,7 +58,7 @@ function ContactHero() {
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] border border-[var(--border)] bg-[var(--blush)] shadow-[0_30px_70px_-44px_rgba(58,31,61,.45)]">
             <Image
-              alt="Muuhu LED light therapy support"
+              alt="Muuhu IPL hair removal support"
               className="object-cover"
               fill
               priority
@@ -73,7 +73,7 @@ function ContactHero() {
             </div>
             <p className="mt-3 text-sm leading-6 text-[rgba(247,241,232,.78)]">
               Product guidance, order updates, and routine support for your
-              Muuhu light therapy devices.
+              Muuhu IPL devices.
             </p>
           </div>
         </div>

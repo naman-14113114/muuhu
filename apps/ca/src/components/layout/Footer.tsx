@@ -22,7 +22,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-7 text-[var(--muted)]">
-              Salon-grade LED light therapy, beautifully wearable. Designed in
+              Salon-grade IPL hair removal, beautifully wearable. Designed in
               the Canada.
             </p>
           </div>

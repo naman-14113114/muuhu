@@ -16,7 +16,7 @@ export function SkincareQuizPage() {
             <em className="Muuhu-italic text-[var(--gold)]">hair-free ritual</em>.
           </h1>
           <p className="Muuhu-copy mt-5 max-w-2xl">
-            A 60-second assessment for a practical LED light therapy routine,
+            A 60-second assessment for a effective IPL hair removal routine,
             shaped around your skin concerns and daily habits.
           </p>
         </div>

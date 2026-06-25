@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us | Canada LED Skincare Store - Muuhu",
   description:
-    "Learn about Muuhu, our team of skincare advocates, our story of IPL hair removal innovation, and our mission to make high-quality light therapy routines simple and effective.",
+    "Learn about Muuhu, our team of skincare advocates, our story of IPL hair removal innovation, and our mission to make high-quality IPL hair removal routines simple and effective.",
   alternates: {
     canonical: "/pages/about-us",
   },

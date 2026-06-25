@@ -140,12 +140,12 @@ export const freeGiftDetails: FreeGiftDetail[] = [
       {
         title: "What is inside the guide",
         paragraphs: [
-          "The guide walks customers through the Muuhu method from first principles to practical routines. It covers the science of LED light therapy, the role of each wavelength, skin-type matching, weekly protocols, morning and evening rituals, and the best ingredients to pair with LED sessions.",
+          "The guide walks customers through the Muuhu method from first principles to practical routines. It covers the science of IPL hair removal, the role of each wavelength, skin-type matching, weekly protocols, morning and evening rituals, and the best ingredients to pair with LED sessions.",
           "It also includes a results timeline, travel tips, routine examples by decade, common myths, and a bonus chapter on the Muuhu Ultra Pro ritual.",
         ],
         bullets: [
           "Welcome to the Muuhu Method",
-          "The Science of LED Light Therapy",
+          "The Science of IPL Hair Removal",
           "Your 7 Wavelengths + NIR, Explained",
           "Find Your Skin Type",
           "Your Personalised Treatment Plan",
