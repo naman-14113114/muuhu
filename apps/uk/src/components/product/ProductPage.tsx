@@ -22,11 +22,11 @@ export function ProductPage({ product }: { product: Product }) {
     <>
       <ProductHero product={product} />
       {/* <VideoReviews /> */}
+      <IPLVideo />
       <BeforeAfterGrid />
 
       <ProductReviewsSection />
       <SuitabilitySection />
-      <IPLVideo />
         <AppPromo />
       <IceCoolingSection />
       <ComparisonTable />
