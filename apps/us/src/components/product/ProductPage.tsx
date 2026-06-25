@@ -9,13 +9,13 @@ import { GuaranteeSection } from "./GuaranteeSection";
 import { ProductHero } from "./ProductHero";
 import { ProductReviewsSection } from "./ProductReviewsSection";
 import { StickyAddToCart } from "./StickyAddToCart";
-import { TorchProductPage } from "./TorchProductPage";
+import { MassageKitProductPage } from "./MassageKitProductPage";
 import { VideoReviews } from "./VideoReviews";
 import { SuitabilitySection } from "./SuitabilitySection";
 
 export function ProductPage({ product }: { product: Product }) {
   if (product.template === "torch") {
-    return <TorchProductPage product={product} />;
+    return <MassageKitProductPage product={product} />;
   }
 
   return (

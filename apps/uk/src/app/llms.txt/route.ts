@@ -8,7 +8,7 @@ Muuhu Canada sells at-home LED light therapy devices for skincare and wellness r
 - Home: ${market.siteUrl}
 - Muuhu Ultra Pro: ${market.siteUrl}/products/buudy-led-mask
 - Best LED Face Mask Canada Guide: ${market.siteUrl}/pages/best-led-face-mask-Canada
-- Muuhu Red Torch: ${market.siteUrl}/products/red-light-torch
+- Muuhu Red MassageKit: ${market.siteUrl}/products/muuhu-massage-kit
 - Skincare Quiz: ${market.siteUrl}/pages/skincare-quiz
 - FAQs: ${market.siteUrl}/pages/faqs
 

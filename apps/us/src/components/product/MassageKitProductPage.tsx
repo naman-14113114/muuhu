@@ -1,9 +1,9 @@
 import Image from "next/image";
 import type { Product } from "@/data/products";
 import {
-  torchDetailImages,
-  torchFeatures,
-  torchHowToUse,
+  massagerDetailImages,
+  massagerFeatures,
+  massagerHowToUse,
 } from "@/data/productSections";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProductHero } from "./ProductHero";
@@ -12,7 +12,7 @@ import { FAQSection } from "./FAQSection";
 import { GuaranteeSection } from "./GuaranteeSection";
 import { StickyAddToCart } from "./StickyAddToCart";
 
-function TorchFeatureGrid({ product }: { product: Product }) {
+function MassageKitFeatureGrid({ product }: { product: Product }) {
   return (
     <section className="Muuhu-section bg-[var(--plum)] text-[var(--cream)] md: py-14 md:py-24">
       <div className="Muuhu-wrap">
@@ -27,7 +27,7 @@ function TorchFeatureGrid({ product }: { product: Product }) {
           invert
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {torchFeatures.map((feature) => (
+          {massagerFeatures.map((feature) => (
             <article
               className="rounded-2xl border border-[rgba(247,241,232,.18)] bg-[rgba(247,241,232,.08)] p-5"
               key={feature.title}
@@ -65,7 +65,7 @@ function TorchFeatureGrid({ product }: { product: Product }) {
   );
 }
 
-function TorchStorySection() {
+function MassageKitStorySection() {
   return (
     <section className="Muuhu-section bg-[var(--cream)] md: py-14 md:py-24">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
@@ -81,12 +81,12 @@ function TorchStorySection() {
           />
           <p className="mt-6 leading-8 text-[var(--muted)]">
             Experience the synergy of portability and power with a handheld
-            light therapy torch. The compact design offers targeted relief for
+            resin massage kit. The compact design offers targeted relief for
             muscle discomfort, wherever you are and whenever you need it.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-3">
-          {torchDetailImages.map((image, index) => (
+          {massagerDetailImages.map((image, index) => (
             <div
               className={`relative overflow-hidden rounded-2xl bg-[var(--cream)] ${
                 index === 0 ? "aspect-[4/5] sm:col-span-2 sm:row-span-2" : "aspect-square"
@@ -108,7 +108,7 @@ function TorchStorySection() {
   );
 }
 
-function TorchDetailSection() {
+function MassageKitDetailSection() {
   return (
     <section className="Muuhu-section bg-[var(--cream)] md: py-14 md:py-24">
       <div className="Muuhu-wrap grid gap-10 lg:grid-cols-2">
@@ -126,7 +126,7 @@ function TorchDetailSection() {
               sleep-quality support.
             </p>
             <p>
-              Muuhu Red Torch combines blue 460nm, red 630nm and 660nm, plus
+              Muuhu Red MassageKit combines blue 460nm, red 630nm and 660nm, plus
               near-infrared 850nm and 900nm light. Three LEDs are visible, while
               two infrared LEDs are invisible to the naked eye.
             </p>
@@ -154,7 +154,7 @@ function TorchDetailSection() {
   );
 }
 
-function TorchUseGuide() {
+function MassageKitUseGuide() {
   return (
     <section className="Muuhu-section bg-[var(--plum)] text-[var(--cream)] md: py-14 md:py-24">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
@@ -165,11 +165,11 @@ function TorchUseGuide() {
               Build a consistent <em className="Muuhu-italic">routine</em>.
             </>
           }
-          copy="Start gradually, keep the torch positioned correctly, and focus on the areas that need attention."
+          copy="Start gradually, keep the Gua Sha positioned correctly, and focus on the areas that need attention."
           invert
         />
         <ol className="grid gap-4">
-          {torchHowToUse.map((step, index) => (
+          {massagerHowToUse.map((step, index) => (
             <li
               className="flex gap-5 rounded-2xl border border-[rgba(247,241,232,.16)] bg-[rgba(247,241,232,.07)] p-5"
               key={step}
@@ -186,17 +186,17 @@ function TorchUseGuide() {
   );
 }
 
-import { TorchFeatureTabs } from "./TorchFeatureTabs";
+import { MassageKitFeatureTabs } from "./MassageKitFeatureTabs";
 import { ProductReviewsSection } from "./ProductReviewsSection";
 
-export function TorchProductPage({ product }: { product: Product }) {
+export function MassageKitProductPage({ product }: { product: Product }) {
   return (
     <>
       <ProductHero product={product} />
-      <TorchFeatureTabs />
-      <TorchStorySection />
-      {/* <TorchDetailSection /> */}
-      <TorchUseGuide />
+      <MassageKitFeatureTabs />
+      <MassageKitStorySection />
+      {/* <MassageKitDetailSection /> */}
+      <MassageKitUseGuide />
       <ProductReviewsSection productHandle={product.id} />
       <FAQSection faqs={product.faqs} />
       {/* <GuaranteeSection showVideo={false} /> */}

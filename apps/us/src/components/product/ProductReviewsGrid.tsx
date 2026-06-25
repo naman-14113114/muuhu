@@ -1335,9 +1335,9 @@ export function ProductReviewsGrid({
           <SectionHeading
             eyebrow="Product reviews"
             title={
-              productHandle === "buudy-red-torch" ? (
+              productHandle === "muuhu-massage-kit" ? (
                 <>
-                  Muuhu Red Torch <em className="Muuhu-italic">reviews</em>.
+                  Muuhu Red MassageKit <em className="Muuhu-italic">reviews</em>.
                 </>
               ) : (
                 <>
@@ -1346,8 +1346,8 @@ export function ProductReviewsGrid({
               )
             }
             copy={
-              productHandle === "buudy-red-torch"
-                ? "Real feedback from customers who made the Muuhu Red Torch part of their daily wellness ritual."
+              productHandle === "muuhu-massage-kit"
+                ? "Real feedback from customers who made the Muuhu Red MassageKit part of their daily wellness ritual."
                 : "Real feedback from customers who made Muuhu part of their at-home skincare ritual."
             }
           />

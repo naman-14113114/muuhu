@@ -1,6 +1,6 @@
 export const primaryNavigation = [
   { label: "IPL Hair Removal", href: "/products/muuhu-ipl-hair-removal" },
-  { label: "Red Light Torch", href: "/products/red-light-torch" },
+  { label: "Massage Kit", href: "/products/muuhu-massage-kit" },
   { label: "Skincare Quiz", href: "/pages/skincare-quiz" },
 ];
 

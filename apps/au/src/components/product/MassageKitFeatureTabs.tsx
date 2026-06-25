@@ -10,35 +10,35 @@ const tabs = [
     tabLabel: "Compact Build",
     title: "Take your Wellness Anywhere",
     body: "Lightweight 200g design (4.9 inches) works at home, the office, or during travel. Durable one-button operation.",
-    image: productAsset("tab-1-compact.jpeg", "buudy-red-torch"),
+    image: productAsset("tab-1-compact.jpeg", "muuhu-massage-kit"),
   },
   {
     id: "clinical-strength",
     tabLabel: "Clinical Strength",
     title: "Clinical Strength",
-    body: "The T5 torch combines blue, red, deep red, and near-infrared wavelengths for a focused skin and body care routine.",
-    image: productAsset("tab-2-clinical.jpeg", "buudy-red-torch"),
+    body: "The resin kit combines blue, red, deep red, and near-infrared wavelengths for a focused skin and body care routine.",
+    image: productAsset("tab-2-clinical.jpeg", "muuhu-massage-kit"),
   },
   {
     id: "precision-wavelengths",
     tabLabel: "Precision Wavelengths",
     title: "Precision Wavelengths",
     body: "Use the specific wavelength blend for localized application on the face, back, knees, shoulders, hands, feet, or other target areas.",
-    image: productAsset("tab-3-precision.jpeg", "buudy-red-torch"),
+    image: productAsset("tab-3-precision.jpeg", "muuhu-massage-kit"),
   },
   {
     id: "rapid-treatment",
     tabLabel: "Rapid Treatment",
     title: "Rapid Treatment",
-    body: "Hold the torch over the target area for quick sessions, building gradually as your body gets used to red light therapy.",
+    body: "Glide the Gua Sha over the target area for quick sessions, building gradually as your body gets used to red light therapy.",
     image: productAsset(
       "tab-4-rapid.jpeg",
-      "buudy-red-torch",
+      "muuhu-massage-kit",
     ),
   },
 ];
 
-export function TorchFeatureTabs() {
+export function MassageKitFeatureTabs() {
   const [activeTabId, setActiveTabId] = useState(tabs[0].id);
 
   const activeTab = tabs.find((t) => t.id === activeTabId) || tabs[0];

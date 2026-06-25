@@ -355,7 +355,7 @@ export function GiftBundle({ product }: { product: Product }) {
             60% off, free shipping, and a rechargeable wellness kit.
           </p>
           <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-            Includes the torch, rechargeable battery, charger, USB cable,
+            Includes the Gua Sha board, wide-toothed comb, and acupuncture pen,
             glasses, and user manual for a complete targeted light therapy
             routine.
           </p>

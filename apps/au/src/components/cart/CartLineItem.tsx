@@ -12,11 +12,11 @@ export function CartLineItem({ line }: { line: CartLine }) {
 
   return (
     <div className="flex gap-4 border-b border-[var(--border)] py-5">
-      {((line.type === "product" && line.slug) || line.title === "Muuhu LED Torch") ? (
+      {((line.type === "product" && line.slug) || line.title === "Muuhu LED MassageKit") ? (
         <Link
           aria-label={`View ${line.title}`}
           className="relative h-24 w-20 flex-none overflow-hidden rounded-lg bg-[var(--blush)] transition hover:opacity-90"
-          href={line.title === "Muuhu LED Torch" ? "/products/red-light-torch" : `/products/${line.slug}`}
+          href={line.title === "Muuhu LED MassageKit" ? "/products/muuhu-massage-kit" : `/products/${line.slug}`}
         >
           <Image
             alt={line.title}

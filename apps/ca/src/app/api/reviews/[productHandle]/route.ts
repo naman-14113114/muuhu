@@ -336,7 +336,7 @@ export async function POST(
     revalidatePath("/products/buudy-led-mask");
     revalidatePath("/products/buudy-led-mask-2");
   } else {
-    revalidatePath("/products/red-light-torch");
+    revalidatePath("/products/muuhu-massage-kit");
   }
 
   return NextResponse.json({ review: toPublicProductReview(data) }, { status: 201 });

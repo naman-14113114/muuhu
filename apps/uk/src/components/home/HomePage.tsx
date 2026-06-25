@@ -8,7 +8,7 @@ import {
   homeMaskSpotlight,
   homeSkincareGuideIntro,
   homeTechnologySpotlight,
-  homeTorchSpotlight,
+  homeMassageKitSpotlight,
   homeYoungerYou,
 } from "@/data/home";
 import { productMediaAsset } from "@/lib/media";
@@ -16,8 +16,8 @@ import { Button } from "@/components/ui/Button";
 import { Price } from "@/components/ui/Price";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-function TorchSpotlight() {
-  const data = homeTorchSpotlight;
+function MassageKitSpotlight() {
+  const data = homeMassageKitSpotlight;
   return (
     <section className="Muuhu-section bg-[var(--plum)] py-12 md:py-16 text-[var(--cream)]">
       <div className="Muuhu-wrap grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center">
@@ -40,7 +40,7 @@ function TorchSpotlight() {
             className="mt-8 !border-[var(--cream)] !text-[var(--cream)] hover:!bg-[var(--blush)] hover:!text-[var(--plum)]"
           >
             <Link href={`/products/${data.product.slug}`}>
-              {homeTorchSpotlight.ctaLabel}
+              {homeMassageKitSpotlight.ctaLabel}
               <ArrowRight size={17} />
             </Link>
           </Button>
@@ -275,7 +275,7 @@ export function HomePage() {
       <TechnologySpotlight />
       {/* <LightTherapyStory /> */}
       <HomeFeatureGrid />
-      <TorchSpotlight />
+      <MassageKitSpotlight />
       <CustomerReviewsGrid />
     </>
   );

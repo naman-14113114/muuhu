@@ -5,7 +5,7 @@ const routes = [
   { path: "/", lastModified: "2026-05-28", changeFrequency: "weekly", priority: 1 },
   { path: "/products/muuhu-ipl-hair-removal", lastModified: "2026-06-05", changeFrequency: "weekly", priority: 1 },
   { path: "/pages/best-ipl-hair-removal-us", lastModified: "2026-06-05", changeFrequency: "weekly", priority: 0.95 },
-  { path: "/products/red-light-torch", lastModified: "2026-05-28", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/products/muuhu-massage-kit", lastModified: "2026-05-28", changeFrequency: "weekly", priority: 0.9 },
   { path: "/cart", lastModified: "2026-05-28", changeFrequency: "monthly", priority: 0.4 },
   { path: "/pages/contact-us", lastModified: "2026-05-29", changeFrequency: "monthly", priority: 0.6 },
   { path: "/pages/about-us", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.6 },
@@ -19,7 +19,7 @@ const routes = [
   { path: "/cookies-policy", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.3 },
   { path: "/pages/skincare-quiz", lastModified: "2026-05-31", changeFrequency: "monthly", priority: 0.8 },
   { path: "/pages/premium-travel-box", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/pages/red-light-torch", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/pages/muuhu-massage-kit", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.6 },
   { path: "/pages/skincare-guide", lastModified: "2026-06-01", changeFrequency: "monthly", priority: 0.6 },
 ] as const;
 

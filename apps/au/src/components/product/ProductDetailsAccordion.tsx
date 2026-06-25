@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import type { Product } from "@/data/products";
 import type { ReactNode } from "react";
-import { features, torchFeatures } from "@/data/productSections";
+import { features, massagerFeatures } from "@/data/productSections";
 import {
   IconGrid4x4,
   IconShieldHeart,
@@ -137,10 +137,10 @@ export function ProductDetailsAccordion({ product }: { product: Product }) {
     {
       id: "unique",
       eyebrow: "Features",
-      title: product.template === "torch" ? "What makes our torch unique?" : "What makes our IPL unique?",
+      title: product.template === "torch" ? "What makes our massage kit unique?" : "What makes our IPL unique?",
       content: (
         <ul className="grid gap-3">
-          {(product.template === "torch" ? torchFeatures : features).map((feature, index) => {
+          {(product.template === "torch" ? massagerFeatures : features).map((feature, index) => {
             const Icon = product.template === "torch" ? IconBulb : featureIcons[index];
             return (
             <li

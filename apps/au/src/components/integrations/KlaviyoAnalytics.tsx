@@ -60,7 +60,7 @@ function productPayload(product: Product) {
     ProductName: product.name,
     ProductID: product.id,
     SKU: product.sku,
-    Categories: ["Light Therapy", product.template === "mask" ? "IPL Hair Removal" : "Red Light Torch"],
+    Categories: ["Light Therapy", product.template === "mask" ? "IPL Hair Removal" : "Massage Kit"],
     ImageURL: toAbsoluteUrl(product.cartImage),
     URL: toAbsoluteUrl(`/products/${product.slug}`),
     Brand: "Muuhu",
@@ -85,7 +85,7 @@ function cartLinePayload(line: CartLine) {
     ImageURL: toAbsoluteUrl(line.image),
     ProductCategories: [
       "Light Therapy",
-      product?.template === "torch" ? "Red Light Torch" : "IPL Hair Removal",
+      product?.template === "torch" ? "Massage Kit" : "IPL Hair Removal",
     ],
   };
 }

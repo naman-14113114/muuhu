@@ -378,7 +378,7 @@ export const reviewVideos: ReviewVideo[] = [
 
 export const wavelengths: Wavelength[] = [];
 
-export const torchWavelengths: Wavelength[] = [
+export const massagerWavelengths: Wavelength[] = [
   
   {
     nm: "630nm",
@@ -404,7 +404,7 @@ export const torchWavelengths: Wavelength[] = [
   
 ];
 
-export const torchFeatures: Feature[] = [
+export const massagerFeatures: Feature[] = [
   {
     title: "Compact Build",
     kicker: "4.92 inch handheld design",
@@ -413,7 +413,7 @@ export const torchFeatures: Feature[] = [
   {
     title: "Clinical Strength",
     kicker: "3 precision wavelengths",
-    body: "The torch combines red, deep red, and near-infrared wavelengths for a focused skin and body care routine.",
+    body: "The massage kit combines three tools for a focused skin and body care routine.",
   },
   {
     title: "Precision Wavelengths",
@@ -423,26 +423,26 @@ export const torchFeatures: Feature[] = [
   {
     title: "Rapid Treatment",
     kicker: "Targeted 1 to 5 minute sessions",
-    body: "Hold the torch over the target area for quick sessions, building gradually as your body gets used to red light therapy.",
+    body: "Glide the Gua Sha over the target area for quick sessions, building gradually as your body gets used to red light therapy.",
   },
 ];
 
-export const torchDetailImages = [
+export const massagerDetailImages = [
   {
-    src: productAsset("09-buudy-red-torch-detail-wide.jpeg", "buudy-red-torch"),
-    alt: "Muuhu Red Torch detail image",
+    src: productAsset("09-muuhu-massage-kit-detail-wide.jpeg", "muuhu-massage-kit"),
+    alt: "Muuhu Red Kit detail image",
   },
   {
-    src: productAsset("10-buudy-red-torch-wellness.jpeg", "buudy-red-torch"),
-    alt: "Muuhu Red Torch wellness use",
+    src: productAsset("10-muuhu-massage-kit-wellness.jpeg", "muuhu-massage-kit"),
+    alt: "Muuhu Red Kit wellness use",
   },
   {
-    src: productAsset("11-buudy-red-torch-treatment.jpeg", "buudy-red-torch"),
-    alt: "Muuhu Red Torch treatment application",
+    src: productAsset("11-muuhu-massage-kit-treatment.jpeg", "muuhu-massage-kit"),
+    alt: "Muuhu Red Kit treatment application",
   },
 ];
 
-export const torchHowToUse = [
+export const massagerHowToUse = [
   "Set up the red light therapy device on a chair, table, wall, or door, then uncover the target area before use.",
   "Position the device 4 to 6 inches away from the skin for best results.",
   "Treat each area that needs attention for 5 to 15 minutes, starting with 1 to 2 minutes per area.",
@@ -450,7 +450,7 @@ export const torchHowToUse = [
   "Use four to ten times a week depending on your routine, allowing at least 6 hours between multiple daily sessions.",
 ];
 
-export const torchFaqs: FAQItem[] = [
+export const massagerFaqs: FAQItem[] = [
   {
     question: "How does this handheld light therapy device work?",
     answer:
@@ -464,7 +464,7 @@ export const torchFaqs: FAQItem[] = [
   {
     question: "Can I use it in my country?",
     answer:
-      "Yes. The Muuhu Red Torch is dual voltage, which means it can be used worldwide without any issues.",
+      "Yes. The Muuhu Red Kit is dual voltage, which means it can be used worldwide without any issues.",
   },
   {
     question:
@@ -475,7 +475,7 @@ export const torchFaqs: FAQItem[] = [
   {
     question: "Do you sell this anywhere else?",
     answer:
-      "The Muuhu Red Torch is exclusively sold through Muuhu.com at approved clinics, salons, and spas with a strict MSRP. There are no other authorized online sites.",
+      "The Muuhu Red Kit is exclusively sold through Muuhu.com at approved clinics, salons, and spas with a strict MSRP. There are no other authorized online sites.",
   },
 ];
 

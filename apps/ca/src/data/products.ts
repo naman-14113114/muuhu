@@ -6,8 +6,8 @@ import {
 import { market, type StoreCurrency } from "@/lib/market";
 import {
   faqs,
-  torchFaqs,
-  torchWavelengths,
+  massagerFaqs,
+  massagerWavelengths,
   type FAQItem,
   type Wavelength,
 } from "./productSections";
@@ -110,12 +110,12 @@ export const muuhuIpl: Product = {
       href: "/pages/premium-travel-box",
     },
     {
-      id: "red-light-torch",
-      name: "Muuhu Red Light Torch",
+      id: "muuhu-massage-kit",
+      name: "Muuhu Massage Kit",
       valueCents: 9900,
-      image: productAsset("Muuhu-led-torch.jpg"),
+      image: productAsset("muuhu-massage-kit.jpg"),
       label: "Limited edition",
-      href: "/products/red-light-torch",
+      href: "/products/muuhu-massage-kit",
     },
     {
       id: "skincare-ebook",
@@ -145,7 +145,7 @@ export const muuhuIpl: Product = {
     { quantity: "1×", label: "Power Adapter (100–240V)" },
     { quantity: "1×", label: "Protective Goggles" },
     { quantity: "1×", label: "User Manual" },
-    { quantity: "1×", label: "Muuhu LED Torch", tag: "Free gift" },
+    { quantity: "1×", label: "Muuhu Massage Kit", tag: "Free gift" },
   ],
   highlights: [
     "999,999 flashes for years of full-body treatments",
@@ -213,78 +213,100 @@ export const muuhuIpl: Product = {
   ],
 };
 
-const torchAsset = (fileName: string) =>
-  productAsset(fileName, "buudy-red-torch");
+const massagerAsset = (fileName: string) => productAsset(fileName, "muuhu-massage-kit");
 
-export const MuuhuRedTorch: Product = {
-  id: "red-light-torch",
-  sku: "1000020384558655",
-  slug: "red-light-torch",
+export const MuuhuMassageKit: Product = {
+  id: "muuhu-massage-kit",
+  sku: "1458336123034558477",
+  slug: "muuhu-massage-kit",
   template: "torch",
-  name: "Muuhu Red Torch",
-  heroTitle: "Muuhu Red",
-  heroEmphasis: "Torch",
+  name: "Muuhu Massage Kit",
+  heroTitle: "Muuhu",
+  heroEmphasis: "Massage Kit",
   shortDescription:
-    "A compact red and near-infrared light therapy torch with 3 targeted wavelengths for skin health, body relief, and easy travel use.",
+    "A versatile 3-piece resin massage tool kit including a Gua Sha board, massage comb, and beauty pen for comprehensive body relaxation and puffiness relief.",
   description:
-    "Red light therapy device with 3 wavelengths: 630nm, 660nm, and 850nm. Designed for localized body relief, acne care, skin health, and portable at-home wellness rituals.",
-  seoTitle: "Muuhu Red Torch | 3 Wavelength Red Light Therapy Device",
+    "Experience SPA-quality massage at home. This 3-piece resin kit features a Gua Sha scraping board to reduce puffiness, a wide-toothed comb to relieve tension, and an acupuncture beauty pen. Embrace traditional Chinese therapy for a rejuvenated appearance.",
+  seoTitle: "Muuhu Massage Kit | 3-Piece Gua Sha & Tension Relief",
   seoDescription:
-    "Portable red light therapy torch with 3 wavelengths, near infrared support, rechargeable battery, and targeted body and skin relief.",
+    "Reduce puffiness and tension with the Muuhu Massage Kit. Features a premium resin Gua Sha scraping board, massage comb, and beauty pen.",
   currency: market.currency,
-  priceCents: 9900,
-  compareAtCents: 17900,
-  rating: 4.8,
-  reviewCount: 16000,
-  customerCount: "16,000+",
-  promoCode: "TORCH60",
-  promoLabel: "Red torch offer applied",
-  cartImage: torchAsset("01-buudy-red-torch-main.png"),
-    gallery: [
-      { src: torchAsset("01-buudy-red-torch-main.png"), alt: "Muuhu LED Torch" },
-      { src: torchAsset("02-buudy-red-torch-angle.png"), alt: "Muuhu LED Torch Lifestyle" },
-      { src: torchAsset("03-buudy-red-torch-lifestyle.png"), alt: "Muuhu LED Torch Device" }
-    ],
+  priceCents: 6900,
+  compareAtCents: 22000,
+  rating: 4.9,
+  reviewCount: 1172,
+  customerCount: "1,100+",
+  promoCode: "MASSAGE50",
+  promoLabel: "Massage kit offer applied",
+  cartImage: massagerAsset("massage_kit_hero.png"),
+  gallery: [
+    { src: massagerAsset("massage_kit_gallery_1.png"), alt: "Muuhu Massage Kit Gua Sha" },
+    { src: massagerAsset("massage_kit_gallery_2.png"), alt: "Muuhu Massage Kit Comb" },
+    { src: massagerAsset("massage_kit_gallery_3.png"), alt: "Muuhu Massage Kit Application" },
+    { src: massagerAsset("massage_kit_gallery_4.png"), alt: "Muuhu Massage Kit Beauty Pen" },
+    { src: massagerAsset("massage_kit_hero.png"), alt: "Muuhu Massage Kit Bundle" }
+  ],
   gifts: [],
   specs: [
-    { label: "Dimensions", value: "2.9cm x 12.5cm (0.95in x 4.92in)" },
-    { label: "Wavelength", value: "630nm, 660nm, 850nm" },
-    { label: "Intensity Level", value: "4 levels" },
-    { label: "Power Source", value: "Rechargeable battery" },
-    { label: "LED Count", value: "3 LEDs" },
-    { label: "Light Color", value: "Red" },
-    { label: "Voltage", value: "220V / 110V" },
-    { label: "Power", value: "3W" },
-    { label: "Irradiance", value: "Surface 281mW/cm2, 4in 71mW/cm2" },
-    { label: "Battery", value: "2200mA" },
-    { label: "Warranty", value: "24 months" },
-    { label: "Lifespan", value: "50,000+ hours" },
-    { label: "Weight", value: "0.2kg" },
+    { label: "Material", value: "Premium Smooth Resin" },
+    { label: "Scraping Board", value: "5.2 x 8.9cm" },
+    { label: "Massage Comb", value: "4.5 x 10.6cm" },
+    { label: "Beauty Pen", value: "Included" },
+    { label: "Application", value: "Face, Neck, Body, Feet" },
+    { label: "Power Supply", value: "None Electric (Manual)" }
   ],
   included: [
-    { quantity: "1x", label: "Strap" },
-    { quantity: "1x", label: "USB cable" },
-    { quantity: "1x", label: "Red Light Torch" },
+    { quantity: "1×", label: "Gua Sha Scraping Board" },
+    { quantity: "1×", label: "Wide-Toothed Massage Comb" },
+    { quantity: "1×", label: "Acupuncture Beauty Pen" },
+    { quantity: "1×", label: "Storage Pouch" }
   ],
   highlights: [
-    "Stimulate collagen production",
-    "Smooths skin & fine lines",
-    "Assist with anti-ageing and healing",
-    "Enhances overall skin health",
-    "Portable, safe, and easy to use",
-    "Minimize wrinkles and lines",
+    "Versatile 3-piece comprehensive relaxation kit",
+    "Reduces puffiness and relieves muscle tension",
+    "Traditional Chinese acupuncture and scraping therapy",
+    "SPA-quality full-body treatment at home"
   ],
-  faqs: torchFaqs,
-  wavelengths: torchWavelengths,
+  keyBenefits: [
+    "Reduces facial puffiness",
+    "Relieves neck and back tension",
+    "Promotes rejuvenated appearance",
+    "Durable resin material",
+    "Portable and lightweight"
+  ],
+  differentiators: [
+    "Complete 3-piece kit versus standard single boards",
+    "Acupuncture pen included for targeted relief",
+    "Combines Gua Sha with scalp tension relief",
+    "Smooth resin finish for sensitive skin"
+  ],
   badges: [
-    "3 precision wavelengths",
-    "Rechargeable battery",
-    "Dual voltage",
-    "24 month warranty",
+    "Reduces puffiness",
+    "Relieves tension",
+    "SPA-quality",
+    "Full-body use"
   ],
+  faqs: [
+    {
+      question: "How do I use the Gua Sha scraping board?",
+      answer: "Apply a facial oil or serum, then gently glide the scraping board upwards and outwards along your jawline, cheeks, and forehead to reduce puffiness and promote lymphatic drainage."
+    },
+    {
+      question: "What is the massage comb used for?",
+      answer: "The wide-toothed resin comb is perfect for massaging the scalp and neck. It releases deep tension without tangling or breaking your hair, providing ultimate relaxation."
+    },
+    {
+      question: "Can I use this kit anywhere on my body?",
+      answer: "Yes! While primarily used for the face and neck, the tools are versatile enough to relieve tension on your back, shoulders, arms, and even feet."
+    },
+    {
+      question: "How do I clean the resin tools?",
+      answer: "Simply wipe them clean with a damp cloth or wash them with mild soap and lukewarm water. Dry completely before storing them in the provided pouch."
+    }
+  ]
 };
 
-export const products = [muuhuIpl, MuuhuRedTorch];
+export const products = [muuhuIpl, MuuhuMassageKit];
 
 export const productsById = Object.fromEntries(
   products.map((product) => [product.id, product]),

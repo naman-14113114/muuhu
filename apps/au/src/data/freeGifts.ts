@@ -23,7 +23,7 @@ export type FreeGiftDetail = {
 };
 
 const bundleFooter =
-  "The Muuhu Ultra Pro offer works best as a complete kit: the IPL device, the travel case, the LED Torch, and the skincare guide all support the same goal.";
+  "The Muuhu Ultra Pro offer works best as a complete kit: the IPL device, the travel case, the LED MassageKit, and the skincare guide all support the same goal.";
 
 export const freeGiftBundleFooter = bundleFooter;
 
@@ -73,18 +73,18 @@ export const freeGiftDetails: FreeGiftDetail[] = [
     primaryCtaLabel: "Claim The IPL Device + Free Gifts",
   },
   {
-    slug: "muuhu-led-torch",
+    slug: "muuhu-massage-kit",
     eyebrow: "Free Bonus Gift",
-    title: "Muuhu LED Torch",
-    seoTitle: "Muuhu LED Torch Bonus Gift",
+    title: "Muuhu LED MassageKit",
+    seoTitle: "Muuhu LED MassageKit Bonus Gift",
     seoDescription:
-      "Explore the targeted Muuhu LED Torch included as a free companion gift with the Muuhu Ultra Pro offer.",
+      "Explore the targeted Muuhu LED MassageKit included as a free companion gift with the Muuhu Ultra Pro offer.",
     intro:
-      "The Muuhu LED Torch adds precision to the main device offer. While the IPL device gives you broad face-and-neck coverage, the torch gives you a smaller tool you can use for targeted touch-up areas and travel-friendly sessions.",
+      "The Muuhu LED MassageKit adds precision to the main device offer. While the IPL device gives you broad face-and-neck coverage, the torch gives you a smaller tool you can use for targeted touch-up areas and travel-friendly sessions.",
     note:
-      "The current Muuhu Ultra Pro offer includes the LED Torch as a free bonus gift.",
-    image: productMediaAsset("free_torch.png"),
-    imageAlt: "Muuhu LED Torch bonus gift",
+      "The current Muuhu Ultra Pro offer includes the LED MassageKit as a free bonus gift.",
+    image: productMediaAsset("massage_kit_spotlight.png"),
+    imageAlt: "Muuhu LED MassageKit bonus gift",
     cardTitle: "Why customers like this bonus",
     cardBullets: [
       "Great for targeted touch-up zones",

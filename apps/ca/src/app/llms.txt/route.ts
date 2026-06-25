@@ -8,7 +8,7 @@ Muuhu CA sells at-home IPL hair removal devices with ice cooling technology.
 - Home: ${market.siteUrl}
 - Muuhu Ultra Pro: ${market.siteUrl}/products/muuhu-ipl-hair-removal
 - Best IPL Hair Removal Canada Guide: ${market.siteUrl}/pages/best-ipl-hair-removal-canada
-- Red Light Torch: ${market.siteUrl}/products/red-light-torch
+- Massage Kit: ${market.siteUrl}/products/muuhu-massage-kit
 - FAQs: ${market.siteUrl}/pages/faqs
 
 ## Muuhu Ultra Pro Summary

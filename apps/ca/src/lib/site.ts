@@ -53,7 +53,7 @@ export function buildPlusbaseCheckoutUrl(options: CheckoutBridgeOptions = {}) {
     gift_variant_id: "1000020384558655",
     gift_product_id: "1000000665008955",
     gift_quantity: String(giftQuantity),
-    gift: "red-light-torch",
+    gift: "muuhu-massage-kit",
     redirect: "checkout",
     product_handle: "muuhu-ipl-hair-removal",
     source: options.source ?? market.checkoutSource,

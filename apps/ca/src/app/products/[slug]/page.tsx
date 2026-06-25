@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         : [
             "red light torch Canada",
             "handheld red light therapy",
-            "near infrared torch",
+            "massage kit",
             "blue red light therapy device",
           ],
     alternates: {

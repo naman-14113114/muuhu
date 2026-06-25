@@ -8,7 +8,7 @@ Muuhu Australia sells at-home IPL hair removal devices with ice cooling technolo
 - Home: ${market.siteUrl}
 - Muuhu Ultra Pro: ${market.siteUrl}/products/muuhu-ipl-hair-removal
 - Best IPL Hair Removal Australia Guide: ${market.siteUrl}/pages/best-ipl-hair-removal-australia
-- Red Light Torch: ${market.siteUrl}/products/red-light-torch
+- Massage Kit: ${market.siteUrl}/products/muuhu-massage-kit
 - FAQs: ${market.siteUrl}/pages/faqs
 
 ## Muuhu Ultra Pro Summary

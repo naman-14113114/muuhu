@@ -5,7 +5,7 @@ export const footerMenus = [
       { label: "Home", href: "/" },
       { label: "IPL Hair Removal", href: "/products/muuhu-ipl-hair-removal" },
       { label: "Best IPL Hair Removal Australia Guide", href: "/pages/best-ipl-hair-removal-Australia" },
-      { label: "Red Light Torch", href: "/products/red-light-torch" },
+      { label: "Massage Kit", href: "/products/muuhu-massage-kit" },
       { label: "Skincare Quiz", href: "/pages/skincare-quiz" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Return Policy", href: "/return-policy" },

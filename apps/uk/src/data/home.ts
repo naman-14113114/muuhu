@@ -1,5 +1,5 @@
 import { homeAsset, productAsset, productMediaAsset } from "@/lib/media";
-import { muuhuIpl, MuuhuRedTorch } from "./products";
+import { muuhuIpl, MuuhuMassageKit } from "./products";
 
 export const homeHero = {
   eyebrow: "Next-generation hair removal",
@@ -87,17 +87,17 @@ export const homeYoungerYou = {
 };
 
 
-export const homeTorchSpotlight = {
+export const homeMassageKitSpotlight = {
   eyebrow: "Portable and powerful",
   title: "Targeted light therapy in your hand.",
-  copy: 'Simply set aside some "Me Time" for 15 minutes a day while you watch your favourite show. The Red Torch harnesses high-power LED technology for blood circulation support, stiffness relief, and targeted body care.',
+  copy: 'Simply set aside some "Me Time" for 15 minutes a day while you watch your favourite show. The Red MassageKit harnesses high-power LED technology for blood circulation support, stiffness relief, and targeted body care.',
   ctaLabel: "Buy Now",
-  ctaHref: `/products/${MuuhuRedTorch.slug}`,
+  ctaHref: `/products/${MuuhuMassageKit.slug}`,
   image: {
     src: productMediaAsset("35-w.webp"),
-    alt: "Muuhu Red Torch product spotlight",
+    alt: "Muuhu Red MassageKit product spotlight",
   },
-  product: MuuhuRedTorch,
+  product: MuuhuMassageKit,
 };
 
 export const homeWavelengthMap = {
