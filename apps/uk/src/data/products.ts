@@ -87,7 +87,7 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_provided_2.png"),
+  cartImage: productMediaAsset("ipl_face_closeup.png"),
         gallery: [
       { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
       { src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Premium" },
