@@ -172,7 +172,7 @@ export function MassageKitProductPage({ product }: { product: Product }) {
   return (
     <>
       <ProductHero product={product} />
-      <MassageKitFeatureTabs />
+      {/* <MassageKitFeatureTabs /> */}
       <MassageKitStorySection />
       {/* <MassageKitDetailSection /> */}
       <MassageKitUseGuide />
