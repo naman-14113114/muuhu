@@ -358,3 +358,18 @@ Update the MASTER_CONTEXT.md file after every major task completion.
   - Updated text and images in `SkincareQuizPage.tsx`.
   - Executed the updates across apps/us, apps/uk, apps/ca, and apps/au.
   - Passed the 4-tier check with a successful global `pnpm run build`.
+
+
+### Session 15: Reverting Main Image and Adding Price Comparison to Quiz
+- **User Intent**: The user was frustrated that the main image had changed because of a previous update, and they wanted it locked back to the original image `ipl_face_closeup.png`. They also provided an infographic containing a price comparison between Shaving, Waxing, Laser, and Muuhu IPL ($129), and requested it be placed on the Skincare Quiz page. Finally, they wanted the price in that infographic explicitly edited to $199 for the AU store specifically, and to not use AI generated infographic images.
+- **Agent Logic & Thinking**:
+  - Found that the `cartImage` and first two `gallery` images in `products.ts` were accidentally switched to `ipl_provided_gallery_1.png` and `2` instead of `ipl_face_closeup.png` and `ipl_replacement_1.png` in Session 14. I reverted these back to the correct images across all 4 apps.
+  - Located the user-uploaded infographic `media__1782382133918.jpg`. I wrote a Node script using the `canvas` library to programmatically sample the background color, blank out the `129` price, and write `199` using a similar serif font.
+  - Copied the original $129 image to the `us`, `uk`, and `ca` apps, and copied the edited $199 image to the `au` app.
+  - Wrote a Node string replacement script to accurately edit `SkincareQuizPage.tsx` across all 4 apps. Replaced the `ipl_product_angle.png` AI image with the new `ipl_price_comparison.jpg` image, and updated the CSS from `aspect-[4/5]` and `object-cover` to `aspect-square` and `object-contain` to properly fit the square infographic without clipping.
+- **Actions Taken**:
+  - Reverted `products.ts` gallery images via `multi_replace_file_content`.
+  - Wrote `edit_image.js` using `canvas` to modify the AU pricing graphic.
+  - Wrote `replace.js` to update `SkincareQuizPage.tsx` safely.
+  - Ran a Next.js build on the AU app to verify correctness.
+  - Committed ("Revert main product images and add edited price comparison image to quiz") and pushed code to GitHub.
