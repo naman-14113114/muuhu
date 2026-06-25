@@ -58,7 +58,7 @@ export const homeFeatureCards = [
   {
     title: "For all skin sensitivities",
     copy: "9 adjustable energy levels let you start low and increase gradually. From sensitive areas to coarse hair, there is a setting for you.",
-    image: productMediaAsset("ipl_provided_8.png"),
+    image: productMediaAsset("ipl_replacement_3.png"),
   },
   {
     title: "Ice cooling at 8°C",

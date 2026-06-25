@@ -96,7 +96,7 @@ export const muuhuIpl: Product = {
       { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use" },
       { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Close Up" },
       { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu Ultra Pro Product Shot" },
-      { src: productMediaAsset("ipl_provided_8.png"), alt: "Muuhu Ultra Pro Full View" },
+      { src: productMediaAsset("ipl_replacement_3.png"), alt: "Muuhu Ultra Pro Full View" },
       { src: productMediaAsset("ipl_replacement_2.png"), alt: "Muuhu Ultra Pro Lifestyle" },
       { src: productMediaAsset("ipl_provided_10.png"), alt: "Muuhu Ultra Pro Premium" }
     ],
