@@ -7,8 +7,8 @@ export const dynamic = "force-dynamic";
 const plusbaseOrigin = "https://Muuhu.com";
 const iplProductId = 1000000611225890;
 const iplVariantId = 1000019092784268;
-const torchProductId = 1000000665008955;
-const torchVariantId = 1000020384558655;
+const massageKitProductId = 1000000665008955;
+const massageKitVariantId = 1000020384558655;
 
 type CheckoutPrepareBody = {
   customerEmail?: string;
@@ -135,7 +135,7 @@ async function createPlusbaseCheckout(quantity: number) {
   }
 
   await addItem(iplProductId, iplVariantId, quantity);
-  await addItem(torchProductId, torchVariantId, quantity);
+  await addItem(massageKitProductId, massageKitVariantId, quantity);
 
   return {
     checkoutToken,

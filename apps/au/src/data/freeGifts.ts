@@ -80,7 +80,7 @@ export const freeGiftDetails: FreeGiftDetail[] = [
     seoDescription:
       "Explore the targeted Muuhu LED MassageKit included as a free companion gift with the Muuhu Ultra Pro offer.",
     intro:
-      "The Muuhu LED MassageKit adds precision to the main device offer. While the IPL device gives you broad face-and-neck coverage, the torch gives you a smaller tool you can use for targeted touch-up areas and travel-friendly sessions.",
+      "The Muuhu LED MassageKit adds precision to the main device offer. While the IPL device gives you broad face-and-neck coverage, the massage kit gives you traditional tools you can use for targeted touch-up areas and travel-friendly sessions.",
     note:
       "The current Muuhu Ultra Pro offer includes the LED MassageKit as a free bonus gift.",
     image: productMediaAsset("massage_kit_spotlight.png"),
@@ -96,7 +96,7 @@ export const freeGiftDetails: FreeGiftDetail[] = [
       {
         title: "Where a smaller companion device helps",
         paragraphs: [
-          "Some customers love the idea of a main device for full sessions and a smaller companion for precision. The torch fits that role well because it gives the bundle more flexibility.",
+          "Some customers love the idea of a main device for full sessions and a smaller companion for precision. The massage kit fits that role well because it gives the bundle more flexibility.",
           "It helps the offer feel like a system rather than a single product.",
         ],
         bullets: [

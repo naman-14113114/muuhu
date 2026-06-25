@@ -137,11 +137,11 @@ export function ProductDetailsAccordion({ product }: { product: Product }) {
     {
       id: "unique",
       eyebrow: "Features",
-      title: product.template === "torch" ? "What makes our massage kit unique?" : "What makes our IPL unique?",
+      title: product.template === "massage-kit" ? "What makes our massage kit unique?" : "What makes our IPL unique?",
       content: (
         <ul className="grid gap-3">
-          {(product.template === "torch" ? massagerFeatures : features).map((feature, index) => {
-            const Icon = product.template === "torch" ? IconBulb : featureIcons[index];
+          {(product.template === "massage-kit" ? massagerFeatures : features).map((feature, index) => {
+            const Icon = product.template === "massage-kit" ? IconBulb : featureIcons[index];
             return (
               <li
                 key={index}
@@ -250,7 +250,7 @@ export function ProductDetailsAccordion({ product }: { product: Product }) {
       aria-label="Product details"
       className="mt-8 rounded-[18px] border border-[var(--border)] bg-[rgba(247,241,232,.64)] px-5"
     >
-      {items.filter(item => !(product.template === "torch" && item.id === "certifications")).map((item) => (
+      {items.filter(item => !(product.template === "massage-kit" && item.id === "certifications")).map((item) => (
         <AccordionPanel
           isOpen={openItems.has(item.id)}
           item={item}

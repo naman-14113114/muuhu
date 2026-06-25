@@ -85,7 +85,7 @@ function cartLinePayload(line: CartLine) {
     ImageURL: toAbsoluteUrl(line.image),
     ProductCategories: [
       "Light Therapy",
-      product?.template === "torch" ? "Massage Kit" : "IPL Hair Removal",
+      product?.template === "massage-kit" ? "Massage Kit" : "IPL Hair Removal",
     ],
   };
 }

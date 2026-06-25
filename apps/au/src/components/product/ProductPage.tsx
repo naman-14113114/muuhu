@@ -14,7 +14,7 @@ import { VideoReviews } from "./VideoReviews";
 import { SuitabilitySection } from "./SuitabilitySection";
 
 export function ProductPage({ product }: { product: Product }) {
-  if (product.template === "torch") {
+  if (product.template === "massage-kit") {
     return <MassageKitProductPage product={product} />;
   }
 

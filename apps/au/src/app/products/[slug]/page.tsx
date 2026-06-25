@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             "Muuhu Ultra Pro",
           ]
         : [
-            "red light torch Australia",
+            "massage kit Australia",
             "handheld red light therapy",
             "massage kit",
             "blue red light therapy device",

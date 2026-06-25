@@ -1,5 +1,5 @@
 import maskReviews from "./reviews/buudy-led-mask-reviews.json";
-import torchReviews from "./reviews/muuhu-massage-kit-reviews.json";
+import massagerReviews from "./reviews/muuhu-massage-kit-reviews.json";
 import { market } from "@/lib/market";
 import { createSupabaseAdminClient } from "@/lib/supabase/admin";
 import { isSupabaseAdminConfigured } from "@/lib/supabase/config";
@@ -34,7 +34,7 @@ function normalizeStaticReview(r: ProductReview) {
 
 const reviewCollections = {
   "buudy-led-mask": maskReviews.map(normalizeStaticReview) as ProductReview[],
-  "muuhu-massage-kit": torchReviews.map(normalizeStaticReview) as ProductReview[],
+  "muuhu-massage-kit": massagerReviews.map(normalizeStaticReview) as ProductReview[],
 } as const;
 
 export type ReviewProductHandle = keyof typeof reviewCollections;

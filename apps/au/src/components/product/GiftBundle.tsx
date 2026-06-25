@@ -348,7 +348,7 @@ export function GiftBundle({ product }: { product: Product }) {
       ) : (
         <section
           className="mt-8 rounded-2xl border border-[rgba(58,31,61,.15)] bg-[var(--card)] p-5"
-          id="torch-offer"
+          id="massage-kit-offer"
         >
           <p className="buudy-eyebrow">{product.promoLabel}</p>
           <p className="buudy-display mt-2 text-2xl text-[var(--plum)]">

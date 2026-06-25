@@ -36,7 +36,7 @@ export type Product = {
   id: string;
   sku: string;
   slug: string;
-  template: "mask" | "torch";
+  template: "mask" | "massage-kit";
   name: string;
   heroTitle: string;
   heroEmphasis: string;
@@ -219,7 +219,7 @@ export const MuuhuMassageKit: Product = {
   id: "muuhu-massage-kit",
   sku: "1458336123034558477",
   slug: "muuhu-massage-kit",
-  template: "torch",
+  template: "massage-kit",
   name: "Muuhu Massage Kit",
   heroTitle: "Muuhu",
   heroEmphasis: "Massage Kit",
