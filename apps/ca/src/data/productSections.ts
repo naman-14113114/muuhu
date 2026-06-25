@@ -424,15 +424,15 @@ export const massagerFeatures: Feature[] = [
 
 export const massagerDetailImages = [
   {
-    src: productAsset("massage_kit_spotlight.png", "muuhu-massage-kit"),
+    src: productMediaAsset("massage_kit_spotlight.png", "muuhu-massage-kit", "images"),
     alt: "Muuhu Massage Kit detail image",
   },
   {
-    src: productAsset("massage_kit_gallery_2.png", "muuhu-massage-kit"),
+    src: productMediaAsset("massage_kit_gallery_2.png", "muuhu-massage-kit", "images"),
     alt: "Muuhu Massage Kit wellness use",
   },
   {
-    src: productAsset("massage_kit_gallery_3.png", "muuhu-massage-kit"),
+    src: productMediaAsset("massage_kit_gallery_3.png", "muuhu-massage-kit", "images"),
     alt: "Muuhu Massage Kit treatment application",
   },
 ];
