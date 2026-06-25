@@ -108,7 +108,7 @@ export function VideoReviews() {
           eyebrow="Real Customers"
           title={
             <>
-              Muuhu Mask <span className="buudy-italic text-[var(--gold)]">reviews</span> <span className="font-serif italic text-[var(--plum)]">&</span> real results
+              Muuhu IPL <span className="buudy-italic text-[var(--gold)]">reviews</span> <span className="font-serif italic text-[var(--plum)]">&</span> real results
             </>
           }
         />

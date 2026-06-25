@@ -5,8 +5,8 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const plusbaseOrigin = "https://Muuhu.com";
-const maskProductId = 1000000611225890;
-const maskVariantId = 1000019092784268;
+const iplProductId = 1000000611225890;
+const iplVariantId = 1000019092784268;
 const torchProductId = 1000000665008955;
 const torchVariantId = 1000020384558655;
 
@@ -134,7 +134,7 @@ async function createPlusbaseCheckout(quantity: number) {
     }
   }
 
-  await addItem(maskProductId, maskVariantId, quantity);
+  await addItem(iplProductId, iplVariantId, quantity);
   await addItem(torchProductId, torchVariantId, quantity);
 
   return {

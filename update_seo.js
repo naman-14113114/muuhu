@@ -1,4 +1,17 @@
-import Link from "next/link";
+﻿const fs = require('fs');
+const path = require('path');
+
+const apps = {
+  us: { short: 'US', long: 'US', urlSuffix: 'US' },
+  uk: { short: 'UK', long: 'UK', urlSuffix: 'UK' },
+  ca: { short: 'Canada', long: 'Canadian', urlSuffix: 'Canada' },
+  au: { short: 'Australia', long: 'Australian', urlSuffix: 'Australia' }
+};
+
+for (const [app, meta] of Object.entries(apps)) {
+  const filePath = `E:/1st YEAR DTU/New folder/muuhu/apps/${app}/src/components/product/SEOGuideSection.tsx`;
+  
+  const content = `import Link from "next/link";
 import { CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
 import type { Product } from "@/data/products";
 import { formatMoney } from "@/lib/money";
@@ -25,9 +38,9 @@ const criteria = [
 
 const queryAnswers = [
   {
-    question: "Best IPL Hair Removal Australia",
+    question: "Best IPL Hair Removal ${meta.short}",
     answer:
-      "For Australia shoppers comparing IPL devices, Muuhu is strongest if you want one device with 16J energy, Ice Cooling Technology, 999,999 flashes, fast auto-glide mode, free tracked shipping, and a 90-day return window.",
+      "For ${meta.short} shoppers comparing IPL devices, Muuhu is strongest if you want one device with 16J energy, Ice Cooling Technology, 999,999 flashes, fast auto-glide mode, free tracked shipping, and a 90-day return window.",
   },
   {
     question: "IPL hair removal for sensitive skin",
@@ -47,9 +60,9 @@ export function SEOGuideSection({ product }: { product: Product }) {
       <div className="Muuhu-wrap">
         <div className="grid gap-9 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <div className="rounded-[30px] bg-[var(--plum)] p-7 text-[var(--cream)] md:p-9 lg:sticky lg:top-28">
-            <p className="Muuhu-mono text-[var(--gold)]">Australia buying guide</p>
+            <p className="Muuhu-mono text-[var(--gold)]">${meta.short} buying guide</p>
             <h2 className="Muuhu-display mt-4 text-4xl leading-none md:text-5xl">
-              What makes the best IPL hair removal device for Australian skin?
+              What makes the best IPL hair removal device for ${meta.long} skin?
             </h2>
             <p className="mt-5 text-sm leading-7 text-[rgba(247,241,232,.74)] md:text-base">
               The best IPL device is not just the one with the prettiest
@@ -64,14 +77,14 @@ export function SEOGuideSection({ product }: { product: Product }) {
               </p>
               <p className="mt-2 text-sm leading-6 text-[rgba(247,241,232,.7)]">
                 Includes free glow kit, free tracked shipping, and 90-day money
-                back guarantee while the Australia launch offer is live.
+                back guarantee while the ${meta.short} launch offer is live.
               </p>
             </div>
             <Button
               asChild
               className="mt-6 bg-[var(--cream)] text-[var(--plum)] hover:bg-[var(--blush)]"
             >
-              <Link href="/pages/best-ipl-hair-removal-Australia">Read the full Australia guide</Link>
+              <Link href="/pages/best-ipl-hair-removal-${meta.urlSuffix}">Read the full ${meta.short} guide</Link>
             </Button>
           </div>
 
@@ -98,7 +111,7 @@ export function SEOGuideSection({ product }: { product: Product }) {
                 <div>
                   <p className="Muuhu-mono text-[var(--gold)]">Fast answers</p>
                   <h3 className="Muuhu-display mt-2 text-3xl text-[var(--plum)] md:text-4xl">
-                    Query-ready answers for Australia buyers
+                    Query-ready answers for ${meta.short} buyers
                   </h3>
                 </div>
                 <Sparkles className="text-[var(--gold)]" size={30} />
@@ -131,4 +144,9 @@ export function SEOGuideSection({ product }: { product: Product }) {
       </div>
     </section>
   );
+}
+`;
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  console.log('Updated ' + filePath);
 }

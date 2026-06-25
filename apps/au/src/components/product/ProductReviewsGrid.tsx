@@ -1341,7 +1341,7 @@ export function ProductReviewsGrid({
                 </>
               ) : (
                 <>
-                  Muuhu Mask <em className="buudy-italic">customer reviews</em>.
+                  Muuhu IPL <em className="buudy-italic">customer reviews</em>.
                 </>
               )
             }

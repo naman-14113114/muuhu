@@ -612,7 +612,7 @@ function QuizResults({
             href="/products/buudy-led-mask"
             onClick={() => trackQuizEvent("skincare_quiz_mask_cta_clicked")}
           >
-            Shop the Muuhu Mask
+            Shop the Muuhu IPL
             <ArrowRight size={16} />
           </Link>
         </Button>

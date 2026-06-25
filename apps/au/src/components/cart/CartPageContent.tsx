@@ -283,7 +283,7 @@ function DigitalGiftNotice({ line }: { line: CartLine }) {
         </div>
         <p className="text-sm leading-6 text-[var(--muted)]">
           It will not appear as a shipped cart item, but it stays unlocked with
-          your mask order so your routine starts the moment your confirmation
+          your IPL order so your routine starts the moment your confirmation
           email arrives.
         </p>
       </div>

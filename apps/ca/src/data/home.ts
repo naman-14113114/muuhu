@@ -9,7 +9,7 @@ export const homeHero = {
   ctaHref: `/products/${muuhuIpl.slug}`,
   images: [
     {
-      src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro Hero",
+      src: productMediaAsset("ipl_hero_banner.png"), alt: "Muuhu Ultra Pro Hero",
     },
     {
       src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Lifestyle",
@@ -23,7 +23,7 @@ export const homeHero = {
 export const homeMaskSpotlight = {
   eyebrow: "Professional grade",
   title: "The Muuhu Ultra Pro with ice cooling + 9 energy levels",
-  copy: "Modern problems require modern solutions. The Muuhu Ultra Pro device makes at-home hair removal painless and effective. With built-in ice cooling at 8Ã‚Â°C and 9 adjustable energy levels up to 16J, you can treat your entire body comfortably from home.",
+  copy: "Modern problems require modern solutions. The Muuhu Ultra Pro device makes at-home hair removal painless and effective. With built-in ice cooling at 8°C and 9 adjustable energy levels up to 16J, you can treat your entire body comfortably from home.",
   image: {
     src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Spotlight",
   },
@@ -41,7 +41,7 @@ export const homeSkincareGuideIntro = {
 export const homeTechnologySpotlight = {
   eyebrow: "IPL ice cooling technology",
   title: "A smarter way to remove hair.",
-  copy: "The Muuhu Ultra Pro uses Intense Pulsed Light (600Ã¢â‚¬â€œ1200nm) to target hair follicle melanin, disrupting the growth cycle for long-lasting reduction. Built-in ice cooling at 8Ã‚Â°C keeps every flash painless.",
+  copy: "The Muuhu Ultra Pro uses Intense Pulsed Light (600–1200nm) to target hair follicle melanin, disrupting the growth cycle for long-lasting reduction. Built-in ice cooling at 8°C keeps every flash painless.",
   ctaLabel: "Shop the IPL device",
   ctaHref: `/products/${muuhuIpl.slug}`,
   image: {
@@ -61,7 +61,7 @@ export const homeFeatureCards = [
     image: productMediaAsset("ipl_provided_8.png"),
   },
   {
-    title: "Ice cooling at 8Ã‚Â°C",
+    title: "Ice cooling at 8°C",
     copy: "The built-in ice cooling plate soothes your skin on contact, making every flash painless. No numbing creams needed.",
     image: productMediaAsset("ipl_provided_9.png"),
   },
@@ -70,7 +70,7 @@ export const homeFeatureCards = [
 export const homeLightTherapy = {
   eyebrow: "IPL technology",
   title: "What is IPL and how does it work?",
-  copy: "IPL stands for Intense Pulsed Light. It targets the melanin pigment in hair follicles with broad-spectrum light energy (600Ã¢â‚¬â€œ1200nm), disrupting the hair growth cycle over repeated treatments. Clinical studies have shown that consistent at-home IPL use over 6Ã¢â‚¬â€œ12 weeks produces significant, long-lasting hair reduction. It is non-invasive, requires no consumables, and treats your entire body.",
+  copy: "IPL stands for Intense Pulsed Light. It targets the melanin pigment in hair follicles with broad-spectrum light energy (600–1200nm), disrupting the hair growth cycle over repeated treatments. Clinical studies have shown that consistent at-home IPL use over 6–12 weeks produces significant, long-lasting hair reduction. It is non-invasive, requires no consumables, and treats your entire body.",
   image: {
     src: productMediaAsset("ipl_provided_10.png"),
     alt: "IPL technology editorial image",

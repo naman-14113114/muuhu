@@ -86,7 +86,7 @@ function TechnologySpotlight() {
       <div className="Muuhu-wrap">
         <div className="grid gap-16 lg:grid-cols-2">
 
-          {/* LEFT — light therapy text + button + mask spotlight image */}
+          {/* LEFT — light therapy text + button + IPL spotlight image */}
           <div className="flex flex-col h-full">
             <div className="flex flex-col items-center text-center gap-2 mb-8">
               <SectionHeading

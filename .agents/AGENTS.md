@@ -330,3 +330,16 @@ pm run build, verified it compiled successfully in ~10s, and pushed the updates 
   - Executed `fix_name.js` updating 92 files across all 4 storefronts (`us`, `uk`, `ca`, `au`).
   - Verified it preserved URL slugs and variables because case-sensitive strict matches were used.
   - Committed ("Rename product from Muuhu IPL Hair Removal to Muuhu Ultra Pro across all apps") and pushed to GitHub.
+
+## MASTER CONTEXT FILE
+**CRITICAL**: Before starting ANY task, read the master context file at:
+`E:\1st YEAR DTU\New folder\MASTER_CONTEXT.md`
+
+This file contains the complete business context, credentials reference, product data, design rules, session history, and working preferences compiled from:
+- `E:\1st YEAR DTU\New folder\trustpilot-led-mask-replica\agent.md` (437,644 lines)
+- `E:\1st YEAR DTU\New folder\trustpilot-led-mask-replica\agent-secrets.local.md`
+- `C:\Users\sahil\Downloads\AGENTS.md` (Naman's operating manual)
+- `C:\Users\sahil\Downloads\HANDOFF-INDEX.md`
+- All session logs from this conversation
+
+Update the MASTER_CONTEXT.md file after every major task completion.

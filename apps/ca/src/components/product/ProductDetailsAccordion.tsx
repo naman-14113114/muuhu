@@ -137,7 +137,7 @@ export function ProductDetailsAccordion({ product }: { product: Product }) {
     {
       id: "unique",
       eyebrow: "Features",
-      title: product.template === "torch" ? "What makes our torch unique?" : "What makes our mask unique?",
+      title: product.template === "torch" ? "What makes our torch unique?" : "What makes our IPL unique?",
       content: (
         <ul className="grid gap-3">
           {(product.template === "torch" ? torchFeatures : features).map((feature, index) => {

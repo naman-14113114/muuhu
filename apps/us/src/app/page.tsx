@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best IPL Hair Removal US | Muuhu",
     description:
-      "Discover the Muuhu Ultra Pro Device with 999,999 flashes, ice cooling at 8Â°C, and 9 energy levels.",
+      "Discover the Muuhu Ultra Pro Device with 999,999 flashes, ice cooling at 8°C, and 9 energy levels.",
     url: market.siteUrl,
     images: [
       {

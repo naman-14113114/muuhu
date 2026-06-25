@@ -76,7 +76,7 @@ export const muuhuIpl: Product = {
   shortDescription:
     "At-home IPL hair removal with ice cooling, 999,999 flashes, and 9 energy levels for long-lasting smoothness.",
   description:
-    "At-home IPL hair removal reimagined for Canadian homes. The Muuhu Ultra Pro combines 999,999 flashes, built-in ice cooling at 8Ã‚Â°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
+    "At-home IPL hair removal reimagined for Canadian homes. The Muuhu Ultra Pro combines 999,999 flashes, built-in ice cooling at 8°C, 9 adjustable energy levels up to 16J, Auto and Manual modes, and an LCD touch display for painless, long-lasting hair reduction across your entire body.",
   seoTitle: "Best IPL Hair Removal Canada | Muuhu Ice Cooling Device",
   seoDescription:
     "Shop the Muuhu Ultra Pro in Canada: 999,999 flashes, ice cooling, 9 energy levels, 16J max output, Auto and Manual modes, LCD touch display, 90-day returns, and free shipping.",
@@ -88,7 +88,7 @@ export const muuhuIpl: Product = {
   customerCount: "16,000+",
   promoCode: "GLOWKIT",
   promoLabel: "Glow kit promo applied",
-  cartImage: productMediaAsset("ipl_face_closeup.png"),
+  cartImage: productMediaAsset("ipl_provided_2.png"),
         gallery: [
       { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
       { src: productMediaAsset("ipl_provided_11.png"), alt: "Muuhu Ultra Pro Premium" },
@@ -131,21 +131,21 @@ export const muuhuIpl: Product = {
     { label: "Flash Count", value: "999,999 flashes" },
     { label: "Max Energy", value: "16J" },
     { label: "Energy Levels", value: "9 adjustable levels" },
-    { label: "Wavelength Range", value: "600Ã¢â‚¬â€œ1200nm" },
-    { label: "Cooling", value: "Built-in ice cooling (~8Ã‚Â°C / 46Ã‚Â°F)" },
+    { label: "Wavelength Range", value: "600–1200nm" },
+    { label: "Cooling", value: "Built-in ice cooling (~8°C / 46°F)" },
     { label: "Modes", value: "Auto (glide) + Manual (stamp)" },
     { label: "Display", value: "LCD touch screen" },
-    { label: "Power Supply", value: "AC 100Ã¢â‚¬â€œ240V (corded)" },
+    { label: "Power Supply", value: "AC 100–240V (corded)" },
     { label: "Material", value: "Plastic" },
     { label: "Waterproof", value: "No" },
   ],
   included: [
-    { quantity: "1Ãƒâ€”", label: "Premium Travel Box", tag: "Free gift" },
-    { quantity: "1Ãƒâ€”", label: "Muuhu Ultra Pro Device" },
-    { quantity: "1Ãƒâ€”", label: "Power Adapter (100Ã¢â‚¬â€œ240V)" },
-    { quantity: "1Ãƒâ€”", label: "Protective Goggles" },
-    { quantity: "1Ãƒâ€”", label: "User Manual" },
-    { quantity: "1Ãƒâ€”", label: "Muuhu LED Torch", tag: "Free gift" },
+    { quantity: "1×", label: "Premium Travel Box", tag: "Free gift" },
+    { quantity: "1×", label: "Muuhu Ultra Pro Device" },
+    { quantity: "1×", label: "Power Adapter (100–240V)" },
+    { quantity: "1×", label: "Protective Goggles" },
+    { quantity: "1×", label: "User Manual" },
+    { quantity: "1×", label: "Muuhu LED Torch", tag: "Free gift" },
   ],
   highlights: [
     "999,999 flashes for years of full-body treatments",
@@ -163,8 +163,8 @@ export const muuhuIpl: Product = {
     "Compact and ergonomic design",
   ],
   differentiators: [
-    "999,999 flash lifespan Ã¢â‚¬â€ no lamp replacements",
-    "Ice cooling at 8Ã‚Â°C for pain-free sessions",
+    "999,999 flash lifespan — no lamp replacements",
+    "Ice cooling at 8°C for pain-free sessions",
     "16J max energy for effective results",
     "9 intensity levels for sensitive to coarse hair",
     "Auto and Manual modes for precision and speed",
@@ -180,19 +180,19 @@ export const muuhuIpl: Product = {
   faqs: [
     {
       question: "How does IPL hair removal work?",
-      answer: "IPL (Intense Pulsed Light) targets the melanin in hair follicles with broad-spectrum light energy (600Ã¢â‚¬â€œ1200nm). The light is absorbed by the hair pigment, which disrupts the growth cycle over repeated treatments, leading to long-lasting hair reduction."
+      answer: "IPL (Intense Pulsed Light) targets the melanin in hair follicles with broad-spectrum light energy (600–1200nm). The light is absorbed by the hair pigment, which disrupts the growth cycle over repeated treatments, leading to long-lasting hair reduction."
     },
     {
       question: "Is the ice cooling really painless?",
-      answer: "The built-in ice cooling plate maintains a temperature of approximately 8Ã‚Â°C (46Ã‚Â°F) at the treatment window, soothing the skin on contact. Most users describe the sensation as a mild warm snap followed by instant cooling relief."
+      answer: "The built-in ice cooling plate maintains a temperature of approximately 8°C (46°F) at the treatment window, soothing the skin on contact. Most users describe the sensation as a mild warm snap followed by instant cooling relief."
     },
     {
       question: "How many sessions until I see results?",
-      answer: "Results vary by individual. Many users notice hair shedding after 2Ã¢â‚¬â€œ3 weekly sessions. Consistent use over 6Ã¢â‚¬â€œ12 weeks typically produces significant, long-lasting hair reduction. After that, occasional maintenance sessions keep results smooth."
+      answer: "Results vary by individual. Many users notice hair shedding after 2–3 weekly sessions. Consistent use over 6–12 weeks typically produces significant, long-lasting hair reduction. After that, occasional maintenance sessions keep results smooth."
     },
     {
       question: "What skin tones and hair colours work with IPL?",
-      answer: "IPL works best on light to medium skin tones with dark hair, where the contrast between skin and hair pigment allows effective light absorption. It is not recommended for very dark skin tones (Fitzpatrick VÃ¢â‚¬â€œVI) or for very light, red, grey, or white hair due to insufficient melanin."
+      answer: "IPL works best on light to medium skin tones with dark hair, where the contrast between skin and hair pigment allows effective light absorption. It is not recommended for very dark skin tones (Fitzpatrick V–VI) or for very light, red, grey, or white hair due to insufficient melanin."
     },
     {
       question: "Can I use this on any body area?",
@@ -200,7 +200,7 @@ export const muuhuIpl: Product = {
     },
     {
       question: "Can I use it in my country?",
-      answer: "Yes. The Muuhu Ultra Pro device is universal voltage (AC 100Ã¢â‚¬â€œ240V) which means it can be used worldwide without any issues."
+      answer: "Yes. The Muuhu Ultra Pro device is universal voltage (AC 100–240V) which means it can be used worldwide without any issues."
     },
     {
       question: "What if I am pregnant or have a medical condition?",

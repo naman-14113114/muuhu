@@ -58,7 +58,7 @@ export function CheckoutForm({ initialCustomer }: CheckoutFormProps) {
     return () => window.removeEventListener("pageshow", handlePageShow);
   }, []);
 
-  const maskQuantity =
+  const iplQuantity =
     lines.find(
       (line) => line.type === "product" && line.productId === "buudy-led-mask",
     )?.quantity ?? totals.itemCount;
@@ -95,7 +95,7 @@ export function CheckoutForm({ initialCustomer }: CheckoutFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           customerEmail: initialCustomer.email,
-          quantity: maskQuantity,
+          quantity: iplQuantity,
           cart: { lines, giftMessage, promoCodes: activePromoCodes },
           totals,
           attribution,
@@ -104,12 +104,12 @@ export function CheckoutForm({ initialCustomer }: CheckoutFormProps) {
       if (!response.ok) throw new Error("Could not prepare checkout.");
       const data = (await response.json()) as { checkoutUrl?: string };
       window.location.assign(
-        data.checkoutUrl ?? buildPlusbaseCheckoutUrl({ quantity: maskQuantity }),
+        data.checkoutUrl ?? buildPlusbaseCheckoutUrl({ quantity: iplQuantity }),
       );
     } catch {
       setError("Opening secure checkout...");
       window.location.assign(
-        buildPlusbaseCheckoutUrl({ quantity: maskQuantity, extraParams: attribution }),
+        buildPlusbaseCheckoutUrl({ quantity: iplQuantity, extraParams: attribution }),
       );
     }
   }

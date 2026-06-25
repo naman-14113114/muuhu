@@ -108,7 +108,7 @@ export function FreeGiftDetailPage({ gift }: { gift: FreeGiftDetail }) {
         <div className="buudy-wrap max-w-3xl">
           <p className="buudy-eyebrow">Complete The Ritual</p>
           <h2 className="buudy-display mt-3 text-4xl leading-tight md:text-5xl">
-            Buy the mask, unlock the full bonus bundle.
+            Buy the IPL device, unlock the full bonus bundle.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl leading-7 text-[rgba(247,241,232,.72)]">
             {freeGiftBundleFooter}

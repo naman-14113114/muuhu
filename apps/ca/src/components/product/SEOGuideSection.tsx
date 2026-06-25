@@ -6,38 +6,38 @@ import { Button } from "@/components/ui/Button";
 
 const criteria = [
   {
-    title: "Enough LEDs for even coverage",
-    copy: "Look for dense, evenly spaced LEDs so the face is not treated in patches. Muuhu uses 192 high-density LEDs across the mask.",
+    title: "16J high-energy output",
+    copy: "Look for high energy output to effectively target hair follicles. Muuhu delivers up to 16J of energy for visible results.",
   },
   {
-    title: "Red, blue, and near-infrared modes",
-    copy: "Red light supports anti-ageing routines, blue light is useful for breakout-prone skin routines, and near-infrared is used for deeper skincare support.",
+    title: "Ice Cooling Technology",
+    copy: "A built-in sapphire cooling head cools the skin to ~8°C (46°F), making the IPL treatment practically painless even on high settings.",
   },
   {
-    title: "Face plus neck in one device",
-    copy: "Many LED masks stop at the chin. Muuhu includes neck coverage because the neck is often one of the first areas to show visible ageing.",
+    title: "999,999 flashes",
+    copy: "Enough flashes to last a lifetime of treatments. You will never need to buy replacement cartridges or parts.",
   },
   {
     title: "A routine people will actually repeat",
-    copy: "Cordless wearability, tap control, and simple sessions matter because consistent use is what makes at-home light therapy practical.",
+    copy: "Fast auto-glide mode, ergonomic design, and simple sessions matter because consistent use is what makes at-home IPL practical.",
   },
 ];
 
 const queryAnswers = [
   {
-    question: "Best LED Face Mask Canada",
+    question: "Best IPL Hair Removal Canada",
     answer:
-      "For Canada shoppers comparing LED masks, Muuhu is strongest if you want one device with 192 LEDs, 7 wavelengths plus 830nm near-infrared, full face and neck coverage, cordless use, free tracked shipping, and a 90-day return window.",
+      "For Canada shoppers comparing IPL devices, Muuhu is strongest if you want one device with 16J energy, Ice Cooling Technology, 999,999 flashes, fast auto-glide mode, free tracked shipping, and a 90-day return window.",
   },
   {
-    question: "LED face mask for acne and anti-ageing",
+    question: "IPL hair removal for sensitive skin",
     answer:
-      "Muuhu combines blue 415nm light for breakout-prone routines with red 633nm light for fine-line and firmness routines, so you do not need separate acne and anti-ageing devices.",
+      "Muuhu combines high-energy flashes with a sapphire ice cooling head that cools the skin to ~8°C, so you do not feel the intense heat that older IPL devices produce.",
   },
   {
-    question: "Red light therapy mask with neck coverage",
+    question: "Does at-home IPL actually work?",
     answer:
-      "The mask includes face and neck coverage in one wearable device, which is useful for buyers who want their skincare routine to treat the jawline and neck together.",
+      "Yes, when used consistently. The device targets the melanin in the hair follicle, breaking the cycle of hair regrowth. Most users see significant reduction within 4 to 8 weeks.",
   },
 ];
 
@@ -49,11 +49,11 @@ export function SEOGuideSection({ product }: { product: Product }) {
           <div className="rounded-[30px] bg-[var(--plum)] p-7 text-[var(--cream)] md:p-9 lg:sticky lg:top-28">
             <p className="Muuhu-mono text-[var(--gold)]">Canada buying guide</p>
             <h2 className="Muuhu-display mt-4 text-4xl leading-none md:text-5xl">
-              What makes the best LED face mask for Canadian skincare?
+              What makes the best IPL hair removal device for Canadian skin?
             </h2>
             <p className="mt-5 text-sm leading-7 text-[rgba(247,241,232,.74)] md:text-base">
-              The best LED face mask is not just the one with the prettiest
-              shell. It should give you even light coverage, useful wavelengths,
+              The best IPL device is not just the one with the prettiest
+              shell. It should give you high energy output, advanced cooling,
               a comfortable fit, transparent pricing, and a routine simple
               enough to repeat.
             </p>
@@ -71,7 +71,7 @@ export function SEOGuideSection({ product }: { product: Product }) {
               asChild
               className="mt-6 bg-[var(--cream)] text-[var(--plum)] hover:bg-[var(--blush)]"
             >
-              <Link href="/pages/best-led-face-mask-Canada">Read the full Canada guide</Link>
+              <Link href="/pages/best-ipl-hair-removal-Canada">Read the full Canada guide</Link>
             </Button>
           </div>
 
@@ -123,9 +123,7 @@ export function SEOGuideSection({ product }: { product: Product }) {
             <div className="flex items-start gap-4 rounded-[24px] border border-[var(--border)] bg-[var(--card)] p-5">
               <ShieldCheck className="mt-1 shrink-0 text-[var(--gold)]" size={23} />
               <p className="text-sm leading-7 text-[var(--muted)]">
-                Safety note: do not use LED light therapy without medical advice
-                if you are pregnant, have epilepsy, are sensitive to light, or
-                take medication that may cause photosensitivity.
+                Safety note: do not use IPL without medical advice if you are pregnant, have epilepsy, are sensitive to light, or have very dark skin tones.
               </p>
             </div>
           </div>
@@ -134,4 +132,3 @@ export function SEOGuideSection({ product }: { product: Product }) {
     </section>
   );
 }
-

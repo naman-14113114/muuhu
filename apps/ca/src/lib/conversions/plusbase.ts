@@ -4,8 +4,8 @@ import {
   type Attribution,
 } from "./attribution";
 
-const maskProductId = 1000000664830560;
-const maskVariantId = 1000020374538805;
+const iplProductId = 1000000664830560;
+const iplVariantId = 1000020374538805;
 export const googleAdsUploadTag = "google_ads_purchase_uploaded";
 
 export type PlusbaseLineItem = {
@@ -50,13 +50,13 @@ export function hasGoogleAdsUploadTag(order: PlusbaseOrder) {
 }
 
 export function getPlusbaseOrderAttribution(order: PlusbaseOrder): Attribution {
-  const maskLine = (order.line_items ?? []).find(
+  const iplLine = (order.line_items ?? []).find(
     (line) =>
-      Number(line.product_id) === maskProductId ||
-      Number(line.variant_id) === maskVariantId,
+      Number(line.product_id) === iplProductId ||
+      Number(line.variant_id) === iplVariantId,
   );
   const raw: Record<string, unknown> = {};
-  (maskLine?.properties ?? []).forEach((property) => {
+  (iplLine?.properties ?? []).forEach((property) => {
     const name = property.name?.trim();
     const value = property.value?.trim();
     if (!name?.startsWith("_blfm_") || !value) return;
@@ -77,10 +77,10 @@ export function summarizePaidPlusbaseOrder(order: PlusbaseOrder) {
   if (!timestamp) return null;
   const paidAt = new Date(timestamp);
   if (Number.isNaN(paidAt.getTime())) return null;
-  const maskQuantity = (order.line_items ?? []).reduce((quantity, line) => {
+  const iplQuantity = (order.line_items ?? []).reduce((quantity, line) => {
     const isMask =
-      Number(line.product_id) === maskProductId ||
-      Number(line.variant_id) === maskVariantId;
+      Number(line.product_id) === iplProductId ||
+      Number(line.variant_id) === iplVariantId;
     return isMask
       ? quantity + Math.max(0, Math.round(toFiniteNumber(line.quantity)))
       : quantity;
@@ -94,6 +94,6 @@ export function summarizePaidPlusbaseOrder(order: PlusbaseOrder) {
     financialStatus: "paid" as const,
     orderCurrency: String(order.currency || "USD"),
     orderTotal: toFiniteNumber(order.total_price),
-    maskQuantity,
+    iplQuantity,
   };
 }

@@ -3,7 +3,7 @@ import { PolicyPage } from "@/components/policies/PolicyPage";
 
 export const metadata: Metadata = {
   title: "Return Policy | Muuhu",
-  description: "Learn about the simple, stress-free replacement policy and goddess guarantees for the Muuhu LED Skincare Mask.",
+  description: "Learn about the simple, stress-free replacement policy and goddess guarantees for the Muuhu IPL Hair Removal Device.",
   alternates: {
     canonical: "/policies/return-policy",
   },
