@@ -343,3 +343,18 @@ This file contains the complete business context, credentials reference, product
 - All session logs from this conversation
 
 Update the MASTER_CONTEXT.md file after every major task completion.
+
+### Session 15: IPL Skincare Quiz Overhaul
+- **User Intent**: The user requested that the existing LED Mask skincare quiz be fully converted to an IPL Hair Removal quiz for the Muuhu Ultra Pro device. The quiz needed to maintain the exact same 5-question layout, design, and amount of questions, while providing personalized results based on hair struggles, areas, and skin sensitivity. 
+- **Agent Logic & Thinking**:
+  - Investigated the current quiz data in `src/data/skincareQuiz.ts` and logic in `src/lib/skincareQuiz.ts`.
+  - Maintained the exact component structures and types, but changed the question titles, options, and logic to reflect IPL.
+  - Rewrote the Quiz logic to recommend specific Intensity levels (1-9), Ice Cooling (8°C), and specific auto-glide routines based on concerns (e.g. Strawberry Legs, Coarse Hair) and sensitivity (e.g. Very Sensitive).
+  - Replaced the hero image on the quiz page from the mask to `ipl_product_angle.png` and updated the UI text to focus on 'hair-free ritual' instead of 'light therapy'.
+  - Applied the identical data and component text updates globally across all 4 apps (us, uk, ca, au) using a centralized script to ensure strict consistency.
+- **Actions Taken**:
+  - Replaced LED questions with IPL questions (Hair Removal Struggles, Areas to Treat, Skin Sensitivity).
+  - Replaced LED wavelength logic with Intensity/Ice Cooling personalized logic.
+  - Updated text and images in `SkincareQuizPage.tsx`.
+  - Executed the updates across apps/us, apps/uk, apps/ca, and apps/au.
+  - Passed the 4-tier check with a successful global `pnpm run build`.

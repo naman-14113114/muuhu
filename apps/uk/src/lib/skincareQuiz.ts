@@ -6,91 +6,59 @@ type SkinRoutine = {
 };
 
 function getLedRecommendation(concerns: string[]) {
-  if (
-    concerns.includes("Acne-Prone") ||
-    concerns.includes("Oily Skin / Blackheads")
-  ) {
+  if (concerns.includes("Ingrown Hairs") || concerns.includes("Strawberry Legs")) {
     return {
-      setting: "Blue Light (415nm) & Purple Light",
-      details:
-        "Blue light is clinically proven to target and destroy acne-causing bacteria beneath the skin surface. Alternate with Purple light to heal existing blemishes and prevent future breakouts.",
+      setting: "Intensity Levels 6-9 with Sapphire Ice Cooling",
+      details: "Higher energy (up to 16J) specifically targets the root to eliminate ingrown hairs and clear up strawberry legs, while Ice Cooling prevents skin irritation.",
     };
   }
 
-  if (
-    concerns.includes("Early Signs of Aging") ||
-    concerns.includes("Mature Skin")
-  ) {
+  if (concerns.includes("Thick / Coarse Hair") || concerns.includes("Fast Regrowth")) {
     return {
-      setting: "Red Light (633nm)",
-      details:
-        "Red light penetrates deep into the dermis to stimulate natural collagen production, reduce fine lines, and firm up sagging skin for a youthful appearance.",
+      setting: "Max Intensity (Level 9)",
+      details: "Utilize the full 16J energy output to effectively disable stubborn, coarse hair follicles and significantly slow down fast regrowth.",
     };
   }
 
-  if (
-    concerns.includes("Hyperpigmentation") ||
-    concerns.includes("Dullness")
-  ) {
+  if (concerns.includes("Shaving Rash / Razor Bumps") || concerns.includes("Very Sensitive")) {
     return {
-      setting: "Green Light (525nm) & White Light",
-      details:
-        "Green light breaks down melanin clusters to fade dark spots and even skin tone. White light accelerates skin metabolism for a radiant, healthy glow.",
-    };
-  }
-
-  if (concerns.includes("Sensitive / Rosacea-prone")) {
-    return {
-      setting: "Cyan Light (490nm) & Yellow Light (590nm)",
-      details:
-        "Cyan reduces swollen capillaries and calms inflammation, while Yellow light flushes toxins and balances skin texture to relieve redness quickly.",
+      setting: "Intensity Levels 1-5 with Active Ice Cooling",
+      details: "Start with lower intensity levels to allow your skin to adapt without triggering a rash. The 8°C Ice Cooling technology will soothe the skin on contact.",
     };
   }
 
   return {
-    setting: "Red Light (633nm)",
-    details:
-      "The gold standard for maintaining collagen levels, boosting hydration, and keeping your complexion healthy and radiant.",
+    setting: "Intensity Levels 5-9 with Auto-Glide Mode",
+    details: "Perfect for fast, painless treatments. Use the continuous flash Auto-Glide mode to treat large areas quickly while maintaining maximum comfort.",
   };
 }
 
 function getSkinRoutine(skinType: string): SkinRoutine {
   switch (skinType) {
-    case "Dry Skin":
+    case "Very Sensitive":
       return {
-        prep: "Use a gentle, milky cleanser.",
-        protect:
-          "Apply a Hyaluronic Acid serum on damp skin to draw in moisture. Seal your routine with a rich ceramide cream to protect your barrier.",
+        prep: "Shave the area 24 hours before treatment. Avoid using any lotions or creams.",
+        protect: "Apply a gentle, fragrance-free aloe vera gel. Stay out of direct sunlight.",
       };
-    case "Oily Skin":
+    case "Mildly Sensitive":
       return {
-        prep: "Double cleanse in the evenings.",
-        protect:
-          "Incorporate Niacinamide to regulate sebum production naturally, and finish with a lightweight, oil-free gel moisturizer.",
-      };
-    case "Combination Skin":
-      return {
-        prep: "Balance is key. Use a mild foaming cleanser.",
-        protect:
-          "Spot-treat your oily T-zone and apply a medium-weight lotion to your drier cheeks.",
+        prep: "Shave the treatment area cleanly. Ensure skin is dry and free of products.",
+        protect: "Moisturize with a soothing lotion and apply SPF if exposing the area to the sun.",
       };
     default:
       return {
-        prep: "Maintain your healthy barrier with a gentle cleanser.",
-        protect:
-          "Use a daily antioxidant serum, like Vitamin C, and SPF 50 every morning.",
+        prep: "Shave the area closely right before your session for maximum energy absorption.",
+        protect: "Keep the skin hydrated with your favorite body lotion and apply SPF 50 if going outside.",
       };
   }
 }
 
 function getEyeTips(eyes: string[]) {
-  if (eyes.includes("No Eye Concern")) {
-    return "Keep up the good work. Protect your delicate eye area with SPF daily to prevent future damage and thinning of the skin.";
+  if (eyes.includes("Face / Upper Lip")) {
+    return "Since you're treating facial areas, always wear the provided protective eyewear and never flash directly near the eyes.";
   }
 
-  return `To target your ${eyes
-    .join(" and ")
-    .toLowerCase()}, ensure you get adequate rest and apply a caffeine or peptide-based eye cream before your LED treatment to boost circulation.`;
+  return `For your ${eyes.join(" and ").toLowerCase()}, use the Auto-Glide mode for larger areas and Manual mode for precision control.`;
 }
 
 function getProfileTag(concerns: string[]) {
@@ -110,27 +78,25 @@ export function buildSkincareQuizResult(answers: QuizAnswers): QuizResult {
     ledSetting: led.setting,
     pregnancyWarning:
       answers.pregnant === "Yes"
-        ? "Because you are pregnant or breastfeeding, we strongly advise consulting your physician before using LED Light Therapy or introducing new active ingredients."
+        ? "Because you are pregnant or breastfeeding, we strongly advise consulting your physician before using IPL Hair Removal or introducing new active ingredients."
         : undefined,
     routine: [
       {
         number: "01",
-        title: "Prep & Cleanse",
-        copy: `${skinRoutine.prep} Make sure your face is completely clean and dry before light therapy for maximum light penetration.`,
+        title: "Prep & Shave",
+        copy: `${skinRoutine.prep} Make sure your skin is completely clean and dry before IPL treatment for maximum light penetration.`,
       },
       {
         number: "02",
-        title: "Muuhu LED Therapy (10 Mins)",
-        copy: `${led.details} Use 3-4 times a week for best results.`,
+        title: "Muuhu IPL Treatment (10 Mins)",
+        copy: `${led.details} Use 2-3 times a week for best results.`,
         highlighted: true,
       },
       {
         number: "03",
         title: "Hydrate & Protect",
-        copy: `${skinRoutine.protect} Don't forget your eye area: ${eyeTips}`,
+        copy: `${skinRoutine.protect} Don't forget your specific areas: ${eyeTips}`,
       },
     ],
   };
 }
-
-

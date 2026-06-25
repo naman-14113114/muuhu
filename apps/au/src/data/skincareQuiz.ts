@@ -54,74 +54,58 @@ export const emptyQuizAnswers: QuizAnswers = {
 export const skincareQuizQuestions: QuizQuestion[] = [
   {
     id: "concern",
-    title: "What are your main skin concerns?",
+    title: "What are your main hair removal struggles?",
     subtitle: "Select all that apply.",
     selection: "multiple",
     options: [
-      { value: "Acne-Prone", label: "Acne-Prone" },
-      {
-        value: "Dryness and Dehydration",
-        label: "Dryness and Dehydration",
-      },
-      { value: "Dullness", label: "Dullness" },
-      { value: "Early Signs of Aging", label: "Early Signs of Aging" },
-      { value: "Hyperpigmentation", label: "Hyperpigmentation" },
-      { value: "Mature Skin", label: "Mature Skin" },
-      { value: "Oily Skin / Blackheads", label: "Oily Skin / Blackheads" },
-      {
-        value: "Sensitive / Rosacea-prone",
-        label: "Sensitive / Rosacea-prone",
-      },
+      { value: "Fast Regrowth", label: "Fast Regrowth" },
+      { value: "Ingrown Hairs", label: "Ingrown Hairs" },
+      { value: "Strawberry Legs", label: "Strawberry Legs" },
+      { value: "Shaving Rash / Razor Bumps", label: "Shaving Rash / Razor Bumps" },
+      { value: "Thick / Coarse Hair", label: "Thick / Coarse Hair" },
+      { value: "Painful Waxing", label: "Painful Waxing" },
+      { value: "Time Consuming", label: "Time Consuming" },
+      { value: "Dark Shadows", label: "Dark Shadows" },
     ],
   },
   {
     id: "eyes",
-    title: "How about your eye area?",
+    title: "Which areas do you want to treat the most?",
     subtitle: "Select any that apply.",
     selection: "multiple",
     options: [
-      { value: "Dark Circles", label: "Dark Circles" },
-      {
-        value: "Fine Lines and Wrinkles",
-        label: "Fine Lines and Wrinkles",
-      },
-      { value: "Puffiness", label: "Puffiness" },
-      {
-        value: "No Eye Concern",
-        label: "No Eye Concern",
-        exclusive: true,
-      },
+      { value: "Legs", label: "Legs" },
+      { value: "Underarms", label: "Underarms" },
+      { value: "Bikini Line / Brazilian", label: "Bikini Line / Brazilian" },
+      { value: "Face / Upper Lip", label: "Face / Upper Lip" },
+      { value: "Arms & Body", label: "Arms & Body" },
     ],
   },
   {
     id: "skinType",
-    title: "What best describes your skin type?",
+    title: "How would you describe your skin sensitivity?",
     subtitle: "Select one option.",
     selection: "single",
     options: [
       {
-        value: "Combination Skin",
-        label: "Combination Skin",
-        description:
-          "Your T-zone gives you trouble occasionally. Larger pores on the forehead, nose, or chin, but cheeks may feel drier.",
+        value: "Very Sensitive",
+        label: "Very Sensitive",
+        description: "Skin gets red easily after shaving, waxing, or using new products.",
       },
       {
-        value: "Dry Skin",
-        label: "Dry Skin",
-        description:
-          "Skin feels dull and has an unquenchable thirst. Flaky patches and a tight sensation are common.",
+        value: "Mildly Sensitive",
+        label: "Mildly Sensitive",
+        description: "Occasional irritation, but generally handles hair removal well.",
       },
       {
-        value: "Normal Skin",
-        label: "Normal Skin",
-        description:
-          "Lucky you. Skin is generally in good shape. You would like to start a routine because prevention is the best medicine.",
+        value: "Normal",
+        label: "Normal",
+        description: "Resilient skin. Rarely experiences redness or irritation from hair removal.",
       },
       {
-        value: "Oily Skin",
-        label: "Oily Skin",
-        description:
-          "Non-stop shine and blotting throughout the day. Pesky pimples and clogged pores are constant companions.",
+        value: "Tough",
+        label: "Tough",
+        description: "Never experiences irritation. Can handle any hair removal method easily.",
       },
     ],
   },
@@ -151,4 +135,3 @@ export const skincareQuizQuestions: QuizQuestion[] = [
     ],
   },
 ];
-

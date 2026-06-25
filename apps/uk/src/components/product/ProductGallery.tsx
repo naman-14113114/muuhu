@@ -68,11 +68,6 @@ export function ProductGallery({
   useEffect(() => {
     if (isLightboxOpen || isPaused) return;
 
-    const interval = setInterval(() => {
-      goNext();
-    }, 3000);
-
-    return () => clearInterval(interval);
   }, [goNext, isLightboxOpen, isPaused]);
 
   // 4. Center active thumbnail only in the stacked gallery strip.
