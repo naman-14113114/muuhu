@@ -2,10 +2,13 @@
 import Image from "next/image";
 import { footerMenus, paymentIcons } from "@/data/footer";
 import { productMediaAsset } from "@/lib/media";
+import { TrustBadges } from "@/components/product/TrustBadges";
 
 export function Footer() {
   return (
-    <footer className="bg-[var(--cream)] text-[var(--plum)]">
+    <>
+      <TrustBadges />
+      <footer className="bg-[var(--cream)] text-[var(--plum)]">
       <div className="Muuhu-wrap py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
@@ -125,6 +128,7 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ export function TrustBadges() {
   const badges = [
     {
       title: "Free Shipping all over UK",
-      icon: "/media/products/buudy-led-mask/images/i3.png", // Truck
+      icon: "/media/products/buudy-led-mask/images/muuhu_truck.png", // Truck
     },
     {
       title: "Dermatologist Reviewed",
@@ -21,11 +21,11 @@ export function TrustBadges() {
   ];
 
   return (
-    <section className="hidden md:block bg-[#FEFAF2] pt-2 md:pt-4 pb-6 md:pb-8">
+    <section className="hidden md:block bg-white pt-2 md:pt-4 pb-6 md:pb-8">
       <div className="Muuhu-wrap">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 items-center">
           {badges.map((badge, idx) => (
-            <div key={idx} className="flex flex-col md:flex-row items-center gap-3 md:gap-4 text-center md:text-left justify-center mx-auto w-full">
+            <div key={idx} className="flex flex-col items-center gap-3 md:gap-4 text-center justify-center mx-auto w-full">
               <div className="relative w-12 h-12 md:w-14 md:h-14 shrink-0 flex-none opacity-90">
                 <img
                   src={badge.icon}

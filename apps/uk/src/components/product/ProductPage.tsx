@@ -10,7 +10,6 @@ import { ProductHero } from "./ProductHero";
 import { ProductReviewsSection } from "./ProductReviewsSection";
 import { StickyAddToCart } from "./StickyAddToCart";
 import { TorchProductPage } from "./TorchProductPage";
-import { TrustBadges } from "./TrustBadges";
 import { VideoReviews } from "./VideoReviews";
 import { SuitabilitySection } from "./SuitabilitySection";
 
@@ -23,7 +22,6 @@ export function ProductPage({ product }: { product: Product }) {
     <>
       <ProductHero product={product} />
       {/* <VideoReviews /> */}
-      <TrustBadges />
       <BeforeAfterGrid />
 
       <ProductReviewsSection />
