@@ -23,14 +23,14 @@ export function SkincareQuizPage() {
 
         <div className="grid gap-6 lg:grid-cols-[.82fr_1.18fr] lg:items-start">
           <aside className="lg:sticky lg:top-8">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] bg-[var(--plum)]">
+            <div className="relative aspect-square overflow-hidden rounded-[18px] bg-[var(--plum)]">
               <Image
-                alt="Muuhu Ultra Pro IPL Device"
-                className="object-cover"
+                alt="Muuhu Ultra Pro Cost Comparison"
+                className="object-contain bg-[var(--cream)]"
                 fill
                 priority
                 sizes="(min-width: 1024px) 38vw, 92vw"
-                src="/media/products/buudy-led-mask/images/ipl_product_angle.png"
+                src="/media/products/buudy-led-mask/images/ipl_price_comparison.jpg"
               />
               <div className="absolute inset-x-0 bottom-0 bg-[linear-gradient(180deg,transparent,rgba(23,10,24,.88))] p-6 pt-24 text-[var(--cream)]">
                 <p className="Muuhu-mono text-[var(--gold)]">16J Energy + 8°C Ice Cooling</p>
