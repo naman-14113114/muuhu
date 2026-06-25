@@ -112,7 +112,7 @@ export const muuhuIpl: Product = {
       id: "muuhu-massage-kit",
       name: "Muuhu Massage Kit",
       valueCents: 7000,
-      image: productAsset("massage_kit_hero.png", "muuhu-massage-kit"),
+      image: productMediaAsset("massage_kit_hero.png", "muuhu-massage-kit", "images"),
       label: "Limited edition",
       href: "/products/muuhu-massage-kit",
     },
@@ -212,7 +212,7 @@ export const muuhuIpl: Product = {
   ],
 };
 
-const massagerAsset = (fileName: string) => productAsset(fileName, "muuhu-massage-kit");
+const massagerAsset = (fileName: string) => productMediaAsset(fileName, "muuhu-massage-kit", "images");
 
 export const MuuhuMassageKit: Product = {
   id: "muuhu-massage-kit",
