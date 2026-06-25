@@ -127,7 +127,7 @@ export function SuitabilitySection() {
   const resultType = selectedSkin && selectedHair ? getResultType(selectedSkin, selectedHair) : null;
   const resultMsg = selectedSkin && selectedHair ? getResultMessage(resultType!, selectedSkin, selectedHair) : "";
   const comboKey = selectedSkin && selectedHair ? `${selectedSkin}|${selectedHair}` : "";
-  const resultImg = resultImages[comboKey] || null;
+  const resultImg = selectedSkin && selectedHair ? "/media/products/buudy-led-mask/images/ipl_face_closeup.png" : null;
 
   return (
     <section className="Muuhu-section bg-[var(--cream)] py-14 md:py-24" id="suitability">
@@ -291,24 +291,25 @@ export function SuitabilitySection() {
           border-radius: 999px;
           cursor: pointer;
           transition: all 0.2s ease;
-          border: 2px solid var(--plum);
+          border: 2px solid var(--gold);
           text-decoration: none;
         }
 
         .suit-btn--primary {
-          background: var(--plum);
+          background: var(--gold);
           color: #fff;
         }
         .suit-btn--primary:hover {
-          background: var(--plum-soft);
+          background: var(--gold);
+          opacity: 0.9;
         }
 
         .suit-btn--secondary {
           background: transparent;
-          color: var(--plum);
+          color: var(--gold);
         }
         .suit-btn--secondary:hover {
-          background: rgba(0,0,0,0.06);
+          background: rgba(237, 106, 58, 0.06);
         }
 
         .suit-progress {
