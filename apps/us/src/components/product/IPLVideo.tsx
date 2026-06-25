@@ -22,7 +22,7 @@ export function IPLVideo() {
             src="/media/products/buudy-led-mask/videos/hero.mp4"
             autoPlay={true}
             muted={true}
-            defaultMuted={true}
+            
             loop={true}
             playsInline={true}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
