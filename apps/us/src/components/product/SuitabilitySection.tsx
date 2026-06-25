@@ -1,6 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useCart } from "@/components/cart/CartProvider";
+import type { Product } from "@/data/products";
+
 
 /* ── Skin tone swatches (from reference HTML) ─────────────────────── */
 const skinTones = [
@@ -103,7 +107,9 @@ function getResultMessage(type: ResultType, skin: string, hair: string): string 
 /* ══════════════════════════════════════════════════════════════════════
    Component
    ══════════════════════════════════════════════════════════════════════ */
-export function SuitabilitySection() {
+export function SuitabilitySection({ product }: { product?: Product }) {
+  const { addProduct } = useCart();
+  const router = useRouter();
   const [step, setStep] = useState(1);
   const [selectedSkin, setSelectedSkin] = useState<string | null>(null);
   const [selectedHair, setSelectedHair] = useState<string | null>(null);
@@ -432,14 +438,14 @@ export function SuitabilitySection() {
                       href="#product-form"
                       onClick={(e) => {
                         e.preventDefault();
-                        document.getElementById("product-form")?.scrollIntoView({ behavior: "smooth" });
+                        if (product) { addProduct(product); router.push("/cart"); }
                       }}
                     >
                       Add to Cart
                     </a>
                   )}
                   {resultType === "no" && (
-                    <a className="suit-btn suit-btn--primary" href="/products/red-light-torch">
+                    <a className="suit-btn suit-btn--primary" href="/">
                       Explore Others
                     </a>
                   )}

@@ -26,7 +26,7 @@ export function ProductPage({ product }: { product: Product }) {
       <BeforeAfterGrid />
 
       <ProductReviewsSection />
-      <SuitabilitySection />
+      <SuitabilitySection product={product} />
         <AppPromo />
       <IceCoolingSection />
       <ComparisonTable />
