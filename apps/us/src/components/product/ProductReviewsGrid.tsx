@@ -1337,7 +1337,7 @@ export function ProductReviewsGrid({
             title={
               productHandle === "muuhu-massage-kit" ? (
                 <>
-                  Muuhu Red MassageKit <em className="Muuhu-italic">reviews</em>.
+                  Muuhu Massage Kit <em className="Muuhu-italic">reviews</em>.
                 </>
               ) : (
                 <>
@@ -1347,7 +1347,7 @@ export function ProductReviewsGrid({
             }
             copy={
               productHandle === "muuhu-massage-kit"
-                ? "Real feedback from customers who made the Muuhu Red MassageKit part of their daily wellness ritual."
+                ? "Real feedback from customers who made the Muuhu Massage Kit part of their daily wellness ritual."
                 : "Real feedback from customers who made Muuhu part of their at-home skincare ritual."
             }
           />

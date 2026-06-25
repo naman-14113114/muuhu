@@ -23,7 +23,7 @@ function MassageKitFeatureGrid({ product }: { product: Product }) {
               Take your wellness <em className="buudy-italic">anywhere</em>.
             </>
           }
-          copy="Lightweight 200g design works at home, the office, or during travel. Durable one-button operation keeps each targeted session simple."
+          copy="Take this portable resin gua sha kit anywhere for natural tension relief and lymphatic drainage on the go. Premium smooth resin keeps each targeted session simple."
           invert
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -38,26 +38,6 @@ function MassageKitFeatureGrid({ product }: { product: Product }) {
                 {feature.body}
               </p>
             </article>
-          ))}
-        </div>
-        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {product.wavelengths?.map((wavelength) => (
-            <div
-              className="rounded-2xl border border-[rgba(247,241,232,.16)] bg-[rgba(247,241,232,.06)] p-4"
-              key={wavelength.name}
-            >
-              <div
-                className="h-1.5 rounded-full"
-                style={{ backgroundColor: wavelength.color }}
-              />
-              <div className="mt-4 flex items-baseline justify-between gap-4">
-                <h3 className="buudy-display text-2xl">{wavelength.name}</h3>
-                <span className="buudy-mono text-[var(--gold)]">{wavelength.nm}</span>
-              </div>
-              <p className="mt-3 text-sm leading-6 text-[rgba(247,241,232,.74)]">
-                {wavelength.description}
-              </p>
-            </div>
           ))}
         </div>
       </div>
@@ -80,7 +60,7 @@ function MassageKitStorySection() {
             copy='Simply set aside some "Me Time" for 15 minutes a day while you watch your favourite show.'
           />
           <p className="mt-6 leading-8 text-[var(--muted)]">
-            Experience the synergy of portability and power with a handheld
+            Experience the synergy of tension relief and lymphatic drainage with a handheld
             resin massage kit. The compact design offers targeted relief for
             muscle discomfort, wherever you are and whenever you need it.
           </p>

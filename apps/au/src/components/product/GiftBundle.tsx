@@ -352,7 +352,7 @@ export function GiftBundle({ product }: { product: Product }) {
         >
           <p className="buudy-eyebrow">{product.promoLabel}</p>
           <p className="buudy-display mt-2 text-2xl text-[var(--plum)]">
-            60% off, free shipping, and a rechargeable wellness kit.
+            60% off, free shipping, and a premium resin massage kit.
           </p>
           <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
             Includes the Gua Sha board, wide-toothed comb, and acupuncture pen,

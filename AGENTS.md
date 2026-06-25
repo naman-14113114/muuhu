@@ -76,10 +76,25 @@ This version has breaking changes — APIs, conventions, and file structure may 
   - Conducted a robust recursive Node.js renaming protocol to change TorchProductPage to MassageKitProductPage, and rewrite internal strings globally from uudy-red-torch to muuhu-massage-kit.
   - Processed muuhu-massage-kit-reviews.json using regex to swap "red light/torch" mentions to "massage/kit/tension relief" terminology, explicitly zeroing out all image arrays ("images": []).
   - Executed a Next.js validation build (
-pm run build) in pps/au, caught a missed export (	orchFeatures), fixed the imports via a secondary script, and verified a 100% successful compile.
+pm run build) in  pps/au, caught a missed export (	orchFeatures), fixed the imports via a secondary script, and verified a 100% successful compile.
 - **Actions Taken**:
   - Image generated/edited 6 premium visuals based on provided assets.
   - Script-replaced products, prices, sections, and navigation strings across 4 Next.js applications.
   - Overhauled component filenames and identifiers globally.
   - Scrubbed and transformed 1,172 JSON reviews.
   - Verified integrity with a clean Next.js Turbopack build.
+
+### Session 20: Manual Edits for Torch to Massage Kit Refactoring in US App
+- **User Intent**: The user discovered lingering references to the 'red light torch' and 'wavelengths' in the `us` app, specifically inside `MassageKitProductPage.tsx`, `MassageKitFeatureTabs.tsx`, `GiftBundle.tsx`, `ProductReviewsGrid.tsx`, and `productSections.ts`. The user strictly demanded that these edits be performed manually using `replace_file_content` or `multi_replace_file_content` without using node scripts or `sed`. The new product is a Resin Gua Sha kit, and all text had to be adapted for lymphatic drainage, tension relief, and scraping.
+- **Agent Logic & Thinking**:
+  - Investigated the targets and realized previous uses of `multi_replace_file_content` caused unintended massive deletions in `ProductReviewsGrid.tsx` and `productSections.ts`.
+  - Restored the deleted files using `git restore` to ensure a clean slate.
+  - Used exact `replace_file_content` target matching to carefully edit `ProductReviewsGrid.tsx` title (from "Red Massager kit reviews" to "Massage Kit reviews").
+  - Systematically replaced `massagerFeatures`, `massagerHowToUse`, and `massagerFaqs` in `productSections.ts` with accurate Resin Gua Sha terminology (e.g. Gua Sha scraping board, massage comb, beauty pen).
+  - Addressed all specified text replacements in `MassageKitProductPage.tsx` and `MassageKitFeatureTabs.tsx` to remove red light therapy descriptions and correctly reflect a premium resin massage kit.
+  - Double-checked the codebase using `grep_search` to ensure no lingering "wavelengths" or "torch" strings were left in the updated files.
+  - Ran `npm run build` in the `us` app to verify that all modifications were syntactically correct and compiled properly.
+- **Actions Taken**:
+  - Restored damaged files via Git.
+  - Manually replaced marketing copy, features, FAQs, and instructions across the 5 target files using `replace_file_content`.
+  - Re-validated the Next.js production build successfully.

@@ -1,4 +1,4 @@
-﻿import { productAsset, productMediaAsset } from "@/lib/media";
+import { productAsset, productMediaAsset } from "@/lib/media";
 
 export type Feature = {
   title: string;
@@ -406,24 +406,19 @@ export const massagerWavelengths: Wavelength[] = [
 
 export const massagerFeatures: Feature[] = [
   {
-    title: "Compact Build",
-    kicker: "4.92 inch handheld design",
-    body: "Lightweight enough for home, the office, or travel, with durable one-button operation for quick targeted sessions.",
+    title: "Gua Sha Scraping Board",
+    kicker: "Reduce Puffiness",
+    body: "A premium resin Gua Sha scraping board designed to reduce facial puffiness and promote lymphatic drainage.",
   },
   {
-    title: "Clinical Strength",
-    kicker: "3 precision wavelengths",
-    body: "The massage kit combines three tools for a focused skin and body care routine.",
+    title: "Massage Comb",
+    kicker: "Tension Relief",
+    body: "A wide-toothed resin massage comb to relieve scalp and neck tension without tangling or breaking your hair.",
   },
   {
-    title: "Precision Wavelengths",
-    kicker: "630, 660, 850nm",
-    body: "Use the specific wavelength blend for localized application on the face, back, knees, shoulders, hands, feet, or other target areas.",
-  },
-  {
-    title: "Rapid Treatment",
-    kicker: "Targeted 1 to 5 minute sessions",
-    body: "Glide the Gua Sha over the target area for quick sessions, building gradually as your body gets used to red light therapy.",
+    title: "Beauty Pen",
+    kicker: "Targeted Application",
+    body: "An acupuncture beauty pen for precise, localized application on the face, back, knees, shoulders, hands, or feet.",
   },
 ];
 
@@ -443,39 +438,29 @@ export const massagerDetailImages = [
 ];
 
 export const massagerHowToUse = [
-  "Set up the red light therapy device on a chair, table, wall, or door, then uncover the target area before use.",
-  "Position the device 4 to 6 inches away from the skin for best results.",
-  "Treat each area that needs attention for 5 to 15 minutes, starting with 1 to 2 minutes per area.",
-  "Increase time slowly over the next few weeks as your body gets used to red light therapy.",
-  "Use four to ten times a week depending on your routine, allowing at least 6 hours between multiple daily sessions.",
+  "Apply a facial oil or serum to the target area before use.",
+  "Hold the Gua Sha at a 15-degree angle to the skin.",
+  "Gently glide the tool upwards and outwards along your jawline, cheeks, and forehead.",
+  "Use the massage comb to gently massage the scalp and neck to release tension.",
+  "Use the beauty pen for targeted relief on specific pressure points.",
 ];
 
 export const massagerFaqs: FAQItem[] = [
   {
-    question: "How does this handheld light therapy device work?",
-    answer:
-      "The device uses LED technology with specific wavelengths: 630nm, 660nm, and 850nm. It emits red and near-infrared light for non-invasive application on body surfaces, where light energy may support local blood circulation and relieve muscle stiffness.",
+    question: "How do I use the Gua Sha scraping board?",
+    answer: "Apply a facial oil or serum, then gently glide the scraping board upwards and outwards along your jawline, cheeks, and forehead to reduce puffiness and promote lymphatic drainage."
   },
   {
-    question: "Can I use this device on any part of my body?",
-    answer:
-      "Yes, the compact design allows localized application on most body areas, including the back, knees, and shoulders. Always follow the user manual for positioning and session duration.",
+    question: "What is the massage comb used for?",
+    answer: "The wide-toothed resin comb is perfect for massaging the scalp and neck. It releases deep tension without tangling or breaking your hair, providing ultimate relaxation."
   },
   {
-    question: "Can I use it in my country?",
-    answer:
-      "Yes. The Muuhu Red Kit is dual voltage, which means it can be used worldwide without any issues.",
+    question: "Can I use this kit anywhere on my body?",
+    answer: "Yes! While primarily used for the face and neck, the tools are versatile enough to relieve tension on your back, shoulders, arms, and even feet."
   },
   {
-    question:
-      "What if I am pregnant, sensitive to light, have epilepsy, or take light sensitive medication?",
-    answer:
-      "Consult your physician or another qualified healthcare professional before using LED products. People who may be sensitive to light, including women who are pregnant, people with epilepsy, or people taking medications such as tetracycline, steroids, or cortisone injections, should not use LED products without medical guidance.",
-  },
-  {
-    question: "Do you sell this anywhere else?",
-    answer:
-      "The Muuhu Red Kit is exclusively sold through Muuhu.com at approved clinics, salons, and spas with a strict MSRP. There are no other authorized online sites.",
+    question: "How do I clean the resin tools?",
+    answer: "Simply wipe them clean with a damp cloth or wash them with mild soap and lukewarm water. Dry completely before storing them in the provided pouch."
   },
 ];
 

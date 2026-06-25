@@ -6,8 +6,6 @@ import {
 import { market, type StoreCurrency } from "@/lib/market";
 import {
   faqs,
-  massagerFaqs,
-  massagerWavelengths,
   type FAQItem,
   type Wavelength,
 } from "./productSections";

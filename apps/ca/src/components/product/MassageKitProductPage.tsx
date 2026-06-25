@@ -23,7 +23,7 @@ function MassageKitFeatureGrid({ product }: { product: Product }) {
               Take your wellness <em className="Muuhu-italic">anywhere</em>.
             </>
           }
-          copy="Lightweight 200g design works at home, the office, or during travel. Durable one-button operation keeps each targeted session simple."
+          copy="The lightweight resin gua sha kit works at home, the office, or during travel. Premium smooth resin keeps each targeted session simple."
           invert
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -38,26 +38,6 @@ function MassageKitFeatureGrid({ product }: { product: Product }) {
                 {feature.body}
               </p>
             </article>
-          ))}
-        </div>
-        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {product.wavelengths?.map((wavelength) => (
-            <div
-              className="rounded-2xl border border-[rgba(247,241,232,.16)] bg-[rgba(247,241,232,.06)] p-4"
-              key={wavelength.name}
-            >
-              <div
-                className="h-1.5 rounded-full"
-                style={{ backgroundColor: wavelength.color }}
-              />
-              <div className="mt-4 flex items-baseline justify-between gap-4">
-                <h3 className="Muuhu-display text-2xl">{wavelength.name}</h3>
-                <span className="Muuhu-mono text-[var(--gold)]">{wavelength.nm}</span>
-              </div>
-              <p className="mt-3 text-sm leading-6 text-[rgba(247,241,232,.74)]">
-                {wavelength.description}
-              </p>
-            </div>
           ))}
         </div>
       </div>
@@ -80,7 +60,7 @@ function MassageKitStorySection() {
             copy='Simply set aside some "Me Time" for 15 minutes a day while you watch your favourite show.'
           />
           <p className="mt-6 leading-8 text-[var(--muted)]">
-            Experience the synergy of portability and power with a handheld
+            Experience the synergy of tension relief and lymphatic drainage with a handheld
             resin massage kit. The compact design offers targeted relief for
             muscle discomfort, wherever you are and whenever you need it.
           </p>
@@ -115,20 +95,19 @@ function MassageKitDetailSection() {
         <div>
           <SectionHeading
             eyebrow="Product detail"
-            title="Blue and red light therapy, focused."
-            copy="A 5-wavelength near-infrared flashlight wand for body relief, acne-focused care, skin health, and targeted face or body application."
+            title="Tension relief, focused."
+            copy="A 3-piece resin massage tool kit for body relief, skin health, and targeted face or body application."
           />
           <div className="mt-8 space-y-5 leading-8 text-[var(--muted)]">
             <p>
-              Red light therapy uses low-level wavelengths of light for
+              Gua Sha therapy uses smooth resin edges for
               non-invasive wellness routines, including skin concerns,
-              inflammation, localized discomfort, hair-growth routines, and
+              inflammation, localized discomfort, and
               sleep-quality support.
             </p>
             <p>
-              Muuhu Red MassageKit combines blue 460nm, red 630nm and 660nm, plus
-              near-infrared 850nm and 900nm light. Three LEDs are visible, while
-              two infrared LEDs are invisible to the naked eye.
+              Muuhu Massage Kit combines a Gua Sha board, wide-toothed comb,
+              and acupuncture pen.
             </p>
           </div>
         </div>
@@ -137,8 +116,8 @@ function MassageKitDetailSection() {
           <ul className="mt-6 grid gap-5">
             {[
               "Natural pain relief: safe, painless, and designed to help reduce body aches while supporting smoother-looking skin.",
-              "Powerful combination: blue, red, and infrared lights reach different target depths for a flexible routine.",
-              "Portable and easy to use: includes a storage bag and hanging strip so it can travel with you.",
+              "Powerful combination: Gua Sha board, massage comb, and beauty pen reach different target depths for a flexible routine.",
+              "Portable and easy to use: includes a storage bag so it can travel with you.",
               "Humans and pets: pet owners may use it for animal joint-care routines when appropriate.",
               "Excellent material: 303 stainless steel outer shell with a 50,000+ hour service life.",
             ].map((item) => (
