@@ -108,7 +108,7 @@ export function GiftBundle({ product }: { product: Product }) {
 
   useEffect(() => {
     fetch(
-      "/media/products/buudy-led-mask/images/lottieflow-ecommerce-14-19-aa8e50-easey.json",
+      "/media/products/buudy-led-mask/images/lottieflow-truck-orange.json",
     )
       .then((res) => res.json())
       .then((data) => setDeliveryIconData(data))
@@ -223,21 +223,21 @@ export function GiftBundle({ product }: { product: Product }) {
                   <Lottie animationData={deliveryIconData} loop={true} />
                 </div>
               )}
-              <p className="buudy-eyebrow text-[var(--gold)] m-0 leading-none flex items-center h-5 sm:h-7 font-bold text-[10px] sm:text-xs">
+              <span className="buudy-eyebrow text-[var(--gold)] m-0 leading-none flex items-center h-5 sm:h-7 font-bold text-[10px] sm:text-xs">
                 FREE DELIVERY
-              </p>
+              </span>
             </div>
-            <p className="buudy-display mt-1.5 text-base sm:text-2xl text-[var(--plum)] font-normal leading-none whitespace-nowrap">
+            <span className="buudy-display block mt-1.5 text-base sm:text-2xl text-[var(--plum)] font-normal leading-none whitespace-nowrap">
               {deliveryDate || "soon"}
-            </p>
+            </span>
           </div>
           <div className="text-right">
-            <p className="buudy-eyebrow text-[var(--gold)] whitespace-nowrap text-[9px] sm:text-[11px] tracking-tight sm:tracking-normal">
+            <span className="buudy-eyebrow block text-[var(--gold)] whitespace-nowrap text-[9px] sm:text-[11px] tracking-tight sm:tracking-normal">
               {hasGifts ? "ORDER WITHIN" : "ORDER TODAY"}
-            </p>
-            <p className="buudy-display mt-1.5 text-xl sm:text-[2.2rem] font-normal text-[var(--plum)] leading-none">
+            </span>
+            <span className="buudy-display block mt-1.5 text-xl sm:text-[2.2rem] font-normal text-[var(--plum)] leading-none">
               {timer}
-            </p>
+            </span>
           </div>
         </div>
       </div>
@@ -366,4 +366,6 @@ export function GiftBundle({ product }: { product: Product }) {
     </div>
   );
 }
+
+
 

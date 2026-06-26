@@ -42,17 +42,17 @@ export function CartLineItem({ line }: { line: CartLine }) {
       <div className="min-w-0 flex-1">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="buudy-display text-lg leading-tight text-[var(--plum)]">
+            <span className="buudy-display block text-lg leading-tight text-[var(--plum)]">
               {line.title}
-            </p>
+            </span>
             <p className="mt-1 text-xs leading-5 text-[var(--muted)]">{line.subtitle}</p>
           </div>
           <div className="text-right">
-            <p className="buudy-display text-lg text-[var(--plum)]">
+            <span className="buudy-display block text-lg text-[var(--plum)]">
               {line.unitPriceCents === 0
                 ? "Free"
                 : formatMoney(line.unitPriceCents)}
-            </p>
+            </span>
             {line.compareAtCents ? (
               <p className="text-xs text-[var(--muted)] line-through">
                 {formatMoney(line.compareAtCents)}

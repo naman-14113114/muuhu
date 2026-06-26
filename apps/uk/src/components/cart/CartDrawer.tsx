@@ -58,9 +58,9 @@ export function CartDrawer() {
               aria-live="polite"
               className="flex h-full flex-col items-center justify-center text-center"
             >
-              <p className="Muuhu-display text-3xl text-[var(--plum)]">
+              <span className="Muuhu-display block text-3xl text-[var(--plum)]">
                 Restoring your bag...
-              </p>
+              </span>
               <p className="Muuhu-copy mt-3 max-w-xs text-sm">
                 Bringing your Muuhu selections back into view.
               </p>
@@ -73,9 +73,9 @@ export function CartDrawer() {
             </>
           ) : (
             <div className="flex h-full flex-col items-center justify-center text-center">
-              <p className="Muuhu-display text-3xl text-[var(--plum)]">
+              <span className="Muuhu-display block text-3xl text-[var(--plum)]">
                 Your bag is waiting.
-              </p>
+              </span>
               <p className="Muuhu-copy mt-3 max-w-xs text-sm">
                 Add the Muuhu Ultra Pro or Red MassageKit to unlock current offers
                 and free shipping.

@@ -115,14 +115,14 @@ export function CartPageContent({
                 Free tracked shipping
               </span>
             </div>
-            <p className="Muuhu-display text-center text-xl leading-snug text-[var(--plum)]">
+            <span className="Muuhu-display block text-center text-xl leading-snug text-[var(--plum)]">
               Order in next{" "}
               <span className="font-semibold text-[var(--ink)]">{timer}</span>{" "}
               and receive it by{" "}
               <span className="font-semibold text-[var(--plum)]">
                 {deliveryDate || "soon"}
               </span>
-            </p>
+            </span>
           </div>
 
           {/* Desktop Layout */}
@@ -131,14 +131,14 @@ export function CartPageContent({
               <span className="grid h-11 w-11 flex-none place-items-center rounded-full bg-[rgba(184,149,86,.12)] text-[var(--gold)]">
                 <Truck size={22} />
               </span>
-              <p className="Muuhu-display text-xl leading-snug text-[var(--plum)] md:text-2xl">
+              <span className="Muuhu-display block text-xl leading-snug text-[var(--plum)] md:text-2xl">
                 Order in next{" "}
                 <span className="font-semibold text-[var(--ink)]">{timer}</span>{" "}
                 and receive it by{" "}
                 <span className="font-semibold text-[var(--plum)]">
                   {deliveryDate || "soon"}
                 </span>
-              </p>
+              </span>
             </div>
             <span className="Muuhu-mono rounded-full border border-[rgba(184,149,86,.32)] bg-[rgba(184,149,86,.2)] px-4 py-2 text-[var(--plum)] shadow-[inset_0_1px_0_rgba(255,255,255,.55)]">
               Free tracked shipping
@@ -276,9 +276,9 @@ function DigitalGiftNotice({ line }: { line: CartLine }) {
             <span className="Muuhu-mono rounded-full bg-[rgba(184,149,86,.12)] px-3 py-1 text-xs font-semibold text-[var(--plum)]">
               Free digital reward
             </span>
-            <p className="Muuhu-display text-xl leading-tight text-[var(--plum)] md:text-2xl">
+            <span className="Muuhu-display block text-xl leading-tight text-[var(--plum)] md:text-2xl">
               {line.title} is sent by email after checkout.
-            </p>
+            </span>
           </div>
         </div>
         <p className="text-sm leading-6 text-[var(--muted)]">
