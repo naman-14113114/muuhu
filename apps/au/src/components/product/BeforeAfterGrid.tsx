@@ -203,7 +203,7 @@ export function BeforeAfterGrid() {
               data-story-card
               key={`${story.id}-${index}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden bg-[var(--cream)] flex">
+              <div className="relative aspect-square overflow-hidden bg-[#1a1a1a] flex">
                 {story.imageBefore && story.imageAfter ? (
                   <>
                     <div className="relative w-1/2 h-full">
