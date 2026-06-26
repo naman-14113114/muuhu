@@ -140,11 +140,11 @@ section.bg-\[\#f6ede2\] + section.bg-\[\#f6ede2\] {
 .buudy-copy {
   color: var(--muted);
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 15px;
 }
 
 p {
-  font-size: 1.05rem;
+  font-size: 15px;
 }
 
 .buudy-glow {

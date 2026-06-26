@@ -17,6 +17,12 @@ import {
   Timer,
   Hand,
   ShieldCheck,
+  Snowflake,
+  Settings,
+  Monitor,
+  Plug,
+  Box,
+  Droplets,
 } from "lucide-react";
 import type { Product } from "@/data/products";
 import type { ReactNode } from "react";
@@ -50,14 +56,20 @@ type AccordionItem = {
 function getSpecIcon(label: string) {
   const normLabel = label.toLowerCase();
   if (normLabel.includes("dimension")) return Ruler;
-  if (normLabel.includes("led")) return Lightbulb;
+  if (normLabel.includes("led") || normLabel.includes("technology")) return Lightbulb;
   if (normLabel.includes("color")) return Palette;
   if (normLabel.includes("battery")) return Battery;
   if (normLabel.includes("use")) return Smile;
-  if (normLabel.includes("power")) return Zap;
+  if (normLabel.includes("power") || normLabel.includes("voltage")) return Zap;
   if (normLabel.includes("irradiance") || normLabel.includes("wavelength")) return Sun;
-  if (normLabel.includes("voltage")) return Zap;
-  if (normLabel.includes("intensity")) return Activity;
+  if (normLabel.includes("intensity") || normLabel.includes("levels") || normLabel.includes("energy")) return Activity;
+  if (normLabel.includes("cooling")) return Snowflake;
+  if (normLabel.includes("modes")) return Settings;
+  if (normLabel.includes("display")) return Smartphone;
+  if (normLabel.includes("supply")) return Plug;
+  if (normLabel.includes("material")) return Box;
+  if (normLabel.includes("waterproof")) return Droplets;
+  if (normLabel.includes("flash")) return Timer;
   return Zap;
 }
 
