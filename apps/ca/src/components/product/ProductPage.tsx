@@ -1,4 +1,4 @@
-﻿import type { Product } from "@/data/products";
+import type { Product } from "@/data/products";
 import { AppPromo, IceCoolingSection } from "./AppPromo";
 import { IPLVideo } from "./IPLVideo";
 import { BeforeAfterGrid } from "./BeforeAfterGrid";
@@ -26,7 +26,7 @@ export function ProductPage({ product }: { product: Product }) {
       <BeforeAfterGrid />
 
       <ProductReviewsSection />
-      <SuitabilitySection product={product} />
+      {/* <SuitabilitySection product={product} /> */}
         <AppPromo />
       <IceCoolingSection />
       <ComparisonTable />
