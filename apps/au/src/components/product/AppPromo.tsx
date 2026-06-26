@@ -149,16 +149,21 @@ export function IceCoolingSection() {
   return (
     <section className="Muuhu-section bg-[var(--cream)] py-14 md:py-24">
       <div className="Muuhu-wrap grid items-center gap-8 md:gap-14 lg:grid-cols-2">
-        <div className="lg:order-last">
+        <div className="lg:order-last flex flex-col justify-center h-full py-4 md:py-6">
+          <div className="mb-3 md:mb-4">
+            <Image
+              src={productMediaAsset("ice_cubes.png")}
+              alt="Ice Cooling"
+              width={100}
+              height={100}
+              className="object-contain"
+            />
+          </div>
           <p className="Muuhu-mono text-[#ED6A3A]">Advanced Comfort</p>
-          <h2 className="Muuhu-display mt-3 text-[2.5rem] leading-tight text-[var(--plum)] md:text-5xl">
-            Painless <em className="Muuhu-italic">Ice Cooling</em> Technology.
+          <h2 className="Muuhu-display mt-2 text-[2.5rem] leading-tight text-[var(--plum)] md:text-[3.25rem]">
+            Ice Cooling Technology.
           </h2>
-          <p className="mt-5 max-w-lg leading-7 text-[var(--muted)]">
-            Experience virtually painless hair removal with our built-in contact cooling. 
-            The sapphire cooling head lowers the temperature to a soothing ~8°C (46°F) where it touches your skin.
-          </p>
-          <ul className="mt-10 grid gap-6">
+          <ul className="mt-4 md:mt-6 grid gap-6">
             <li className="border-l-2 border-[#ED6A3A] pl-6">
               <p className="Muuhu-display text-2xl text-[var(--plum)]">~8°C / 46°F</p>
               <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
