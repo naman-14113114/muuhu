@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -164,7 +164,7 @@ export function Header() {
             height={74}
             priority
             sizes="(min-width: 1024px) 180px, 150px"
-            src="/media/products/buudy-led-mask/images/muuhu_logo.png"
+            src="/media/products/buudy-led-mask/images/muuhu_logo_v2.png"
             width={220}
           />
         </Link>
@@ -299,7 +299,7 @@ export function Header() {
                     height={74}
                     priority
                     sizes="150px"
-                    src="/media/products/buudy-led-mask/images/muuhu_logo.png"
+                    src="/media/products/buudy-led-mask/images/muuhu_logo_v2.png"
                     width={220}
                   />
                   <button

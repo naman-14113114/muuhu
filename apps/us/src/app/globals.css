@@ -1,4 +1,4 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 :root {
   --plum: #000000;
@@ -140,6 +140,11 @@ section.bg-\[\#f6ede2\] + section.bg-\[\#f6ede2\] {
 .buudy-copy {
   color: var(--muted);
   line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+p {
+  font-size: 1.05rem;
 }
 
 .buudy-glow {

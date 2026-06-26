@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ export function CartMinimalHeader() {
             height={74}
             priority
             sizes="(min-width: 640px) 160px, 132px"
-            src="/media/products/buudy-led-mask/images/muuhu_logo.png"
+            src="/media/products/buudy-led-mask/images/muuhu_logo_v2.png"
             width={220}
           />
         </Link>
