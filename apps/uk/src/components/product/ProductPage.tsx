@@ -25,10 +25,10 @@ export function ProductPage({ product }: { product: Product }) {
       <IPLVideo />
       <BeforeAfterGrid />
 
+      <AppPromo />
+      <IceCoolingSection />
       <ProductReviewsSection />
       {/* <SuitabilitySection product={product} /> */}
-        <AppPromo />
-      <IceCoolingSection />
       <ComparisonTable />
       <FAQSection faqs={product.faqs} />
       <GuaranteeSection />
