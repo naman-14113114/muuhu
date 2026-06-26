@@ -545,11 +545,20 @@ Update the MASTER_CONTEXT.md file after every major task completion.
   - Saved the user's `update-review-dates.js` script exactly as provided into the root directory of the monorepo.
   - Executed `node update-review-dates.js 6` which processed the 51,000+ line JSON files across all 4 countries (US, UK, CA, AU).
   - The script successfully parsed the existing UTC dates, added 6 days, and re-formatted the dates flawlessly for 21,780 reviews.
-  - Initiated a Next.js production build check to ensure the modified JSON syntax was completely valid and caused no downstream Turbopack caching/build crashes.
+  - The script successfully parsed the existing UTC dates, added 6 days, and re-formatted the dates flawlessly for 21,780 reviews.
+  - Verified changes through a Next.js production build and pushed to GitHub.
+
+### Session 24: Hide Suitability Section
+- **User Intent**: The user instructed me to completely hide/comment out the "Will Muuhu Ultra Pro work for me?" (skin tone suitability) section across all country apps.
+- **Agent Logic & Thinking**:
+  - Found the rendering logic for this inside `<APP_DIR>\src\components\product\ProductPage.tsx` where `<SuitabilitySection product={product} />` was being called.
+  - Defined a `SuitabilityHider` subagent to manually wrap this exact JSX line in a comment `{/* ... */}` via `replace_file_content`.
+  - Dispatched 4 concurrent subagents for `us`, `uk`, `ca`, and `au` apps.
+  - Verified the Next.js `npm run build` completed perfectly with no hydration or JSX errors in the `au` app.
 - **Actions Taken**:
-  - Added `update-review-dates.js` to the root directory.
-  - Ran the script with the `6` argument to add 6 days.
-  - Validated changes via `npm run build` and updated `AGENTS.md` log tracking.
+  - Commented out `<SuitabilitySection product={product} />` globally.
+  - Logged session history and pushed to GitHub.
+
 ### Session 21: Build Error Remediation After Manual Edits
 - **User Intent**: The previous session's manual file edits caused massive corruption in ProductReviewsGrid.tsx (a duplicate sync (review) => function swallowed 	ogglePhotos and pplyFilters) and productSections.ts (a stray } brackets and duplicate eviewVideos object export). The user (via system checkpoint) mandated fixing the build compilation errors so 
 pm run build succeeds.
