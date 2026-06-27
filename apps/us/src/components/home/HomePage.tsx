@@ -5,7 +5,8 @@ import { productMediaAsset } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { Price } from "@/components/ui/Price";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { homeCustomerReviewsGrid, homeHairFreeSmooth, homeProductShowcase, homeReviewQuote, homeProductVideo, homeHiGorgeous, homeSmoothSkin, homeWhyItWorks, homeKeyStats, homeNoMissedSpots, homeFullyAdjustable, homeRealResults, homeMassageKitSpotlight, homeMaskSpotlight, homeSkincareGuideIntro, homeTechnologySpotlight, homeFeatureCards, homeLightTherapy, homeYoungerYou } from "@/data/home";
+import { homeCustomerReviewsGrid, homeHairFreeSmooth, homeProductShowcase, homeProductVideo, homeHiGorgeous, homeSmoothSkin, homeWhyItWorks, homeKeyStats, homeNoMissedSpots, homeFullyAdjustable, homeRealResults, homeMassageKitSpotlight, homeMaskSpotlight, homeSkincareGuideIntro, homeTechnologySpotlight, homeFeatureCards, homeLightTherapy, homeYoungerYou } from "@/data/home";
+import { FAQSection } from "@/components/product/FAQSection";
 
 function MassageKitSpotlight() {
   const data = homeMassageKitSpotlight;
@@ -217,38 +218,6 @@ function RevealYoungerYou() {
 }
 
 
-function CustomerReviewsGrid() {
-  return (
-    <section className="hidden md:block relative w-full overflow-hidden bg-[var(--plum)]">
-      <div className="relative w-full">
-        <Image
-          src={homeCustomerReviewsGrid.image}
-          alt={homeCustomerReviewsGrid.title}
-          width={1800}
-          height={1000}
-          className="w-full h-auto block"
-          sizes="100vw"
-        />
-      </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-        <SectionHeading
-          eyebrow=""
-          title={homeCustomerReviewsGrid.title}
-          copy={homeCustomerReviewsGrid.copy}
-          align="center"
-          invert
-        />
-        <Button asChild className="mt-8 !border-[var(--cream)] !text-[var(--cream)] hover:!bg-[var(--blush)] hover:!text-[var(--plum)]">
-          <Link href={homeCustomerReviewsGrid.ctaHref}>
-            {homeCustomerReviewsGrid.ctaLabel}
-          </Link>
-        </Button>
-      </div>
-    </section>
-  );
-}
-
-
 function HomeVideoHero() {
   return (
     <section className="buudy-section relative w-full overflow-hidden bg-[var(--plum)]">
@@ -341,28 +310,6 @@ function ProductShowcase() {
 }
 
 
-function ReviewQuote() {
-  const data = homeReviewQuote;
-  return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
-      <div className="absolute inset-0 w-full h-full">
-        <Image src={data.image} alt="Background" fill className="object-cover opacity-30" />
-        <div className="absolute inset-0 bg-[#FDF6EA]/80 backdrop-blur-sm" />
-      </div>
-      <div className="relative z-10 Muuhu-wrap max-w-4xl mx-auto text-center">
-        <div className="flex justify-center gap-1 mb-8 text-yellow-400">
-          {[...Array(5)].map((_, i) => <Star key={i} fill="currentColor" size={28} />)}
-        </div>
-        <h2 className="text-3xl md:text-5xl font-serif text-[var(--plum)] leading-snug mb-8">
-          "{data.quote}"
-        </h2>
-        <p className="text-lg font-semibold text-[var(--muted)]">— {data.author}</p>
-      </div>
-    </section>
-  );
-}
-
-
 function ProductVideo() {
   const data = homeProductVideo;
   return (
@@ -389,10 +336,15 @@ function HiGorgeous() {
   return (
     <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[25px] shadow-md lg:order-1">
+        <div className="relative w-full aspect-square max-w-[450px] mx-auto overflow-hidden rounded-[25px] shadow-md lg:order-1">
           <Image alt={data.title} className="w-full h-full object-cover" fill src={data.image} />
         </div>
         <div className="lg:order-2 flex flex-col justify-center max-w-xl">
+          {data.icon && (
+            <div className="mb-6 flex items-center justify-start">
+              <Image src={data.icon} alt="Icon" width={48} height={48} className="w-12 h-12" />
+            </div>
+          )}
           <h2 className="Muuhu-display text-4xl lg:text-5xl text-[var(--plum)] mb-6">{data.title}</h2>
           <div className="prose text-lg text-[var(--muted)] leading-relaxed space-y-4 whitespace-pre-wrap">{data.copy}</div>
         </div>
@@ -408,10 +360,15 @@ function SmoothSkin() {
     <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
         <div className="lg:order-1 flex flex-col justify-center max-w-xl">
+          {data.icon && (
+            <div className="mb-6 flex items-center justify-start">
+              <Image src={data.icon} alt="Icon" width={48} height={48} className="w-12 h-12" />
+            </div>
+          )}
           <h2 className="Muuhu-display text-4xl lg:text-5xl text-[var(--plum)] mb-6">{data.title}</h2>
           <div className="prose text-lg text-[var(--muted)] leading-relaxed space-y-4 whitespace-pre-wrap">{data.copy}</div>
         </div>
-        <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[25px] shadow-md lg:order-2">
+        <div className="relative w-full aspect-square max-w-[450px] mx-auto overflow-hidden rounded-[25px] shadow-md lg:order-2">
           <Image alt={data.title} className="w-full h-full object-cover" fill src={data.image} />
         </div>
       </div>
@@ -501,7 +458,6 @@ export function HomePage() {
       <HomeVideoHero />
       <HairFreeSmooth />
       <ProductShowcase />
-      <ReviewQuote />
       <ProductVideo />
       <HiGorgeous />
       <SmoothSkin />
@@ -512,7 +468,7 @@ export function HomePage() {
       <TwoColumnBlock data={homeFullyAdjustable} reverse />
       <TwoColumnBlock data={homeRealResults} />
       
-      <CustomerReviewsGrid />
+      <FAQSection />
     </>
   );
 }

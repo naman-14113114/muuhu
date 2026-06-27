@@ -131,7 +131,7 @@ export const homeHairFreeSmooth = {
     { text: "9 Intensity Levels", icon: "/media/products/buudy-led-mask/images/icons/icon_3.svg" },
     { text: "Ultra Fast", icon: "/media/products/buudy-led-mask/images/icons/icon_4.svg" },
     { text: "16J Energy Output", icon: "/media/products/buudy-led-mask/images/icons/icon_5.svg" },
-    { text: "Auto / Manual Mode", icon: "/media/products/buudy-led-mask/images/icons/icon_6.svg" },
+    { text: "Auto / Manual Mode", icon: "/media/products/buudy-led-mask/images/icons/ipl_gun_icon.png" },
     { text: "999,999 Flashes", icon: "/media/products/buudy-led-mask/images/icons/icon_7.svg" },
     { text: "Cost-Effective", icon: "/media/products/buudy-led-mask/images/icons/icon_8.svg" },
     { text: "Compact Size", icon: "/media/products/buudy-led-mask/images/icons/icon_9.svg" }
@@ -165,12 +165,14 @@ export const homeHiGorgeous = {
   title: "Hi Gorgeous!",
   copy: "Every summer has a story, and yours starts with smooth, glowing skin. You have spent countless hours and money on waxing, plucking, and shaving those pesky hairs, only for them to return.\n\nLife is too short to fight a daily battle with unwanted hair. Say hello to your ultimate confidence boost and get rid of hair safely and effectively with Muuhu.",
   image: productMediaAsset("hi_gorgeous.jpg"),
+  icon: "/media/products/buudy-led-mask/images/icons/icon_4.svg",
 };
 
 export const homeSmoothSkin = {
   title: "Smooth Skin. Smarter Savings.",
   copy: "Summer-ready skin without the fuss? The Muuhu Ultra Pro IPL has you covered. Skip the expensive and painful waxing appointments or endless shaving routines.\n\nFeel completely confident and carefree in any outfit you choose. Stop wasting time and money—say hello to a lifetime of smooth, hair-free skin.",
-  image: productMediaAsset("money_well_spent_edited.png"),
+  image: productMediaAsset("money_well_spent_edited_v2.jpg"),
+  icon: "/media/products/buudy-led-mask/images/icons/bikini_icon.png",
 };
 
 export const homeWhyItWorks = {
