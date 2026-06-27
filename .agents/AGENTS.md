@@ -1252,6 +1252,14 @@ pnpm --filter @buudy/au build
   - Manually added `font-size: 1.05rem;` to the `.buudy-copy` class and the `p` element in `globals.css` to globally increase paragraph size for legibility.
   - Successfully verified the Next.js turbo compiler (`pnpm build`) for all apps to ensure no hydration or CSS syntax errors were introduced.
 
+### Session 23: CA App Homepage Sync
+- **User Intent**: The user requested that the manual edits applied to the `us` app's `HomePage.tsx` and `home.ts` (specifically the bottom half) be replicated precisely to the `ca` app, STRICTLY using manual file editing tools (no shell/Node scripts), and followed by a build check.
+- **Actions Taken**:
+  - Replaced the `HomePage.tsx` component in `apps/ca` with the exact layout from `apps/us` using `replace_file_content`.
+  - Replaced the data structures from `homeCustomerReviewsGrid` downwards in `apps/ca/src/data/home.ts` using `multi_replace_file_content` to preserve the top CA-specific content.
+  - Identified and fixed a trailing `); }` syntax error injected during the `replace_file_content` call.
+  - Ran `npm run build` in `apps/ca` which successfully passed Next.js Turbopack compilation and TypeScript checks.
+
 ## 21. DEVELOPMENT & REVIEW WORKFLOW (4-Tier Check)
 
 1. **Verification Check:** Make sure any change doesn't break the PlusBase checkout, Trustpilot/Microsoft Ads tracking parameters, or regional sync.

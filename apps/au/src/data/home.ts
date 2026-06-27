@@ -126,30 +126,86 @@ export const homeHairFreeSmooth = {
   title: "Hair-Free Smooth Skin",
   subtitle: "Get ready to love your skin with permanent hair removal at home in just 6-12 weeks.",
   features: [
-    "Ice Cooling 8°C",
-    "Efficient & Painless",
-    "9 Intensity Levels",
-    "Ultra Fast",
-    "16J Energy Output",
-    "Auto / Manual Mode",
-    "999,999 Flashes",
-    "Cost-Effective",
-    "Compact Size"
+    { text: "Ice Cooling 8°C", icon: "/media/products/buudy-led-mask/images/icons/icon_1.svg" },
+    { text: "Efficient & Painless", icon: "/media/products/buudy-led-mask/images/icons/icon_2.svg" },
+    { text: "9 Intensity Levels", icon: "/media/products/buudy-led-mask/images/icons/icon_3.svg" },
+    { text: "Ultra Fast", icon: "/media/products/buudy-led-mask/images/icons/icon_4.svg" },
+    { text: "16J Energy Output", icon: "/media/products/buudy-led-mask/images/icons/icon_5.svg" },
+    { text: "Auto / Manual Mode", icon: "/media/products/buudy-led-mask/images/icons/icon_6.svg" },
+    { text: "999,999 Flashes", icon: "/media/products/buudy-led-mask/images/icons/icon_7.svg" },
+    { text: "Cost-Effective", icon: "/media/products/buudy-led-mask/images/icons/icon_8.svg" },
+    { text: "Compact Size", icon: "/media/products/buudy-led-mask/images/icons/icon_9.svg" }
   ]
 };
 
-export const homeHiGorgeous = {
-  title: "Hi Gorgeous!",
-  copy: "Every summer has a story, and yours starts with smooth, glowing skin. You have spent countless hours and money on waxing, plucking, and shaving those pesky hairs, only for them to return. Life is too short to fight a daily battle with unwanted hair. Say hello to your ultimate confidence boost and get rid of hair safely and effectively with Muuhu.",
-  image: productMediaAsset("hi_gorgeous.jpg"),
+export const homeProductShowcase = {
+  eyebrow: "WHAT YOU ARE GETTING INTO",
+  title: "Permanent hair removal that actually works.",
+  product: muuhuIpl,
+  features: [
+    "Permanent hair reduction in just 6-12 weeks.",
+    "Built-in ice cooling for painless treatments.",
+    "999,999 flashes means it lasts a lifetime.",
+    "Use on any body part including face and bikini."
+  ],
+  image: productMediaAsset("ipl_provided_homepage_1.png")
+};
+
+export const homeReviewQuote = {
+  quote: "I have spent thousands of dollars on salon laser treatments that were painful and inconvenient. Now I use the Muuhu Ultra Pro at home and my hair is literally gone. It's painless, fast, and the best investment I've made for my skin.",
+  author: "Sarah J.",
+  image: productMediaAsset("reference_ipl.jpg")
 };
 
 export const homeProductVideo = {
   video: "/media/products/buudy-led-mask/videos/hero.mp4",
 };
 
+export const homeHiGorgeous = {
+  title: "Hi Gorgeous!",
+  copy: "Every summer has a story, and yours starts with smooth, glowing skin. You have spent countless hours and money on waxing, plucking, and shaving those pesky hairs, only for them to return.\n\nLife is too short to fight a daily battle with unwanted hair. Say hello to your ultimate confidence boost and get rid of hair safely and effectively with Muuhu.",
+  image: productMediaAsset("hi_gorgeous.jpg"),
+};
+
 export const homeSmoothSkin = {
   title: "Smooth Skin. Smarter Savings.",
-  copy: "Summer-ready skin without the fuss? The Muuhu Ultra Pro IPL has you covered. Skip the expensive and painful waxing appointments or endless shaving routines. Feel completely confident and carefree in any outfit you choose. Stop wasting time and money—say hello to a lifetime of smooth, hair-free skin.",
+  copy: "Summer-ready skin without the fuss? The Muuhu Ultra Pro IPL has you covered. Skip the expensive and painful waxing appointments or endless shaving routines.\n\nFeel completely confident and carefree in any outfit you choose. Stop wasting time and money—say hello to a lifetime of smooth, hair-free skin.",
   image: productMediaAsset("money_well_spent_edited.png"),
+};
+
+export const homeWhyItWorks = {
+  title: "Why Muuhu Works So Well",
+  image: productMediaAsset("ipl_provided_5.png"),
+  features: [
+    { number: "1", title: "Sapphire Ice Cooling", copy: "Cools to 8°C on contact to protect skin and ensure a painless experience." },
+    { number: "2", title: "16J High Energy Output", copy: "Reaches deep into the follicle to break the hair growth cycle effectively." },
+    { number: "3", title: "Quartz Lamp", copy: "Durable and powerful, ensuring 999,999 flashes for a lifetime of use." },
+    { number: "4", title: "Ergonomic Design", copy: "Fits perfectly in your hand for easy treatment of tricky areas." }
+  ]
+};
+
+export const homeKeyStats = {
+  stats: [
+    { number: "8", label: "°C Ice Cooling", sublabel: "painless treatments" },
+    { number: "9", label: "Energy Levels", sublabel: "for every skin type" },
+    { number: "16", label: "Joules of Energy", sublabel: "maximum effectiveness" }
+  ]
+};
+
+export const homeNoMissedSpots = {
+  title: "No missed spots",
+  copy: "The Auto-Glide mode flashes continuously as you glide the device over your skin, making it incredibly fast to treat large areas like legs and arms without missing a spot.",
+  image: productMediaAsset("ipl_provided_4.png"),
+};
+
+export const homeFullyAdjustable = {
+  title: "Fully adjustable treatments",
+  copy: "With 9 intensity levels, you are always in control. Start low for sensitive areas like the bikini line or upper lip, and increase the power for coarser hair on your legs or underarms.",
+  image: productMediaAsset("ipl_face_closeup.png"),
+};
+
+export const homeRealResults = {
+  title: "Real results",
+  copy: "Clinical studies show up to 92% hair reduction after just 6-12 weeks of consistent use. Stop managing your hair and start eliminating it.",
+  image: productMediaAsset("ipl_replacement_3.png"),
 };
