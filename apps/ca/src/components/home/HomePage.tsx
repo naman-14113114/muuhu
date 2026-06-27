@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import {
   homeCustomerReviewsGrid,
   homeFeatureCards,
@@ -11,6 +11,7 @@ import {
   homeMassageKitSpotlight,
   homeYoungerYou,
   homeHairFreeSmooth,
+  homeProductVideo,
   homeSmoothSkin,
   homeHiGorgeous,
 } from "@/data/home";
@@ -273,23 +274,69 @@ function HomeVideoHero() {
 function HairFreeSmooth() {
   const data = homeHairFreeSmooth;
   return (
-    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28">
-      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="lg:order-1 flex flex-col justify-center">
-          <SectionHeading
-            eyebrow={data.eyebrow}
-            title={data.title}
-            copy={data.copy}
-          />
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28 text-center">
+      <div className="Muuhu-wrap">
+        <div className="max-w-3xl mx-auto mb-16">
+          <h2 className="Muuhu-display text-4xl lg:text-5xl mb-6 text-custom" style={{ color: "rgb(237, 106, 58)" }}>
+            {data.title}
+          </h2>
+          <p className="text-lg text-[var(--muted)]">{data.subtitle}</p>
         </div>
-        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm lg:order-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {data.features.map((feature, i) => (
+            <div key={i} className="flex flex-col items-center gap-4">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-[var(--plum)] shadow-sm">
+                <CheckCircle size={32} strokeWidth={1.5} />
+              </div>
+              <p className="font-medium text-sm text-[var(--plum)]">{feature}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HiGorgeous() {
+  const data = homeHiGorgeous;
+  return (
+    <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[25px] shadow-md lg:order-1">
           <Image
-            alt="Cost comparison"
-            className="w-full h-auto object-cover"
-            width={600}
-            height={600}
+            alt={data.title}
+            className="w-full h-full object-cover"
+            fill
             sizes="(min-width: 1024px) 45vw, 90vw"
             src={data.image}
+          />
+        </div>
+        <div className="lg:order-2 flex flex-col justify-center max-w-xl">
+          <h2 className="Muuhu-display text-4xl lg:text-5xl text-[var(--plum)] mb-6">
+            {data.title}
+          </h2>
+          <div className="prose text-lg text-[var(--muted)] leading-relaxed space-y-4 whitespace-pre-wrap">
+            {data.copy}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductVideo() {
+  const data = homeProductVideo;
+  return (
+    <section className="Muuhu-section bg-[var(--cream)] py-12 md:py-24">
+      <div className="Muuhu-wrap max-w-[1200px]">
+        <div className="relative w-full aspect-video overflow-hidden rounded-[30px] bg-black shadow-2xl">
+          <video
+            src={data.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
@@ -300,50 +347,22 @@ function HairFreeSmooth() {
 function SmoothSkin() {
   const data = homeSmoothSkin;
   return (
-    <section className="Muuhu-section bg-white py-20 md:py-28">
+    <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="relative w-full aspect-video md:aspect-square overflow-hidden rounded-[25px] bg-black shadow-xl lg:order-1">
-          <video
-            src={data.video}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          />
+        <div className="lg:order-1 flex flex-col justify-center max-w-xl">
+          <h2 className="Muuhu-display text-4xl lg:text-5xl text-[var(--plum)] mb-6">
+            {data.title}
+          </h2>
+          <div className="prose text-lg text-[var(--muted)] leading-relaxed space-y-4">
+            {data.copy}
+          </div>
         </div>
-        <div className="lg:order-2 flex flex-col justify-center">
-          <SectionHeading
-            eyebrow={data.eyebrow}
-            title={data.title}
-            copy={data.copy}
-          />
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function HiGorgeous() {
-  const data = homeHiGorgeous;
-  return (
-    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28 text-center">
-      <div className="Muuhu-wrap flex flex-col items-center">
-        <div className="max-w-3xl mb-12">
-          <SectionHeading
-            eyebrow={data.eyebrow}
-            title={data.title}
-            copy={data.copy}
-            align="center"
-          />
-        </div>
-        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm">
+        <div className="relative w-full aspect-[4/5] lg:aspect-square overflow-hidden rounded-[25px] shadow-md lg:order-2">
           <Image
-            alt="Hi Gorgeous Community"
-            className="w-full h-auto object-cover"
-            width={1000}
-            height={600}
-            sizes="100vw"
+            alt={data.title}
+            className="w-full h-full object-cover"
+            fill
+            sizes="(min-width: 1024px) 45vw, 90vw"
             src={data.image}
           />
         </div>
@@ -357,8 +376,9 @@ export function HomePage() {
     <>
       <HomeVideoHero />
       <HairFreeSmooth />
-      <SmoothSkin />
       <HiGorgeous />
+      <ProductVideo />
+      <SmoothSkin />
       <CustomerReviewsGrid />
     </>
   );

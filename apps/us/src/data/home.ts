@@ -123,22 +123,33 @@ export const homeCustomerReviewsGrid = {
 };
 
 export const homeHairFreeSmooth = {
-  eyebrow: "The Smart Choice",
-  title: "Hair free smooth skin without the salon price.",
-  copy: "Ditch the expensive salon laser treatments and painful waxing. The Muuhu Ultra Pro delivers professional IPL technology with a 999,999 flash lifespan for a fraction of the cost.",
-  image: productMediaAsset("money_well_spent_edited.png"),
-};
-
-export const homeSmoothSkin = {
-  eyebrow: "Ice Cooling Technology",
-  title: "Smooth skin made painless.",
-  copy: "Experience the ultimate comfort with our built-in ice cooling plate that cools to 8°C on contact. Combined with 9 adjustable energy levels, you get a completely customized, painless treatment right from your bedroom.",
-  video: "/media/products/buudy-led-mask/videos/hero.mp4",
+  title: "Hair-Free Smooth Skin",
+  subtitle: "Get ready to love your skin with permanent hair removal at home in just 6-12 weeks.",
+  features: [
+    "Ice Cooling 8°C",
+    "Efficient & Painless",
+    "9 Intensity Levels",
+    "Ultra Fast",
+    "16J Energy Output",
+    "Auto / Manual Mode",
+    "999,999 Flashes",
+    "Cost-Effective",
+    "Compact Size"
+  ]
 };
 
 export const homeHiGorgeous = {
-  eyebrow: "Join the Community",
-  title: "Hi gorgeous, welcome to the club.",
-  copy: "Join thousands of others who have transformed their routine. With visible results in just weeks, you're not just removing hair—you're revealing your most confident self.",
+  title: "Hi Gorgeous!",
+  copy: "Every summer has a story, and yours starts with smooth, glowing skin. You have spent countless hours and money on waxing, plucking, and shaving those pesky hairs, only for them to return. Life is too short to fight a daily battle with unwanted hair. Say hello to your ultimate confidence boost and get rid of hair safely and effectively with Muuhu.",
   image: productMediaAsset("hi_gorgeous.jpg"),
+};
+
+export const homeProductVideo = {
+  video: "/media/products/buudy-led-mask/videos/hero.mp4",
+};
+
+export const homeSmoothSkin = {
+  title: "Smooth Skin. Smarter Savings.",
+  copy: "Summer-ready skin without the fuss? The Muuhu Ultra Pro IPL has you covered. Skip the expensive and painful waxing appointments or endless shaving routines. Feel completely confident and carefree in any outfit you choose. Stop wasting time and money—say hello to a lifetime of smooth, hair-free skin.",
+  image: productMediaAsset("money_well_spent_edited.png"),
 };
