@@ -5,7 +5,7 @@ import { productMediaAsset } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { Price } from "@/components/ui/Price";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { homeCustomerReviewsGrid, homeHairFreeSmooth, homeProductShowcase, homeProductVideo, homeHiGorgeous, homeSmoothSkin, homeWhyItWorks, homeKeyStats, homeNoMissedSpots, homeFullyAdjustable, homeRealResults, homeMassageKitSpotlight, homeMaskSpotlight, homeSkincareGuideIntro, homeTechnologySpotlight, homeFeatureCards, homeLightTherapy, homeYoungerYou } from "@/data/home";
+import { homeCustomerReviewsGrid, homeHairFreeSmooth, homeProductShowcase, homeProductVideo, homeHiGorgeous, homeSmoothSkin, homeWhyItWorks, homeKeyStats, homeCombinedFeatures, homeMassageKitSpotlight, homeMaskSpotlight, homeSkincareGuideIntro, homeTechnologySpotlight, homeFeatureCards, homeLightTherapy, homeYoungerYou } from "@/data/home";
 import { FAQSection } from "@/components/product/FAQSection";
 
 function MassageKitSpotlight() {
@@ -334,7 +334,7 @@ function ProductVideo() {
 function HiGorgeous() {
   const data = homeHiGorgeous;
   return (
-    <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
+    <section className="Muuhu-section bg-[#FDF6EA] pt-20 pb-10 md:pt-28 md:pb-14">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
         <div className="relative w-full aspect-square max-w-[450px] mx-auto overflow-hidden rounded-[25px] shadow-md lg:order-1">
           <Image alt={data.title} className="w-full h-full object-cover" fill src={data.image} />
@@ -359,7 +359,7 @@ function HiGorgeous() {
 function SmoothSkin() {
   const data = homeSmoothSkin;
   return (
-    <section className="Muuhu-section bg-[#FDF6EA] py-20 md:py-28">
+    <section className="Muuhu-section bg-[#FDF6EA] pt-10 pb-20 md:pt-14 md:pb-28">
       <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
         <div className="lg:order-1 flex flex-col justify-center max-w-xl">
           {data.icon && (
@@ -445,7 +445,7 @@ function TwoColumnBlock({ data, reverse = false }: { data: any, reverse?: boolea
         </div>
         <div className={`flex flex-col justify-center max-w-xl ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
           <h2 className="text-3xl lg:text-4xl font-serif text-[var(--plum)] mb-6">{data.title}</h2>
-          <p className="text-lg text-[var(--muted)] leading-relaxed">{data.copy}</p>
+          <p className="text-lg text-[var(--muted)] leading-relaxed whitespace-pre-wrap">{data.copy}</p>
         </div>
       </div>
     </section>
@@ -466,9 +466,7 @@ export function HomePage() {
       <WhyItWorks />
       <KeyStats />
       
-      <TwoColumnBlock data={homeNoMissedSpots} />
-      <TwoColumnBlock data={homeFullyAdjustable} reverse />
-      <TwoColumnBlock data={homeRealResults} />
+      <TwoColumnBlock data={homeCombinedFeatures} />
       
       <FAQSection />
     </>

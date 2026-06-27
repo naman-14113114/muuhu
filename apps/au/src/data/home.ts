@@ -194,20 +194,8 @@ export const homeKeyStats = {
   ]
 };
 
-export const homeNoMissedSpots = {
-  title: "No missed spots",
-  copy: "The Auto-Glide mode flashes continuously as you glide the device over your skin, making it incredibly fast to treat large areas like legs and arms without missing a spot.",
+export const homeCombinedFeatures = {
+  title: "Complete control & real results",
+  copy: "The Auto-Glide mode flashes continuously as you glide the device over your skin, making it incredibly fast to treat large areas like legs and arms without missing a spot. With 9 intensity levels, you are always in control.\n\nStart low for sensitive areas like the bikini line or upper lip, and increase the power for coarser hair. Clinical studies show up to 92% hair reduction after just 6-12 weeks of consistent use. Stop managing your hair and start eliminating it.",
   image: productMediaAsset("ipl_provided_4.png"),
-};
-
-export const homeFullyAdjustable = {
-  title: "Fully adjustable treatments",
-  copy: "With 9 intensity levels, you are always in control. Start low for sensitive areas like the bikini line or upper lip, and increase the power for coarser hair on your legs or underarms.",
-  image: productMediaAsset("ipl_face_closeup.png"),
-};
-
-export const homeRealResults = {
-  title: "Real results",
-  copy: "Clinical studies show up to 92% hair reduction after just 6-12 weeks of consistent use. Stop managing your hair and start eliminating it.",
-  image: productMediaAsset("ipl_replacement_3.png"),
 };
