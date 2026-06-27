@@ -238,7 +238,7 @@ function HomeVideoHero() {
 function HairFreeSmooth() {
   const data = homeHairFreeSmooth;
   return (
-    <section className="Muuhu-section bg-[#FFF9F2] py-16 md:py-24 text-center border-b border-[#F2E8DC]">
+    <section className="Muuhu-section bg-[#FDF6EA] py-16 md:py-24 text-center">
       <div className="Muuhu-wrap">
         <div className="max-w-3xl mx-auto mb-12">
           <h2 className="Muuhu-display text-4xl lg:text-5xl mb-4" style={{ color: "rgb(237, 106, 58)" }}>
@@ -315,14 +315,14 @@ function ProductVideo() {
   return (
     <section className="Muuhu-section bg-[var(--cream)] py-12 md:py-24">
       <div className="Muuhu-wrap max-w-[1200px]">
-        <div className="relative w-full aspect-video overflow-hidden rounded-[30px] bg-black shadow-2xl">
+        <div className="relative w-full overflow-hidden rounded-[30px] shadow-2xl flex leading-none">
           <video
             src={data.video}
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
+            className="block w-full h-auto object-cover"
           />
         </div>
       </div>
@@ -341,8 +341,10 @@ function HiGorgeous() {
         </div>
         <div className="lg:order-2 flex flex-col justify-center max-w-xl">
           {data.icon && (
-            <div className="mb-6 flex items-center justify-start">
-              <Image src={data.icon} alt="Icon" width={48} height={48} className="w-12 h-12" />
+            <div className="mb-6 flex items-center justify-start text-[var(--plum)]">
+              <svg role="presentation" fill="none" focusable="false" strokeWidth="1.5" width="48" height="48" className="w-12 h-12" viewBox="0 0 24 24">
+                <path d="M12 5.457C6.823-.895 1.358 3.619 1.286 8.484c0 7.24 8.665 13.185 10.714 13.185 2.049 0 10.714-5.946 10.714-13.187C22.642 3.617 17.177-.895 12 5.457Z" fill="currentColor" fillOpacity=".12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
           )}
           <h2 className="Muuhu-display text-4xl lg:text-5xl text-[var(--plum)] mb-6">{data.title}</h2>
@@ -457,8 +459,8 @@ export function HomePage() {
     <>
       <HomeVideoHero />
       <HairFreeSmooth />
-      <ProductShowcase />
       <ProductVideo />
+      <ProductShowcase />
       <HiGorgeous />
       <SmoothSkin />
       <WhyItWorks />
