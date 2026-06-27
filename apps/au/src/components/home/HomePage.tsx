@@ -10,6 +10,9 @@ import {
   homeTechnologySpotlight,
   homeMassageKitSpotlight,
   homeYoungerYou,
+  homeHairFreeSmooth,
+  homeSmoothSkin,
+  homeHiGorgeous,
 } from "@/data/home";
 import { productMediaAsset } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
@@ -19,15 +22,15 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 function MassageKitSpotlight() {
   const data = homeMassageKitSpotlight;
   return (
-    <section className="buudy-section bg-[var(--plum)] py-12 md:py-16 text-[var(--cream)]">
-      <div className="buudy-wrap grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center">
+    <section className="Muuhu-section bg-[var(--plum)] py-12 md:py-16 text-[var(--cream)]">
+      <div className="Muuhu-wrap grid gap-8 lg:gap-12 lg:grid-cols-2 lg:items-center">
         <div className="lg:order-2">
           <SectionHeading
             eyebrow={data.eyebrow}
             title={
               <>
                 {data.title.split(" ").slice(0, -2).join(" ")}{" "}
-                <em className="buudy-italic">
+                <em className="Muuhu-italic">
                   {data.title.split(" ").slice(-2).join(" ")}
                 </em>
               </>
@@ -61,8 +64,8 @@ function MassageKitSpotlight() {
 
 function SkincareGuideIntro() {
   return (
-    <section className="buudy-section bg-[var(--cream)] py-20 md:py-24">
-      <div className="buudy-wrap flex flex-col items-center text-center">
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-24">
+      <div className="Muuhu-wrap flex flex-col items-center text-center">
         <SectionHeading
           eyebrow={homeSkincareGuideIntro.eyebrow}
           title={homeSkincareGuideIntro.title}
@@ -82,8 +85,8 @@ function SkincareGuideIntro() {
 
 function TechnologySpotlight() {
   return (
-    <section className="buudy-section bg-[var(--cream)] py-20 md:py-28">
-      <div className="buudy-wrap">
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28">
+      <div className="Muuhu-wrap">
         <div className="grid gap-16 lg:grid-cols-2">
 
           {/* LEFT — light therapy text + button + IPL spotlight image */}
@@ -146,13 +149,13 @@ function TechnologySpotlight() {
 
 function HomeFeatureGrid() {
   return (
-    <section className="buudy-section bg-[var(--cream)] py-24">
-      <div className="buudy-wrap">
+    <section className="Muuhu-section bg-[var(--cream)] py-24">
+      <div className="Muuhu-wrap">
         <SectionHeading
           eyebrow="Why Muuhu"
           title={
             <>
-              Light therapy that covers the <em className="buudy-italic">details</em>.
+              Light therapy that covers the <em className="Muuhu-italic">details</em>.
             </>
           }
           copy="Dense LED coverage, flexible treatments, and built-in neck care help the daily ritual feel simple while still feeling complete."
@@ -169,7 +172,7 @@ function HomeFeatureGrid() {
                 src={feature.image}
               />
               <div className="p-5">
-                <h2 className="buudy-display text-2xl text-[var(--plum)]">
+                <h2 className="Muuhu-display text-2xl text-[var(--plum)]">
                   {feature.title}
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
@@ -187,10 +190,10 @@ function HomeFeatureGrid() {
 function LightTherapyStory() {
   return (
     <section
-      className="buudy-section bg-[var(--plum)] py-24 text-[var(--cream)]"
+      className="Muuhu-section bg-[var(--plum)] py-24 text-[var(--cream)]"
       id="light-therapy"
     >
-      <div className="buudy-wrap grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] bg-[rgba(247,241,232,.08)]">
           <Image
             alt={homeLightTherapy.image.alt}
@@ -205,7 +208,7 @@ function LightTherapyStory() {
           title={
             <>
               What is IPL and{" "}
-              <em className="buudy-italic">where did it come from?</em>
+              <em className="Muuhu-italic">where did it come from?</em>
             </>
           }
           copy={homeLightTherapy.copy}
@@ -267,17 +270,96 @@ function HomeVideoHero() {
   );
 }
 
+function HairFreeSmooth() {
+  const data = homeHairFreeSmooth;
+  return (
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="lg:order-1 flex flex-col justify-center">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+          />
+        </div>
+        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm lg:order-2">
+          <Image
+            alt="Cost comparison"
+            className="w-full h-auto object-cover"
+            width={600}
+            height={600}
+            sizes="(min-width: 1024px) 45vw, 90vw"
+            src={data.image}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SmoothSkin() {
+  const data = homeSmoothSkin;
+  return (
+    <section className="Muuhu-section bg-white py-20 md:py-28">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="relative w-full aspect-video md:aspect-square overflow-hidden rounded-[25px] bg-black shadow-xl lg:order-1">
+          <video
+            src={data.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="lg:order-2 flex flex-col justify-center">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HiGorgeous() {
+  const data = homeHiGorgeous;
+  return (
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28 text-center">
+      <div className="Muuhu-wrap flex flex-col items-center">
+        <div className="max-w-3xl mb-12">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+            align="center"
+          />
+        </div>
+        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm">
+          <Image
+            alt="Hi Gorgeous Community"
+            className="w-full h-auto object-cover"
+            width={1000}
+            height={600}
+            sizes="100vw"
+            src={data.image}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function HomePage() {
   return (
     <>
       <HomeVideoHero />
-      <SkincareGuideIntro />
-      <TechnologySpotlight />
-      {/* <LightTherapyStory /> */}
-      <HomeFeatureGrid />
-      <MassageKitSpotlight />
+      <HairFreeSmooth />
+      <SmoothSkin />
+      <HiGorgeous />
       <CustomerReviewsGrid />
     </>
   );
 }
-

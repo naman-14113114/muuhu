@@ -122,6 +122,23 @@ export const homeCustomerReviewsGrid = {
   image: productMediaAsset("banner_collage_image.jpeg")
 };
 
+export const homeHairFreeSmooth = {
+  eyebrow: "The Smart Choice",
+  title: "Hair free smooth skin without the salon price.",
+  copy: "Ditch the expensive salon laser treatments and painful waxing. The Muuhu Ultra Pro delivers professional IPL technology with a 999,999 flash lifespan for a fraction of the cost.",
+  image: productMediaAsset("money_well_spent_edited.png"),
+};
 
+export const homeSmoothSkin = {
+  eyebrow: "Ice Cooling Technology",
+  title: "Smooth skin made painless.",
+  copy: "Experience the ultimate comfort with our built-in ice cooling plate that cools to 8°C on contact. Combined with 9 adjustable energy levels, you get a completely customized, painless treatment right from your bedroom.",
+  video: "/media/products/buudy-led-mask/videos/hero.mp4",
+};
 
-
+export const homeHiGorgeous = {
+  eyebrow: "Join the Community",
+  title: "Hi gorgeous, welcome to the club.",
+  copy: "Join thousands of others who have transformed their routine. With visible results in just weeks, you're not just removing hair—you're revealing your most confident self.",
+  image: productMediaAsset("hi_gorgeous.jpg"),
+};

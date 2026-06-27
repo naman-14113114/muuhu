@@ -10,6 +10,9 @@ import {
   homeTechnologySpotlight,
   homeMassageKitSpotlight,
   homeYoungerYou,
+  homeHairFreeSmooth,
+  homeSmoothSkin,
+  homeHiGorgeous,
 } from "@/data/home";
 import { productMediaAsset } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
@@ -267,17 +270,96 @@ function HomeVideoHero() {
   );
 }
 
+function HairFreeSmooth() {
+  const data = homeHairFreeSmooth;
+  return (
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="lg:order-1 flex flex-col justify-center">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+          />
+        </div>
+        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm lg:order-2">
+          <Image
+            alt="Cost comparison"
+            className="w-full h-auto object-cover"
+            width={600}
+            height={600}
+            sizes="(min-width: 1024px) 45vw, 90vw"
+            src={data.image}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SmoothSkin() {
+  const data = homeSmoothSkin;
+  return (
+    <section className="Muuhu-section bg-white py-20 md:py-28">
+      <div className="Muuhu-wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="relative w-full aspect-video md:aspect-square overflow-hidden rounded-[25px] bg-black shadow-xl lg:order-1">
+          <video
+            src={data.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="lg:order-2 flex flex-col justify-center">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HiGorgeous() {
+  const data = homeHiGorgeous;
+  return (
+    <section className="Muuhu-section bg-[var(--cream)] py-20 md:py-28 text-center">
+      <div className="Muuhu-wrap flex flex-col items-center">
+        <div className="max-w-3xl mb-12">
+          <SectionHeading
+            eyebrow={data.eyebrow}
+            title={data.title}
+            copy={data.copy}
+            align="center"
+          />
+        </div>
+        <div className="relative w-full overflow-hidden rounded-[25px] shadow-sm">
+          <Image
+            alt="Hi Gorgeous Community"
+            className="w-full h-auto object-cover"
+            width={1000}
+            height={600}
+            sizes="100vw"
+            src={data.image}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function HomePage() {
   return (
     <>
       <HomeVideoHero />
-      <SkincareGuideIntro />
-      <TechnologySpotlight />
-      {/* <LightTherapyStory /> */}
-      <HomeFeatureGrid />
-      <MassageKitSpotlight />
+      <HairFreeSmooth />
+      <SmoothSkin />
+      <HiGorgeous />
       <CustomerReviewsGrid />
     </>
   );
 }
-
