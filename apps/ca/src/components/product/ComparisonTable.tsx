@@ -291,7 +291,7 @@ export function ComparisonTable() {
             title="Price"
             values={[
               <span key="1" className="Muuhu-display font-semibold text-base md:text-lg text-[var(--plum)]">$179</span>,
-              <span key="2" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">$279.99</span>,
+              <span key="2" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">$299.99</span>,
               <span key="3" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">$499</span>,
               <span key="4" className="Muuhu-display text-base md:text-lg text-[var(--muted)]">Â£539</span>,
             ]}
