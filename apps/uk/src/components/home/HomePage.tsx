@@ -460,7 +460,6 @@ export function HomePage() {
       <HomeVideoHero />
       <HairFreeSmooth />
       <ProductVideo />
-      <ProductShowcase />
       <HiGorgeous />
       <SmoothSkin />
       <WhyItWorks />

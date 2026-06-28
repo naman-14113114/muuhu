@@ -111,3 +111,14 @@ pm run build) in  pps/au, caught a missed export (	orchFeatures), fixed the impo
   - Replaced components `HairFreeSmooth`, `SmoothSkin`, `HiGorgeous`, and added `ProductVideo` in `apps/ca/src/components/home/HomePage.tsx`.
   - Updated configuration objects for these sections in `apps/ca/src/data/home.ts`.
   - Verified CA build successfully.
+
+### Session 22: Global Product Showcase Removal
+- **User Intent**: The user wanted to remove the "WHAT YOU ARE GETTING INTO" section (which displays "Permanent hair removal that actually works." and the "Muuhu Ultra Pro" pricing/features) from the homepage across every country app.
+- **Agent Logic & Thinking**:
+  - Identified the requested section as the `ProductShowcase` component by matching the provided screenshot's text to the code in `apps/au/src/components/home/HomePage.tsx`.
+  - Confirmed `ProductShowcase` was being rendered within the `HomePage` component across all 4 apps (US, UK, CA, AU).
+  - Used `replace_file_content` to manually remove the `<ProductShowcase />` line from the JSX return block of the `HomePage` component in `apps/us`, `apps/uk`, `apps/ca`, and `apps/au` without using scripts.
+  - Allowed the running `pnpm dev:au` server to hot-reload and verified changes.
+- **Actions Taken**:
+  - Removed `<ProductShowcase />` from `HomePage.tsx` across `us`, `uk`, `ca`, and `au` apps using exact text replacements.
+  - Logged the session in AGENTS.md.
