@@ -122,3 +122,47 @@ pm run build) in  pps/au, caught a missed export (	orchFeatures), fixed the impo
 - **Actions Taken**:
   - Removed `<ProductShowcase />` from `HomePage.tsx` across `us`, `uk`, `ca`, and `au` apps using exact text replacements.
   - Logged the session in AGENTS.md.
+
+### Session 23: Buy Now Button on Homepage Block
+- **User Intent**: The user wanted to add a "Buy Now" button below the paragraph in the "Complete control & real results" block across all country apps. The button had to perfectly match the "Add To Cart" sticky button styling (colors, hover effects, scale animations) and redirect users to the main IPL product page.
+- **Agent Logic & Thinking**:
+  - Identified the section as `<TwoColumnBlock>` rendering `homeCombinedFeatures` inside `HomePage.tsx`.
+  - Investigated the `GiftBundle.tsx` component to extract the exact styling used for the primary "Add To Cart" buttons (e.g. `bg-[#ED6A3A]`, `rounded-[30px]`, `hover:scale-[1.02]`, group-hover transition on the ArrowRight icon).
+  - Used `replace_file_content` to insert the `<Button>` and `<Link href="/products/muuhu-ipl-hair-removal">` block directly below the paragraph inside `TwoColumnBlock` definition in `HomePage.tsx` across `apps/us`, `apps/uk`, `apps/ca`, and `apps/au`.
+  - Verified changes via the active `pnpm dev:au` dev server.
+- **Actions Taken**:
+  - Inserted the newly styled "Buy Now" button into `TwoColumnBlock` in `HomePage.tsx` across all 4 storefronts.
+  - Logged the session in AGENTS.md.
+
+### Session 24: Buy Now Button Resize
+- **User Intent**: The user requested that the previously added "Buy Now" button be reduced in size to match typical button sizes across the project, while keeping the rest of the styles, hover effects, and animations identical.
+- **Agent Logic & Thinking**:
+  - Located the button inside `TwoColumnBlock` within `HomePage.tsx` across all four applications (US, UK, CA, AU).
+  - Modified the padding and text size classes from `px-10 py-6 text-xl sm:text-[22px]` down to `px-8 py-3 text-sm sm:text-base` to conform to standard project button aesthetics.
+  - Adjusted the `ArrowRight` icon size from `h-5 w-5 sm:h-6 sm:w-6` to `h-4 w-4 sm:h-5 sm:w-5` to proportionally match the new button size.
+  - Applied the changes uniformly across all country variants without altering any logic or links.
+- **Actions Taken**:
+  - Reduced padding and font size for the Buy Now button in `apps/us`, `apps/uk`, `apps/ca`, and `apps/au`.
+  - Logged the session in AGENTS.md.
+
+### Session 25: Contact Page Image Update
+- **User Intent**: The user requested that the image on the "Contact Us" page be changed from the old LED Mask image to an IPL image, strictly ensuring no infographic images are used. The user later clarified they wanted a product gallery image.
+- **Agent Logic & Thinking**:
+  - Located the contact page component in `apps/<country>/src/components/contact/ContactPage.tsx`.
+  - Identified the current image source as `01-home-led-mask-hero.png` and initially used `ipl_lifestyle_1_v2.png`.
+  - Upon user feedback to use a product page image without infographics, selected `ipl_replacement_4.png` from the `products.ts` gallery list (a clean lifestyle shot of the device).
+  - Deployed `replace_file_content` to accurately swap the image source string across all four applications (US, UK, CA, AU).
+- **Actions Taken**:
+  - Replaced `01-home-led-mask-hero.png` (and `ipl_lifestyle_1_v2.png`) with `ipl_replacement_4.png` in `ContactPage.tsx` across `us`, `uk`, `ca`, and `au` apps.
+  - Logged the session in AGENTS.md.
+
+### Session 26: Fix Broken Image Path on Contact Page
+- **User Intent**: The user reported that the image on the "Contact Us" page was broken and not displaying.
+- **Agent Logic & Thinking**:
+  - Investigated the image path in `ContactPage.tsx` and realized that `homeAsset` maps to `/images/home/`, but the newly assigned IPL image (`ipl_lifestyle_1_v2.png`) is actually located in `/media/products/buudy-led-mask/images/`.
+  - Imported `productMediaAsset` from `@/lib/media` to resolve the correct path.
+  - Replaced the `homeAsset` function call with `productMediaAsset` across all four applications (US, UK, CA, AU).
+- **Actions Taken**:
+  - Updated media imports and replaced `homeAsset("ipl_lifestyle_1_v2.png")` with `productMediaAsset("ipl_lifestyle_1_v2.png")` in `ContactPage.tsx` across `us`, `uk`, `ca`, and `au` apps.
+  - Verified the change resolves the broken image link.
+  - Logged the session in AGENTS.md.

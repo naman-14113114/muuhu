@@ -446,6 +446,16 @@ function TwoColumnBlock({ data, reverse = false }: { data: any, reverse?: boolea
         <div className={`flex flex-col justify-center max-w-xl ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
           <h2 className="text-3xl lg:text-4xl font-serif text-[var(--plum)] mb-6">{data.title}</h2>
           <p className="text-lg text-[var(--muted)] leading-relaxed whitespace-pre-wrap">{data.copy}</p>
+          <div className="mt-8">
+            <Button asChild className="group w-full sm:w-auto rounded-[30px] border border-[#ED6A3A] bg-[#ED6A3A] px-8 py-3 text-sm sm:text-base font-bold uppercase tracking-wide text-[var(--cream)] shadow-lg transition-all duration-300 hover:scale-[1.02] hover:border-[var(--gold)] hover:bg-[#ED6A3A] active:scale-[0.98]">
+              <Link href="/products/muuhu-ipl-hair-removal">
+                <span className="flex items-center justify-center gap-2">
+                  Buy Now
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

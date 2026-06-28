@@ -13,7 +13,7 @@ import {
   contactPage,
   contactSocialLinks,
 } from "@/data/contact";
-import { homeAsset } from "@/lib/media";
+import { homeAsset, productMediaAsset } from "@/lib/media";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "./ContactForm";
@@ -63,7 +63,7 @@ function ContactHero() {
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 92vw"
-              src={homeAsset("01-home-led-mask-hero.png")}
+              src={productMediaAsset("ipl_replacement_4.png")}
             />
           </div>
           <div className="absolute bottom-5 left-5 right-5 rounded-2xl bg-[rgba(58,31,61,.9)] p-5 text-[var(--cream)] shadow-[0_20px_55px_-30px_rgba(0,0,0,.6)]">
