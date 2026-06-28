@@ -91,7 +91,7 @@ export const muuhuIpl: Product = {
         gallery: [
       { src: productMediaAsset("ipl_face_closeup.png"), alt: "Muuhu Ultra Pro Face Close Up" },
       { src: productMediaAsset("ipl_price_comparison.jpg"), alt: "Muuhu Ultra Pro Premium" },
-      { src: productMediaAsset("ipl_provided_2.png"), alt: "Muuhu Ultra Pro" },
+      { src: productMediaAsset("ipl_provided_2_v2.png"), alt: "Muuhu Ultra Pro" },
       { src: productMediaAsset("ipl_provided_4.png"), alt: "Muuhu Ultra Pro In Use" },
       { src: productMediaAsset("ipl_provided_5.png"), alt: "Muuhu Ultra Pro Close Up" },
       { src: productMediaAsset("ipl_provided_7.png"), alt: "Muuhu Ultra Pro Product Shot" },

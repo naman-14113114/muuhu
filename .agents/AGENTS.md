@@ -1288,3 +1288,12 @@ pnpm --filter @buudy/au build
 2. **Design & Asset Integrity:** Enforce the rule that no AI-generated placeholders are used unless explicitly approved. Use provided images. Verify no weird encoding symbols (° vs Ã‚Â°).
 3. **Cross-Store Sync:** Guarantee that every single fix is executed simultaneously across all 4 country apps (us, uk, ca, au).
 4. **Visual Browser Review:** NEVER present the website as "done" without first verifying it visually in a browser or through local server fetching (pnpm dev + DOM check). This check ensures there are no regressions (like Mojibake/UTF-8 corruption) visible on the frontend. Find mistakes and fix them before reporting back.
+
+### Session 27: Product Gallery Image Update
+- **User Intent**: The user requested to replace the existing product gallery image (ipl_provided_2.png) with a newly generated ChatGPT image, while strictly enforcing "minimal changes" to the codebase.
+- **Agent Logic & Thinking**:
+  - Instead of modifying React component paths or products.ts arrays which could risk unintended side-effects or build issues, I decided to directly overwrite the existing ipl_provided_2.png file on disk.
+  - Used PowerShell Copy-Item -Force to copy the provided image over the existing asset in the public/media/products/buudy-led-mask/images/ directory across all four applications (US, UK, CA, AU).
+- **Actions Taken**:
+  - Overwrote ipl_provided_2.png with the new generated image across pps/us, pps/uk, pps/ca, and pps/au.
+  - Logged the session in AGENTS.md.
