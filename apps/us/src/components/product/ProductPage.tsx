@@ -21,7 +21,7 @@ export function ProductPage({ product }: { product: Product }) {
   return (
     <>
       <ProductHero product={product} />
-      {/* <VideoReviews /> */}
+      <VideoReviews />
       <IPLVideo />
       <BeforeAfterGrid />
 

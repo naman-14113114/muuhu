@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { reviewVideos, type ReviewVideo } from "@/data/productSections";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-const NUM_SETS = 2;
+const NUM_SETS = 4;
 const loopedVideos = Array(NUM_SETS).fill(reviewVideos).flat();
 
 function ReviewVideoCard({
@@ -19,7 +19,6 @@ function ReviewVideoCard({
   const shouldPlayRef = useRef(false);
   const primarySrc = video.fallbackSrc ?? video.src;
   const [src, setSrc] = useState(primarySrc);
-  const [shouldLoad, setShouldLoad] = useState(index < 4);
 
   const playWhenReady = useCallback(() => {
     if (!shouldPlayRef.current) return;
@@ -39,7 +38,6 @@ function ReviewVideoCard({
         shouldPlayRef.current = entry.isIntersecting;
 
         if (entry.isIntersecting) {
-          setShouldLoad(true);
           videoEl.play().catch(() => undefined);
         } else {
           videoEl.pause();
@@ -78,10 +76,10 @@ function ReviewVideoCard({
         }}
         onLoadedData={playWhenReady}
         playsInline
-        poster={video.poster}
-        preload={shouldLoad ? "metadata" : "none"}
+        poster={video.poster || undefined}
+        preload="metadata"
         ref={videoRef}
-        src={shouldLoad ? src : undefined}
+        src={src}
       >
         Your browser does not support the video tag.
       </video>
@@ -117,7 +115,7 @@ export function VideoReviews() {
           <div 
             className="flex gap-4 w-max hover:[animation-play-state:paused]"
             style={{ 
-              animation: 'vr-css-auto-scroll 95s linear infinite',
+              animation: 'vr-css-auto-scroll 54s linear infinite',
               willChange: 'transform' 
             }}
           >

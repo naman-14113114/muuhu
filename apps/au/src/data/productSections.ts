@@ -174,6 +174,52 @@ export const transformations: Transformation[] = [
 export const reviewVideos: ReviewVideo[] = [
   {
     id: "review-01",
+    poster: "",
+    src: productMediaAsset("Muuhu v6.mov", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-02",
+    poster: "",
+    src: productMediaAsset("Muuhu v2.mov", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-03",
+    poster: "",
+    src: productMediaAsset("Muuhu v5.mov", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-04",
+    poster: "",
+    src: productMediaAsset("Muuhu v11.mov", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-05",
+    poster: "",
+    src: productMediaAsset("Muuhu v3.mov", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-06",
+    poster: "",
+    src: productMediaAsset("8.webm", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-07",
+    poster: "",
+    src: productMediaAsset("7.webm", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-08",
+    poster: "",
+    src: productMediaAsset("10.webm", "buudy-led-mask", "videos"),
+  },
+  {
+    id: "review-09",
+    poster: "",
+    src: productMediaAsset("4.mp4", "buudy-led-mask", "videos"),
+  },
+  /*
+  {
+    id: "review-01",
     poster:
       "https://images.videowise.com/cdn_v_i/XS/converted/thumbnails/1719486304350_448129a4-6d94-4e44-b8af-511f3e7999b2.webp",
     src: productMediaAsset("review-01.mp4", "buudy-led-mask", "videos"),
@@ -374,6 +420,7 @@ export const reviewVideos: ReviewVideo[] = [
       "https://images.videowise.com/cdn_v_i/XS/converted/thumbnails/1719486031184_db6562f9-5414-468e-ab1e-2b3d3df446a9.webp",
     src: "https://cdn2.videowise.com/converted/videos/1686511718245_136b4b13-74af-4d7f-9a5b-202728b15358_h264q6clip.mp4#t=0.1",
   },
+  */
 ];
 
 export const massagerWavelengths: Wavelength[] = [];

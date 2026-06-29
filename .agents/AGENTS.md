@@ -1297,3 +1297,78 @@ pnpm --filter @buudy/au build
 - **Actions Taken**:
   - Overwrote ipl_provided_2.png with the new generated image across pps/us, pps/uk, pps/ca, and pps/au.
   - Logged the session in AGENTS.md.
+
+### Session 28: Restore Video Carousel
+- **User Intent**: The user requested to restore the hidden video carousel on the product page, noting it was a minimal change.
+- **Agent Logic & Thinking**:
+  - Found the VideoReviews component commented out in ProductPage.tsx across all four apps (us, uk, ca, au).
+  - Used eplace_file_content to uncomment <VideoReviews /> in pps/us/src/components/product/ProductPage.tsx, pps/uk/src/components/product/ProductPage.tsx, pps/ca/src/components/product/ProductPage.tsx, and pps/au/src/components/product/ProductPage.tsx without making any other changes or altering layout.
+- **Actions Taken**:
+  - Uncommented <VideoReviews /> in ProductPage.tsx for us, uk, ca, and u apps.
+  - Logged the session in AGENTS.md.
+
+### Session 27: Video Carousel Content Swap
+- **User Intent**: The user provided paths to 9 local mp4 video files and instructed that these 9 videos replace the existing videos in the video carousel exactly as they are currently configured (muted, autoplaying), and that any extra videos should be commented out. The user emphasized making minimal changes to the existing layout or logic.
+- **Agent Logic & Thinking**:
+  - Located the video carousel configuration data in productSections.ts within the eviewVideos array.
+  - Recognized the need to deploy the 9 local video files into the public assets directory across all 4 storefront applications (us, uk, ca, u).
+  - Used PowerShell to copy 4.mp4, 7.mp4, 8.mp4, 10.mp4, Muuhu v2.mp4, Muuhu v3.mp4, Muuhu v5.mp4, Muuhu v6.mp4, and Muuhu v11.mp4 into the public/media/products/buudy-led-mask/videos/ directory for each of the 4 apps.
+  - Used multi_replace_file_content to carefully modify the eviewVideos array in productSections.ts across all 4 apps.
+  - Replaced the first 9 entries with references to the new local video files (setting the poster to "" to avoid mismatching thumbnails) using the existing productMediaAsset helper structure.
+  - Commented out the remaining 23 legacy videos by wrapping them in a block comment /* ... */ to fulfill the user's specific request to comment out extra videos without deleting them.
+  - Verified syntax correctness by running pnpm --filter au build to ensure the commented array did not cause compilation or Next.js build errors.
+- **Actions Taken**:
+  - Copied 9 local video files to all 4 app asset directories.
+  - Updated productSections.ts across us, uk, ca, and u apps to exclusively feature the 9 new videos.
+  - Verified changes by building the AU app successfully.
+
+### Session 28: Video Carousel Compressed Video Update
+- **User Intent**: The user requested that the previously added 9 videos in the carousel be replaced again with newly compressed versions (a mix of .mov, .webm, and .mp4 formats) in a specific order.
+- **Agent Logic & Thinking**:
+  - Validated that the files needed to be copied to the local assets folder for each of the 4 storefronts.
+  - Used PowerShell to perform a global asset copy of the new .mov and .webm files from the user's provided local directory directly into public/media/products/buudy-led-mask/videos/ across apps/us, apps/uk, apps/ca, and apps/au.
+  - Extracted the exact text of the previously updated reviewVideos array.
+  - Used replace_file_content to concurrently swap the src paths in the active 9-item video array across all four apps to match the new ordered list of compressed files.
+  - Preserved the existing commented-out legacy videos below the active array block.
+- **Actions Taken**:
+  - Copied new compressed video files to us, uk, ca, and au apps.
+  - Replaced the first 9 video assets inside productSections.ts across all 4 storefronts.
+
+### Session 29: Cleanup of Older Uncompressed Videos
+- **User Intent**: The user requested the removal of the older, uncompressed .mp4 video files that were deployed previously to save space and remove unused assets.
+- **Agent Logic & Thinking**:
+  - Identified the obsolete files: 7.mp4, 8.mp4, 10.mp4, Muuhu v2.mp4, Muuhu v3.mp4, Muuhu v5.mp4, Muuhu v6.mp4, and Muuhu v11.mp4. (4.mp4 was kept as it was in the new compressed list).
+  - Executed a PowerShell script to iterate over the pps/us, pps/uk, pps/ca, and pps/au public media directories to securely delete these specific 8 unused files.
+- **Actions Taken**:
+  - Deleted the 8 obsolete video assets from all 4 storefronts.
+
+### Session 30: Video Carousel Autoplay Fix
+- **User Intent**: The user reported that the video carousel had "stopped moving automatically" and demanded a fix.
+- **Agent Logic & Thinking**:
+  - Investigated VideoReviews.tsx and determined that because the total active videos dropped from 32 to 9, the CSS animation (r-css-auto-scroll 95s linear infinite moving 	ranslateX(-50%)) slowed down drastically from ~75px/s to ~21px/s (or slower on mobile). At this speed, it appeared stationary.
+  - Additionally, with only 9 items, NUM_SETS = 2 created a total width that was too small for wide monitors, meaning 	ranslateX(-50%) would reveal blank space at the end of the loop.
+  - Used PowerShell string replacement to confidently increase NUM_SETS from 2 to 6 to ensure the carousel track is wide enough to loop seamlessly on all screens.
+  - Updated the animation duration from 95s to 80s to perfectly match the original visual scrolling speed and fix the issue.
+- **Actions Taken**:
+  - Modified NUM_SETS and the animation duration in VideoReviews.tsx across us, uk, ca, and u apps.
+
+### Session 31: Video Carousel Black Card Fix
+- **User Intent**: The user complained that the video carousel items were showing up as permanent black cards because they were being lazily loaded, and requested a fix to prevent them from unloading or showing black.
+- **Agent Logic & Thinking**:
+  - Investigated VideoReviews.tsx and realized that because we removed the poster (set it to ""), the lazy-loading shouldLoad logic caused off-screen videos to render with no poster and no src, appearing as solid black rectangles.
+  - Additionally, NUM_SETS = 6 created 54 separate DOM <video> nodes. The browser limits simultaneous video decoders, which likely prevented some videos from ever initializing when they entered the viewport, leading to "permanent" black cards.
+  - Reduced NUM_SETS from 6 to 4 (bringing total videos to 36, avoiding most browser decoder limits) while maintaining a wide enough carousel for 4K screens. Adjusted the CSS animation duration from 80s down to 54s to preserve the exact same physical scrolling speed.
+  - Rewrote the video element props using PowerShell: removed shouldLoad state entirely, set preload="metadata", and changed poster={video.poster} to poster={video.poster || undefined}. This ensures the browser naturally fetches the first frame of every video immediately to act as a poster, completely eliminating any black cards without waiting for intersection logic.
+- **Actions Taken**:
+  - Modified VideoReviews.tsx across us, uk, ca, and u apps.
+
+### Session 29: Restore Ice Cooling Image
+- **User Intent**: The user reported that the image in the Ice Cooling section (AppPromo.tsx) was incorrectly set to the suitability chart (ipl_provided_2_v2.png), causing confusion on the frontend. The user instructed to restore the correct ice cooling image (white device on snow) to the Ice Cooling section only, and explicitly ensure it does not appear in the product gallery.
+- **Agent Logic & Thinking**:
+  - Reviewed the git history and AGENTS.md logs, determining that in Session 15, ipl_provided_6.png (Ice Cooling image) was removed from the product gallery. In Session 17, another agent incorrectly placed ipl_provided_2.png (the suitability chart) into the AppPromo.tsx Ice Cooling section.
+  - Deduced the correct image to use is ipl_provided_6.png as it matches the requested "device on snow with blue crystals" and the history.
+  - Used eplace_file_content to swap ipl_provided_2_v2.png with ipl_provided_6.png inside the IceCoolingSection of AppPromo.tsx across us, uk, ca, and u apps.
+  - Verified products.ts gallery does not contain ipl_provided_6.png, fulfilling the user's "not in gallery strictly" constraint.
+- **Actions Taken**:
+  - Replaced the erroneous image reference in AppPromo.tsx across all 4 storefront apps.
+  - Added session logging to AGENTS.md.

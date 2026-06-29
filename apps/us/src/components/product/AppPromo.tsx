@@ -184,7 +184,7 @@ export function IceCoolingSection() {
             className="object-cover"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            src={productMediaAsset("ipl_provided_2_v2.png")}
+            src={productMediaAsset("ipl_provided_6.png")}
           />
           <div className="absolute bottom-6 left-6 rounded-2xl bg-[rgba(253,246,240,.94)] p-4 text-[var(--plum)] backdrop-blur">
             <p className="Muuhu-mono text-[#ED6A3A]">Skin Protection</p>
